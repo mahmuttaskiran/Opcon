@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.opcon.ui.views.TitleView android:layout_width="match_parent"
+                              android:layout_height="40dp"
+                              xmlns:app="http://schemas.android.com/apk/res-auto"
+                              app:content="@string/time_restrict_range"
+                              app:leftIcon="@drawable/time_white_icon"
+                              app:rightIcon="@drawable/ic_help_black_18dp"
+                              app:rightIconColor="@color/materialGrey"
+                              app:hideRightSide="true"
+                              app:contentColor="@color/strongGrey"
+                              app:leftIconColor="@color/strongGrey"
+                              android:id="@+id/timeRestrict"
+                              xmlns:android="http://schemas.android.com/apk/res/android"/>

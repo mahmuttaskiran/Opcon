@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+
+        <com.opcon.ui.views.CircleRelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/incoming_contact"
+            app:circleColor="@color/colorPrimary">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_person_white_24dp"
+                android:layout_gravity="center"/>
+
+        </com.opcon.ui.views.CircleRelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/incoming_name"
+            android:layout_toRightOf="@id/incoming_contact"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/operation_in_out_choice"/>
+
+        <com.opcon.ui.views.CircleRelativeLayout
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/close"
+            android:visibility="gone"
+            app:circleColor="@color/red_ff1744"
+            android:layout_alignRight="@id/incoming_contact"
+            android:layout_alignBottom="@id/incoming_contact"
+            app:circleStrokeWidth="1dp"
+            app:circleStrokeColor="@color/white"
+            >
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_close_black_18dp"
+                android:tint="@color/white"/>
+        </com.opcon.ui.views.CircleRelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <com.opcon.ui.views.TimeRangeRestrictView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/incoming_time_restrict"/>
+
+    <com.opcon.ui.views.DateRestrictView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/incoming_date_restrict"/>
+
+</LinearLayout>

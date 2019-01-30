@@ -1,0 +1,21 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <Preference android:title="@string/as_account_black"
+      android:summary="@string/as_account_black_subtitle">
+
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:targetPackage="com.opcon"
+        android:targetClass="com.opcon.libs.settings.BlackListActivity" />
+
+  </Preference>
+
+  <Preference android:title="@string/as_account_remove">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:targetPackage="com.opcon"
+        android:targetClass="com.opcon.libs.settings.DeleteMyAccountActivity" />
+
+  </Preference>
+
+</PreferenceScreen>

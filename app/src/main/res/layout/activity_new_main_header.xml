@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <com.opcon.ui.views.CloudRelativeView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:bgColor="@color/colorSecondaryDark"
+        android:gravity="center_horizontal"
+        app:bottomCloudColor="@color/white"
+        app:bottomCloudStrokeColor="@color/colorPrimary"
+        app:iconColor="@color/colorSecondary"
+        app:maxIcon="10"
+        app:iconMaxSize="1.4"
+        app:bottomCloudWidth="0dp">
+
+      <agency.tango.android.avatarview.views.AvatarView
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:layout_marginTop="50dp"
+          android:id="@+id/avatar"
+          android:layout_marginLeft="16dp"
+          android:layout_centerHorizontal="true"
+          android:layout_marginStart="16dp"
+          app:av_border_color="@color/white"
+          app:av_border_width="1dp"/>
+
+      <com.opcon.ui.views.CircleRelativeLayout
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:id="@+id/changeProfileButton"
+          android:src="@drawable/ic_eye"
+          android:background="?selectableItemBackground"
+          android:layout_alignRight="@id/avatar"
+          android:layout_alignEnd="@id/avatar"
+          app:circleColor="@color/colorSecondaryDark"
+          app:circleStrokeWidth="1dp"
+          app:circleStrokeColor="@color/white"
+          android:layout_alignBottom="@id/avatar">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_pencil"
+            android:background="?selectableItemBackground"
+            android:tint="@color/white"
+            android:padding="3dp"/>
+
+      </com.opcon.ui.views.CircleRelativeLayout>
+
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/title"
+          android:layout_marginTop="10dp"
+          android:layout_centerHorizontal="true"
+          android:layout_below="@id/avatar"
+          android:layout_marginLeft="16dp"
+          android:layout_marginStart="16dp"
+          android:textColor="@color/white"
+          android:textSize="16sp"
+          android:text="Mahmut Taşkıran"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_below="@id/title"
+          android:id="@+id/seeProfile"
+          android:layout_marginLeft="16dp"
+          android:layout_marginStart="16dp"
+          android:text="@string/see_your_profile"
+          android:textSize="12sp"
+          android:layout_marginTop="15dp"
+          android:textColor="@color/white"/>
+
+
+    </com.opcon.ui.views.CloudRelativeView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/linear_secondary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:background="?selectableItemBackground"
+          android:id="@+id/toProfileUpdaters"
+          android:text="@string/see_my_profile_updaters"
+          android:paddingLeft="20dp"
+          android:clickable="true" android:focusable="true"
+          android:gravity="center_vertical"
+          />
+
+       <TextView
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:background="?selectableItemBackground"
+          android:id="@+id/invite"
+          android:paddingLeft="20dp"
+
+          android:clickable="true" android:focusable="true"
+
+          android:gravity="center_vertical"
+          android:text="@string/invite_your_friends"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+
+
+          android:paddingLeft="20dp"
+          android:id="@+id/application_settings"
+          android:background="?selectableItemBackground"
+          android:clickable="true" android:focusable="true"
+
+          android:gravity="center_vertical"
+          android:text="@string/application_settings"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:paddingLeft="20dp"
+
+
+          android:id="@+id/feedback"
+          android:background="?selectableItemBackground"
+          android:clickable="true" android:focusable="true"
+
+          android:gravity="center_vertical"
+          android:text="@string/feedback_activity_title"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:paddingLeft="20dp"
+
+
+          android:id="@+id/help"
+          android:background="?selectableItemBackground"
+          android:clickable="true" android:focusable="true"
+
+          android:gravity="center_vertical"
+          android:text="@string/about_activity_title"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/materialGrey"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/facebook"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:clickable="true" android:focusable="true"
+
+        android:background="?selectableItemBackground"
+        android:paddingRight="8dp"
+        android:paddingEnd="8dp">
+
+
+      <ImageButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="16dp"
+          android:background="@color/transparent"
+          android:src="@drawable/ic_social_facebook"
+          android:tint="@color/colorPrimary"/>
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginStart="10dp"
+          android:textColor="@color/colorPrimary"
+          android:text="@string/follow_to_opcon"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/materialGrey"/>
+
+
+  </LinearLayout>
+
+</ScrollView>
+

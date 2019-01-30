@@ -1,0 +1,75 @@
+<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js">
+</script>
+
+<html>
+<head>
+<title>JavaScript file upload</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script type="text/javascript">
+  // Initialize Firebase
+  // TODO: Replace with your project's customized code snippet
+	
+	var config = {
+	  apiKey: "api_key",
+	  authDomain: "firebase_app_domain",
+	  databaseURL: "firebase_db_url",
+	  storageBucket: "storage_bucket"
+  	};
+	
+  	firebase.initializeApp(config);	
+	var database = firebase.database();
+	var auth = firebase.auth();
+	var storage = firebase.storage().ref();
+	
+	var metadata = {
+		"uid": "oLy2AL4JwFPIIJOvY2MD9TlV83Q2"
+	};
+	
+	var upload = function() {
+		var photo = document.getElementById("photo");
+
+    	// the file is the first element in the files property
+    	var file = photo.files[0];
+		
+		var ref = storage.child("messages/oLy2AL4JwFPIIJOvY2MD9TlV83Q2/whoami.png");
+		
+		
+		ref.put(file, metadata).then((s) => {
+			console.log("upload is success!");
+		}).catch((e) => {
+			console.log("an error occured!", e);
+		});
+		
+		return false;
+	}
+	
+	auth.signInWithEmailAndPassword("opcon@hack.com", "opcon_hack").catch((e) => {
+		console.log("error when login with email and password.", e);
+	});
+
+	auth.onAuthStateChanged((user) => {
+		if (user) {
+			console.log("logined as", user.email, user.uid)
+		} else {
+			console.log("failed login.");
+		}
+	});
+</script>
+
+</head>
+<body>
+	
+	
+
+<form action="/" method="post" onsubmit="return upload();">
+  <fieldset>
+    <legend>Upload photo</legend>
+    <input type="file" name="photo" id="photo">
+    <input type="submit" value="Upload">
+  </fieldset>
+</form>
+
+</body>
+</html>
+
+

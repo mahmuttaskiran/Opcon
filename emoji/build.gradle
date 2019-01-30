@@ -1,0 +1,20 @@
+    apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+
+
+
+    defaultConfig {
+        minSdkVersion 15
+        consumerProguardFiles 'proguard-rules.txt'
+    }
+
+
+    resourcePrefix 'emoji'
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:24.2.0'
+}

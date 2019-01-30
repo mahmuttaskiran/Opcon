@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.opcon.ui.views.TitleView
+        android:id="@+id/seeAll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleHeight"
+        app:content="@string/dialogs"
+        app:color="@color/mainTitleColor"
+        app:contentColor="@color/mainTitleContextColor"
+        app:hideRightSide="true"
+        app:leftIcon="@drawable/ic_weixin"
+        app:leftIconColor="@color/mainTitleContextColor"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/divider"
+        android:layout_below="@id/seeAll"
+        android:background="@color/lightGrey"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="?selectableItemBackground"
+        android:clickable="true" android:focusable="true"
+        android:id="@+id/no_dialog"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        android:paddingRight="16dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/white_bg_blue_border"
+            android:src="@drawable/ic_send_grey_600_24dp"
+            android:clickable="false"
+            android:padding="18dp"
+            android:id="@+id/id"
+            android:tint="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/id"
+            android:layout_toEndOf="@id/id"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:clickable="false"
+            android:textSize="14sp"
+            android:text="@string/dialog_helper"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/no_dialog"
+        android:layout_alignWithParentIfMissing="true"
+        android:id="@+id/dialog_recyclerview">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/transparent"
+              android:id="@+id/root"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+  <android.support.v7.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/cardView"
+      app:cardBackgroundColor="@color/transparent"
+      app:cardUseCompatPadding="true"
+      app:cardElevation="1dp"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <com.opcon.ui.views.CloudRelativeView
+          android:layout_width="match_parent"
+          android:layout_height="90dp"
+          android:id="@+id/cloudView"
+          app:bgColor="@color/colorPrimary"
+          app:maxIcon="10"
+          app:iconMaxSize="1.4"
+          app:iconColor="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_comments_smiley"
+            android:id="@+id/topIcon"
+            android:tint="@color/white"
+            android:layout_centerInParent="true"/>
+
+      </com.opcon.ui.views.CloudRelativeView>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="5dp"
+          android:id="@+id/divider"
+          android:background="@drawable/linear"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="21sp"
+          android:text="test"
+          android:id="@+id/titleOfContent"
+          android:textStyle="bold"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="16dp"
+          android:layout_marginRight="10dp"/>
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/text"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="12dp"
+          android:paddingRight="20dp"
+          android:textSize="12dp"
+          android:text="@string/what_is_profile_updater_answer"/>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginBottom="7dp"
+          android:gravity="right">
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/negativeAction"
+            android:textSize="11sp"
+            android:text="@string/understand"
+            android:background="@color/white"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/positiveAction"
+            android:textSize="11sp"
+            android:text="@string/make_an_profile_updater"
+            android:background="@color/colorSecondary"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+      </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+  </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

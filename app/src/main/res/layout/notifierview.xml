@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/rootCard"
+    android:layout_margin="0dp"
+    android:padding="0dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+
+    app:cardElevation="1.5dp"
+
+    app:cardCornerRadius="1dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true" android:focusable="true"
+        android:orientation="vertical"
+        android:id="@+id/title">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:elevation="0.2dp"
+            android:id="@+id/layout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/options"
+                android:src="@drawable/ic_more_vert_black_18dp"
+                android:padding="6dp"
+                android:tint="@color/strongGrey"/>
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textSize="12sp"
+                android:text="1"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:elevation="3dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:id="@+id/notificationIcon"
+                android:textColor="@color/white"
+                android:layout_toLeftOf="@id/options"
+                android:layout_toStartOf="@id/options"
+                android:layout_centerVertical="true"
+                android:background="@drawable/circle_for_notification"/>
+
+            <agency.tango.android.avatarview.views.AvatarView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/no_avatar"
+                app:av_border_color="@color/colorSecondary"
+                app:av_border_width="0.3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:id="@+id/avatar"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textSize="12sp"
+                android:drawableLeft="@drawable/ic_notifications_off_grey"
+                android:background="#00ffffff"
+                android:drawablePadding="7dp"
+                android:clickable="true" android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:id="@+id/desc"
+                android:layout_marginLeft="10dp"
+                android:editable="false"
+                android:inputType="none"
+                android:hint="@string/please_enter_a_comment_for_notifier"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/avatar"
+                android:layout_toEndOf="@id/avatar"
+                android:layout_toLeftOf="@+id/notificationIcon"
+                android:layout_toStartOf="@+id/notificationIcon"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:visibility="visible"
+            android:background="@color/lightGrey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="0.5">
+
+                    <agency.tango.android.avatarview.views.AvatarView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/no_avatar"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/conditionAvatar"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/conditionAvatar"
+                        android:layout_toEndOf="@id/conditionAvatar"
+                        android:id="@+id/conditionTitle"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:drawablePadding="5dp"
+                        android:text="Description of operation that that that "/>
+
+                  <com.opcon.ui.views.CircleRelativeLayout
+                      android:layout_width="21dp"
+                      android:layout_height="21dp"
+                      android:id="@+id/conditionIconCircle"
+                      app:circleStrokeWidth="1.3dp"
+                      app:circleStrokeColor="@color/white"
+                      app:circleColor="@color/red_ff1744"
+                      android:layout_alignRight="@id/conditionAvatar"
+                      android:layout_alignEnd="@id/conditionAvatar"
+                      android:layout_alignBottom="@id/conditionAvatar">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_delete_white_18dp"
+                        android:id="@+id/conditionIcon"
+                        android:tint="@color/white"
+                        android:padding="6dp"/>
+
+
+                  </com.opcon.ui.views.CircleRelativeLayout>
+
+
+
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="0.5">
+
+                <agency.tango.android.avatarview.views.AvatarView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/operationAvatar"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/operationAvatar"
+                    android:layout_toEndOf="@id/operationAvatar"
+                    android:id="@+id/operationTitle"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:drawablePadding="5dp"
+                    android:text="Description of operation that that that "/>
+
+              <com.opcon.ui.views.CircleRelativeLayout
+                  android:layout_width="21dp"
+                  android:layout_height="21dp"
+                  android:id="@+id/operationIconCircle"
+                  android:layout_alignRight="@id/operationAvatar"
+                  app:circleStrokeWidth="1.3dp"
+                  app:circleStrokeColor="@color/white"
+                  android:layout_alignEnd="@id/operationAvatar"
+                  android:layout_alignBottom="@id/operationAvatar">
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:id="@+id/operationIcon"
+                    android:src="@drawable/ic_delete_white_18dp"
+                    android:tint="@color/white"
+                    android:padding="6dp"/>
+
+              </com.opcon.ui.views.CircleRelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/restrict"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal">
+
+          <android.support.v7.widget.CardView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/dateRestrict"
+              app:contentPadding="6dp"
+              app:cardElevation="0.5dp"
+              app:cardMaxElevation="0.7dp"
+              app:cardUseCompatPadding="true">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="12/02/2016"
+                  android:textSize="11sp"
+                  android:gravity="center_vertical"
+                  android:id="@+id/dateRestrictText"
+                  android:drawableLeft="@drawable/ic_date_range"
+                  android:drawableStart="@drawable/ic_date_range"
+                  android:drawablePadding="6dp"/>
+
+
+          </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/timeRestrict"
+              app:cardMaxElevation="0.7dp"
+              app:cardElevation="0.5dp"
+              app:contentPadding="6dp"
+              app:cardUseCompatPadding="true">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:textSize="11sp"
+                  android:id="@+id/timeRestrictText"
+                  android:drawableLeft="@drawable/ic_timelapse"
+                  android:drawableStart="@drawable/ic_timelapse"
+                  android:drawablePadding="6dp"/>
+
+
+          </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+      <android.support.v7.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:minHeight="30dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="5dp"
+          android:id="@+id/notifier_note_card"
+          app:cardMaxElevation="0.7dp"
+          app:cardElevation="0.5dp"
+          app:contentPadding="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_info_material_grey"
+            android:drawablePadding="6dp"
+            android:drawableTint="@color/materialGrey"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textSize="11sp"
+            android:id="@+id/notifier_note"/>
+
+      </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+

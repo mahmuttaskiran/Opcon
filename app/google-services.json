@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "844779191993",
+    "firebase_url": "https://opcon-ccf1d.firebaseio.com",
+    "project_id": "opcon-ccf1d",
+    "storage_bucket": "opcon-ccf1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844779191993:android:c5c4daf8e09a6c43",
+        "android_client_info": {
+          "package_name": "com.opcon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844779191993-34gevm8vdb1llsorm9os7jst7qotnk2m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.opcon",
+            "certificate_hash": "ef10fce5d96bbbd9a212063b3c16221e2215f926"
+          }
+        },
+        {
+          "client_id": "844779191993-mt0kdrfdu5htdnkeviegafta4jv0jggk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPriBluh1f-cSFqnjtYemnSYgLAUiYDGk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844779191993-mt0kdrfdu5htdnkeviegafta4jv0jggk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

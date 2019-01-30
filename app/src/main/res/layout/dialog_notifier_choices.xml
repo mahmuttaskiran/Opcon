@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:clickable="true" android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:clickable="true" android:focusable="true"
+            android:id="@+id/rcToggle"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/notifier_choice_toogle_stop"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:clickable="true" android:focusable="true"
+            android:id="@+id/rcDelete"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/notifier_choice_delete"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/softGrey"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:paddingLeft="16dp"
+            android:id="@+id/rcGlobal"
+            android:paddingRight="16dp"
+            android:clickable="true" android:focusable="true"
+            android:text="@string/notifier_choice_show_logs"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/softGrey"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="18sp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:id="@+id/rcDetails"
+            android:clickable="true" android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:text="@string/notifier_choice_show_details"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="18sp"
+            android:paddingLeft="16dp"
+            android:clickable="true" android:focusable="true"
+            android:paddingRight="16dp"
+            android:id="@+id/rcEdit"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:text="@string/notifier_choice_edit"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/softGrey"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="18sp"
+            android:paddingLeft="16dp"
+            android:clickable="true" android:focusable="true"
+            android:paddingRight="16dp"
+            android:id="@+id/rcShare"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:text="@string/notifier_choice_share"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/softGrey"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="18sp"
+            android:paddingLeft="16dp"
+            android:clickable="true" android:focusable="true"
+            android:paddingRight="16dp"
+            android:id="@+id/rcNotificationState"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:text="@string/close_notification_for_notifier"/>
+
+        <!--
+
+            removed features: Automate sending packets
+
+        -->
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:visibility="gone"
+            android:id="@+id/automation"
+            android:background="@color/red_ff1744"
+            android:textColor="@color/white"
+            android:text="@string/acception_automated_packet_send"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

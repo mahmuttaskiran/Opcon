@@ -1,0 +1,32 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <Preference
+      android:title="@string/as_about_feedback"
+      android:summary="@string/as_about_feedback_subtitle">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:targetPackage="com.opcon"
+        android:data="FROM_SETTINGS"
+        android:targetClass="com.opcon.libs.settings.FeedbackActivity" />
+  </Preference>
+
+  <Preference android:title="@string/as_about_about" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:targetPackage="com.opcon"
+        android:targetClass="com.opcon.ui.activities.NewAboutActivity" />
+  </Preference>
+
+  <Preference android:title="@string/privacy_activity_title">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:targetPackage="com.opcon"
+        android:targetClass="com.opcon.libs.settings.PrivacyAndPolicyActivity" />
+  </Preference>
+
+  <Preference android:title="@string/copy_right_information"
+              android:summary="@string/third_party_frameworks"
+              android:fragment="com.opcon.libs.settings.SettingsActivity$CopyrightInformation">
+  </Preference>
+
+</PreferenceScreen>

@@ -1,0 +1,118 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+    </style>
+
+    <style name="SearchWhiteAc" parent="NoActionBar">
+        <item name="android:textColorSecondary">@color/strongGrey</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonForSearch</item>
+    </style>
+
+    <style name="MyActionButtonForSearch" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_more_vert_white_18dp</item>
+        <item name="android:contentDescription">"Options"</item>
+        <item name="android:color">@color/searchContentColor</item>
+        <item name="android:tint">@color/searchContentColor</item>
+    </style>
+
+
+    <style name="StyledText" parent="android:TextAppearance">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="PauseDialog" parent="Theme_Dialog">
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="AppLoginTheme" parent="Theme.AccountKit">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="com_accountkit_button_background_color">@color/colorPrimary</item>
+        <item name="com_accountkit_button_text_color">@color/white</item>
+        <item name="com_accountkit_toolbar_elevation">5dp</item>
+        <item name="com_accountkit_icon_color">@color/colorPrimary</item>
+        <item name="com_accountkit_background_color">@color/white</item>
+        <item name="com_accountkit_input_border_color">@color/lightGrey</item>
+        <item name="com_accountkit_input_background_color">@color/white</item>
+
+
+    </style>
+
+    <style name="ProgressBar">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#000000</item>
+    </style>
+
+    <style name="NoActionBar.ActionBarStyle">
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="MainAc" parent="NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+
+    <style name="NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="NoActionBarTransparent" parent="NoActionBar">
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#000000</item>
+    </style>
+
+    <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_more_vert_white_18dp</item>
+        <item name="android:contentDescription">"Options"</item>
+    </style>
+
+
+    <style name="Theme.Transparent" parent="NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="Theme_Dialog" parent="Theme.Transparent">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+
+  <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

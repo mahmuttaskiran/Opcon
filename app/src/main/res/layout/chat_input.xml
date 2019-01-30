@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+                android:animateLayoutChanges="true"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:background="@color/lightGrey"
+      android:id="@+id/emojititle_top_divider"/>
+
+  <com.vanniktech.emoji.EmojiTitleView
+      android:layout_marginTop="6dp"
+      android:layout_below="@id/emojititle_top_divider"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/emojititle"/>
+
+  <View
+      android:layout_width="match_parent"
+      android:id="@+id/emojititle_bottom_divider"
+      android:layout_height="0.5dp"
+      android:background="@color/lightGrey"
+      android:layout_below="@id/emojititle"
+      android:layout_marginTop="6dp"/>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:focusable="true"
+      android:focusableInTouchMode="true"
+      android:id="@+id/input"
+      android:layout_below="@id/emojititle_bottom_divider">
+
+    <com.opcon.ui.views.CircleRelativeLayout
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/smile"
+        android:layout_alignBottom="@+id/edit"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        app:circleColor="@color/white"
+        app:circleStrokeColor="@color/colorPrimary">
+      <ImageView
+          android:layout_width="28dp"
+          android:layout_height="28dp"
+          android:id="@+id/smile_icon"
+          android:src="@drawable/ic_insert_emoticon_grey_600_24dp"
+          android:tint="@color/materialGrey"
+          android:layout_gravity="center"/>
+    </com.opcon.ui.views.CircleRelativeLayout>
+
+    <com.vanniktech.emoji.EmojiEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:maxHeight="150dp"
+        android:inputType="text|textCapSentences"
+        app:emojiSize="24dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/edit"
+        android:layout_toRightOf="@id/smile"
+        android:layout_toEndOf="@id/smile"
+        android:background="@color/transparent"
+        android:hint="@string/send_msg"
+        android:textColor="@color/strongGrey"
+        android:textColorHint="@color/materialGrey"
+        android:layout_toLeftOf="@id/send"
+        android:layout_toStartOf="@id/send"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginEnd="6dp"/>
+
+    <com.opcon.ui.views.CircleRelativeLayout
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/send"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/edit"
+        android:gravity="center"
+        app:circleColor="@color/colorSecondary"
+        app:circleStrokeColor="@color/colorSecondary"
+        app:circleStrokeWidth="0.5dp">
+      <ImageView
+          android:layout_width="22dp"
+          android:layout_height="22dp"
+          android:id="@+id/sendIcon"
+          android:src="@drawable/ic_attachment_black_24dp"
+          android:padding="3dp"
+          android:tint="@color/white"
+          android:layout_gravity="center"/>
+    </com.opcon.ui.views.CircleRelativeLayout>
+  </RelativeLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:id="@+id/listDivider"
+      android:visibility="gone"
+      android:layout_below="@id/input"
+      android:background="@color/lightGrey"/>
+
+  <android.support.v7.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="150dp"
+      android:visibility="gone"
+      android:layout_below="@id/input"
+      android:id="@+id/recyclerView"/>
+
+</RelativeLayout>

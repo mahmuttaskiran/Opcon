@@ -1,0 +1,32 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+  <CheckBoxPreference
+      android:title="@string/as_dialog_enable_ringtone"
+      android:key="dialog_ringtone_state"
+      android:defaultValue="true"
+      android:summaryOn="@string/as_dialog_enable_ringtone_on"
+      android:summaryOff="@string/as_dialog_enable_ringtone_off"/>
+
+  <RingtonePreference
+      android:title="@string/settings_rigtone"
+      android:key="dialog_ringtone"
+      android:ringtoneType="notification"
+      android:showDefault="true"
+      android:showSilent="false"/>
+
+  <CheckBoxPreference
+      android:title="@string/as_dialog_enter_to_send"
+      android:summaryOn="@string/as_dialog_enter_to_send_on"
+      android:summaryOff="@string/as_dialog_enter_to_send_off"
+      android:key="dialog_enter_to_send"/>
+
+  <ListPreference android:title="@string/as_notifier_notification_vibrate"
+      android:key="dialog_vibrate"
+      android:entries="@array/arr_vibrate"
+      android:summary="%s"
+      android:defaultValue="0"
+      android:entryValues="@array/arr_vibrate_values"/>
+
+
+</PreferenceScreen>

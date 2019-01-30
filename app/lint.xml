@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconDuplicates">
+        <ignore path="src/main/res/drawable-hdpi/ic_smile_o_24.png" />
+        <ignore path="src/main/res/drawable-hdpi/outgoing_message_white_icon.png" />
+        <ignore path="src/main/res/drawable-mdpi/outgoing_message_white_icon.png" />
+        <ignore path="src/main/res/drawable-xhdpi/ic_send_white_18dp.png" />
+        <ignore path="src/main/res/drawable-xhdpi/ic_smile_o_18_white.png" />
+        <ignore path="src/main/res/drawable-xhdpi/outgoing_message_white_icon.png" />
+        <ignore path="src/main/res/drawable-xxhdpi/ic_send_white_18dp.png" />
+        <ignore path="src/main/res/drawable-xxhdpi/ic_smile_o_24.png" />
+        <ignore path="src/main/res/drawable-xxxhdpi/ic_send_white_18dp.png" />
+        <ignore path="src/main/res/drawable-xxxhdpi/ic_smile_o_18_white.png" />
+    </issue>
+</lint>

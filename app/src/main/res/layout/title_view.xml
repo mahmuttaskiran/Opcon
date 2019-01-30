@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:id="@+id/root"
+                android:background="?selectableItemBackground"
+                android:clickable="true" android:focusable="true"
+                android:layout_height="match_parent">
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="0.1dp"
+      android:background="@color/lightGrey"
+      android:layout_alignParentTop="true"/>
+
+  <ImageView
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginLeft="16dp"
+      android:layout_centerVertical="true"
+      android:tint="@color/colorPrimary"
+      android:id="@+id/left"
+      android:padding="2dp"
+      android:src="@drawable/condition_ic_access_time_black_18dp"/>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Text!"
+      android:id="@+id/text"
+      android:layout_centerVertical="true"
+      android:layout_toRightOf="@id/left"
+      android:layout_toEndOf="@id/left"
+      android:layout_marginLeft="16dp"
+      android:layout_marginStart="16dp"/>
+
+  <com.opcon.ui.views.CircleRelativeLayout
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:layout_centerVertical="true"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginRight="16dp"
+      android:layout_marginEnd="16dp"
+      android:id="@+id/crl"
+      android:gravity="center"
+      app:circleStrokeColor="@color/midGrey"
+      app:circleStrokeWidth="0.2dp"
+      app:circleColor="@color/transparent">
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/right"
+        android:src="@drawable/condition_ic_location_off_black_18dp"
+        android:tint="@color/colorPrimary"/>
+
+  </com.opcon.ui.views.CircleRelativeLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="0.1dp"
+      android:background="@color/lightGrey"
+      android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

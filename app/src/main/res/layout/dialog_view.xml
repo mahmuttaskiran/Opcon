@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:foreground="?selectableItemBackground"
+    android:paddingTop="10dp"
+                android:animateLayoutChanges="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <agency.tango.android.avatarview.views.AvatarView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/dialog_avatar"
+        android:clickable="true" android:focusable="true"
+        app:av_border_width="0.6dp"
+        app:av_border_color="@color/colorPrimary"
+        />
+
+    <com.vanniktech.emoji.EmojiTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="asd"
+        android:clickable="false"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="40dp"
+        android:id="@+id/dialog_text"
+        android:lineSpacingExtra="1dp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/dialog_date"
+        android:layout_toRightOf="@+id/dialog_avatar"
+        android:layout_toEndOf="@+id/dialog_avatar"/>
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:elevation="3dp"
+        android:background="@drawable/blue_circle_bordered"
+        android:src="@drawable/ic_check_white_24dp"
+        android:padding="3dp"
+        android:clickable="false"
+        android:text="1"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:id="@+id/dialog_non_seen_length"
+        android:layout_alignRight="@id/dialog_avatar"
+        android:layout_alignEnd="@id/dialog_avatar"
+        android:layout_alignBottom="@id/dialog_avatar"/>
+
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@drawable/blue_circle"
+        android:padding="2dp"
+        android:clickable="false"
+
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/dialog_ack_state"
+        android:layout_centerVertical="true"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="06:48"
+        android:layout_alignBottom="@id/dialog_text"
+        android:textSize="12sp"
+        android:clickable="false"
+        android:layout_toRightOf="@id/dialog_ack_state"
+        android:layout_alignWithParentIfMissing="true"
+        android:gravity="center"
+        android:id="@+id/dialog_date"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/dialog_ack_state"
+        android:layout_toStartOf="@id/dialog_ack_state"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:clickable="false"
+        android:background="#f2f2f2"
+        android:layout_below="@id/dialog_avatar"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/dialog_avatar"
+        android:layout_toEndOf="@id/dialog_avatar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"/>
+
+</RelativeLayout>

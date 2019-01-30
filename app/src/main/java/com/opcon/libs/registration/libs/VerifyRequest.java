@@ -1,0 +1,128 @@
+package com.opcon.libs.registration.libs;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.File;
+import java.io.IOException;
+
+import okhttp3.HttpUrl;
+import okhttp3.OkHttpClient;
+import okhttp3.Response;
+import timber.log.Timber;
+
+/**
+ * Created by Mahmut Taşkiran on 1/24/17.
+ */
+
+public class VerifyRequest implements Request {
+
+    private String phone;
+    private String dial_code;
+    private String locale;
+    private String token;
+    private String password;
+    private boolean completed;
+    private boolean success;
+    private String exception;
+    private String email;
+    private JSONObject backoff;
+
+    private String method = "";
+
+    public VerifyRequest(String phone, String dial_code, String locale, String token) {
+        this.phone = phone;
+        this.dial_code = dial_code;
+        this.locale = locale;
+        this.token = token;
+    }
+
+    public void asAccountKit(){
+        method = "account_kit";
+    }
+
+    @Override
+    public void executeSync(String domain, int port) {
+        OkHttpClient mClient = new OkHttpClient();
+        HttpUrl.Builder mUrlBuilder = HttpUrl.parse(domain + ":" + port +
+                File.separator + "verify").newBuilder();
+
+        mUrlBuilder.addQueryParameter("phone", phone);
+        mUrlBuilder.addQueryParameter("dial_code", dial_code);
+        mUrlBuilder.addQueryParameter("locale", locale);
+        mUrlBuilder.addQueryParameter("token", token);
+        mUrlBuilder.addQueryParameter("method", method);
+
+        String mUrl = mUrlBuilder.build().toString();
+
+        okhttp3.Request mRequest =  new okhttp3.Request.Builder()
+                .url(mUrl)
+                .get()
+                .build();
+
+        try {
+
+            Response response = mClient.newCall(mRequest).execute();
+            String body = response.body().string();
+
+            Timber.d(body);
+
+            completed = body != null;
+
+            if (completed) {
+
+                if (body.equals("failed") || body.equals("bad_request") || body.equals("invalid_code")) {
+                    exception = body;
+                    success = false;
+                } else {
+                    try {
+                        JSONObject r = new JSONObject(body);
+                        if (r.has("token")) {
+                            success = true;
+                            email = r.getString("token");
+                            password = r.getString("password");
+                        } else if (r.has("error")) {
+                            exception = r.getString("error");
+                        } else {
+                            backoff = r;
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                        completed = false;
+                    }
+                }
+
+            }
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            completed = false;
+        }
+
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public boolean isCompleted() {
+        return completed;
+    }
+
+    public String getException() {
+        return exception;
+    }
+
+    public boolean isSuccess() {
+        return success && completed;
+    }
+
+    public JSONObject getBackoff() {
+        return backoff;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+}

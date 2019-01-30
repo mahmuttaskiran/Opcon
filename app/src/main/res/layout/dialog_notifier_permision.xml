@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+              android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.opcon.ui.views.NotifierView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notifierView">
+    </com.opcon.ui.views.NotifierView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:elevation="5dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:text="@string/Opcon_need_permission_to_execute_this_notifier"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView">
+
+    </ListView>
+
+</LinearLayout>

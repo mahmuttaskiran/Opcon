@@ -1,0 +1,107 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+  <Preference android:title="Butterknife"
+            android:summary="© Jake Wharton - Apache License 2.0">
+    <intent android:action="android.intent.action.VIEW"
+            android:data="https://github.com/bumptech/glide" />
+  </Preference>
+
+  <Preference android:title="Glide"
+            android:summary="© Sam Judd - Apache License 2.0">
+    <intent android:action="android.intent.action.VIEW"
+            android:data="http://square.github.io/picasso/" />
+  </Preference>
+
+  <Preference android:title="libphonenumber"
+      android:summary="© Google - Apache License 2.0">
+    <intent android:action="android.intent.action.VIEW"
+        android:data="https://github.com/googlei18n/libphonenumber" />
+  </Preference>
+
+  <Preference android:title="Recycler Bubble"
+            android:summary="© Future Mind - Apache License 2.0">
+    <intent android:action="android.intent.action.VIEW"
+            android:data="https://github.com/FutureMind/recycler-fast-scroll" />
+  </Preference>
+
+  <Preference android:title="TimePicker"
+            android:summary="© erz05 - Apache License 2.0">
+    <intent android:action="android.intent.action.VIEW"
+            android:data="https://github.com/erz05/TimePicker" />
+  </Preference>
+
+  <Preference android:title="Android Image Cropper"
+            android:summary="© Arthur Teplitzki - Apache License 2.0">
+    <intent android:action="android.intent.action.VIEW"
+            android:data="https://github.com/ArthurHub/Android-Image-Cropper" />
+  </Preference>
+
+  <Preference android:title="Timber"
+            android:summary="© Jake Wharton - Apache License 2.0">
+    <intent android:action="android.intent.action.VIEW"
+            android:data="https://github.com/JakeWharton/timber" />
+  </Preference>
+
+  <Preference android:title="OkHttp"
+            android:summary="© Square, Inc. - Apache License 2.0">
+    <intent android:action="android.intent.action.VIEW"
+            android:data="http://square.github.io/okhttp/" />
+  </Preference>
+
+  <Preference android:title="FloatingActionButton"
+            android:summary="© Dmytro Tarianyk - Apache License 2.0">
+    <intent android:action="android.intent.action.VIEW"
+            android:data="https://github.com/Clans/FloatingActionButton/" />
+  </Preference>
+
+  <Preference android:title="Avatar View"
+            android:summary="© Tango Agency - MIT License">
+    <intent android:action="android.intent.action.VIEW"
+            android:data="https://github.com/TangoAgency/avatar-view" />
+  </Preference>
+
+  <Preference android:title="aFileChooser"
+            android:summary="© Paul Burke, OpenIntents.org, Ian Lake - Apache License 2.0">
+    <intent android:action="android.intent.action.VIEW"
+            android:data="https://github.com/iPaulPro/aFileChooser" />
+  </Preference>
+
+  <Preference android:title="Emoji"
+            android:summary="© Niklas Baudy - Apache License 2.0">
+    <intent android:action="android.intent.action.VIEW"
+            android:data="https://github.com/vanniktech/Emoji" />
+  </Preference>
+
+  <Preference android:title="Recycler Bubble"
+            android:summary="© Future Mind - Apache License 2.0">
+    <intent android:action="android.intent.action.VIEW"
+            android:data="https://github.com/chrisbanes/PhotoView" />
+  </Preference>
+  <Preference android:title="Leku"
+            android:summary="© Schibsted Classified Media Spain S.L. - Apache License 2.0">
+    <intent android:action="android.intent.action.VIEW"
+            android:data="https://github.com/SchibstedSpain/Leku" />
+  </Preference>
+
+  <Preference android:title="Pretty Time"
+      android:summary="© ocpsoft - Apache License 2.0">
+    <intent android:action="android.intent.action.VIEW"
+        android:data="http://www.ocpsoft.org/prettytime/" />
+  </Preference>
+
+  <Preference android:title="PhotoView"
+            android:summary="© Chris Banes - Apache License 2.0">
+    <intent android:action="android.intent.action.VIEW"
+            android:data="https://github.com/FutureMind/recycler-fast-scroll" />
+  </Preference>
+
+  <Preference android:title="AOSP"
+            android:summary="This software contains code derived from code developed by The  Android Open Source Project">
+    <intent android:action="android.intent.action.VIEW"
+            android:data="http://source.android.com/" />
+  </Preference>
+
+</PreferenceScreen>

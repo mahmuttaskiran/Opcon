@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
+      <item
+          android:id="@+id/addANewUser"
+          android:title="@string/addANewUser"/>
+    </group>
+
+    <item
+        android:id="@+id/refresh"
+        android:title="@string/refresh"
+        android:visible="true"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_refresh"/>
+
+    <item android:title="@string/notifier_creation_save_it"
+        android:visible="false"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_close_white_18dp"
+        android:id="@+id/menu_close"
+        />
+
+</menu>

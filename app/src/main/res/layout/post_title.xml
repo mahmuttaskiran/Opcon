@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <agency.tango.android.avatarview.views.AvatarView
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:id="@+id/avatar"
+      android:src="@drawable/no_avatar"
+      app:av_border_width="0.1dp"
+      app:av_border_color="@color/colorSecondaryDark"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_centerVertical="true"
+      android:id="@+id/ll"
+      android:gravity="center_vertical"
+      android:layout_marginStart="8dp"
+      android:layout_marginLeft="8dp"
+      android:layout_toRightOf="@id/avatar"
+      android:layout_toEndOf="@id/avatar">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:id="@+id/title"
+        android:text="Mahmut Taşkıran"/>
+
+    <com.vanniktech.emoji.EmojiTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        app:emojiSize="23dp"
+        android:textSize="12sp"
+        android:id="@+id/text"
+        android:text="17 hour ago"/>
+
+    <com.opcon.ui.views.NewChatInput
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:id="@+id/chatInput"/>
+
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_below="@id/avatar"
+      android:layout_height="0.5dp"
+      android:id="@+id/titleDivider"
+      android:layout_marginTop="7dp"
+      android:background="@color/softGrey"/>
+
+</RelativeLayout>

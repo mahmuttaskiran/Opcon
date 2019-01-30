@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+  <com.opcon.ui.views.NewChatInput
+      android:layout_width="match_parent"
+      android:layout_marginLeft="6dp"
+      android:layout_marginStart="6dp"
+      android:id="@+id/chatinput"
+      android:layout_height="wrap_content"/>
+
+  <com.opcon.ui.views.TitleView
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      app:leftIconColor="@color/strongGrey"
+      app:contentColor="@color/strongGrey"
+      app:rightIconStrokeColor="@color/red_ff1744"
+      app:rightIconColor="@color/red_ff1744"
+      android:id="@+id/selectAnSpecialPacket"
+      app:leftIcon="@drawable/ic_paperclip"
+      app:rightIcon="@drawable/ic_close_black_18dp"
+      app:content="@string/share_an_special_packet"/>
+
+  <com.opcon.ui.views.VerticalPacketPickerView
+      android:layout_width="match_parent"
+      android:layout_margin="8dp"
+      android:id="@+id/packetPicker"
+      android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

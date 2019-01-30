@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.opcon">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false"/>
+
+    <application
+        android:name=".Opcon"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="allowBackup">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBMdEFItkM0l32pWXupjYgvG4yZfLILpng"/>
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_applicationId"/>
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/facebook_applicationClientToken"/>
+
+        <activity
+            android:name="com.facebook.accountkit.ui.AccountKitActivity"
+            android:theme="@style/AppLoginTheme"
+            tools:replace="android:theme"/>
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/MainAc">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.schibstedspain.leku.LocationPickerActivity"
+            android:label="@string/title_activity_location_picker"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="adjustPan"
+            android:parentActivityName=".ui.activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                       android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activities.MainActivity" />
+        </activity>
+
+
+        <activity
+            android:name=".ui.activities.ChatActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/NoActionBar"/>
+        <activity
+            android:name=".ui.activities.NotifierLogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".ui.activities.ContactsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/SearchWhiteAc"/>
+
+        <receiver android:name=".notifier.environment.triggers.BatteryEventReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".services.BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".notifier.environment.triggers.TimeNotifierBroadcastReceiver"
+            android:enabled="true"/>
+        <receiver android:name=".notifier.environment.triggers.PhoneStateReceiver">
+            <intent-filter android:priority="10000">
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".notifier.environment.triggers.IncomingMessageReceiver"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.activities.ProfileImageUpdaterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme.Dark"/>
+        <activity
+            android:name="com.ipaulpro.afilechooser.FileChooserActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@drawable/ic_chooser"
+            android:label="@string/choose_file">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.opcon.fileprovider"
+            android:exported="false"
+            android:enabled="true"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths">
+            </meta-data>
+        </provider>
+
+        <receiver android:name=".notifier.environment.triggers.NewPictureReceiver">
+            <intent-filter android:priority="10000">
+                <action
+                    android:name="android.hardware.action.NEW_PICTURE"
+                    tools:ignore="BatteryLife"/>
+                <action
+                    android:name="com.android.camera.NEW_PICTURE"
+                    tools:ignore="BatteryLife"/>
+                <action android:name="android.intent.action.CAMERA_BUTTON"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".notifier.environment.triggers.OutgoingSmsReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.opcon.NEW_OUTGOING_SMS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".notifier.environment.triggers.LocationAlertReceiver">
+            <intent-filter>
+                <action android:name="com.opcon.LOCATION_ALERT"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".notifier.environment.triggers.OutgoingSmsServiceProxy14"
+            android:exported="false">
+        </service>
+
+        <activity
+            android:name=".libs.registration.activities.CountrySelectActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/NoActionBar">
+        </activity>
+        <activity
+            android:name=".libs.registration.activities.RequestTokenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/NoActionBar">
+        </activity>
+        <activity
+            android:name=".libs.registration.activities.VerifyTokenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/NoActionBar">
+        </activity>
+        <activity
+            android:name=".libs.registration.activities.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.activities.FullScreenImageViewerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/NoActionBarTransparent">
+        </activity>
+        <activity
+            android:name=".libs.settings.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_settings">
+        </activity>
+        <activity
+            android:name=".libs.settings.BlackListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".libs.settings.DeleteMyAccountActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".libs.settings.FeedbackActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".libs.settings.AboutActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <service
+            android:name=".services.FCM"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.FIDS"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ui.activities.NotifierBuilderActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.activities.ProfileActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/MainAc">
+        </activity>
+        <activity
+            android:name=".ui.activities.WaitingPostActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".ui.activities.ProfileUpdatersActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <service
+            android:name=".notifier.environment.triggers.NewPictureTriggerService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+        <activity android:name=".libs.settings.PrivacyAndPolicyActivity">
+        </activity>
+        <activity android:name=".ui.activities.FeatureActivity">
+        </activity>
+        <activity android:name=".ui.activities.NewAboutActivity" android:theme="@style/NoActionBar">
+        </activity>
+    </application>
+
+</manifest>

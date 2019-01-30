@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.opcon.ui.views.CloudRelativeView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:bgColor="@color/colorPrimary"
+    app:iconMaxSize="1.2"
+    app:iconColor="@color/colorPrimaryDark">
+
+  <android.support.v7.widget.CardView
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:id="@+id/add_notifier_big"
+      app:cardCornerRadius="75dp"
+      app:cardElevation="10dp"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="40dp">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_add_alert_white_18"
+        android:tint="@color/colorPrimary"/>
+  </android.support.v7.widget.CardView>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_below="@+id/add_notifier_big"
+      android:layout_centerHorizontal="true"
+      android:padding="10dp"
+      android:textColor="@color/white"
+      android:text="@string/add_an_notifier"/>
+
+  <com.opcon.ui.views.CloudRelativeView
+      android:layout_width="match_parent"
+      android:layout_height="150dp"
+      android:layout_alignParentBottom="true"
+      app:bgColor="@color/colorSecondary"
+      app:maxIcon="5"
+      app:iconMaxSize="1"
+      app:iconColor="@color/white"
+      app:topCloudColor="@color/colorPrimary"
+      app:topCloudWidth="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_understand_Opcon"
+        android:drawablePadding="10dp"
+        android:textColor="@color/materialGrey"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        />
+
+  </com.opcon.ui.views.CloudRelativeView>
+
+</com.opcon.ui.views.CloudRelativeView>

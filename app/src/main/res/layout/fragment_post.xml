@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <com.opcon.ui.views.CloudRelativeView
+      android:layout_width="match_parent"
+      android:layout_height="1000dp"
+      app:bgColor="@color/colorSecondaryDark"
+      app:topCloudColor="@color/red_ff1744"
+      app:topCloudWidth="0dp"
+      app:iconMaxSize="1.1"
+      app:iconColor="@color/colorSecondary"
+      android:id="@+id/there_is_no_post"
+      android:layout_centerVertical="true"
+      android:background="@color/colorSecondary"
+      android:elevation="10dp"
+      android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:id="@+id/divider"
+        android:background="@drawable/linear"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/icon"
+        android:layout_below="@id/divider"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_sad_34_white"
+        android:tint="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/there_is_no_post_message"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/there_is_no_any_post"/>
+
+  </com.opcon.ui.views.CloudRelativeView>
+
+  <android.support.v7.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/recyclerView"/>
+
+</RelativeLayout>

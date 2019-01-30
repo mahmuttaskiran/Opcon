@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:background="@color/white"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/searchToolbarColor"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editText"
+            android:textColor="@color/searchContentColor"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:hint="@string/search"
+            android:textColorHint="@color/searchContentColor"
+            android:background="#00ffffff" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="@drawable/linear"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/directEnterParentCard"
+        app:cardElevation="1dp"
+        app:cardCornerRadius="0dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.opcon.ui.views.TitleView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:leftIcon="@drawable/ic_text_format"
+                app:leftIconColor="@color/strongGrey"
+                app:hideRightSide="true"
+                app:contentColor="@color/strongGrey"
+                app:content="@string/select_an_man_or_enter_an_phone_number"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+
+                <com.opcon.ui.views.CircleRelativeLayout
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/directEnterOk"
+                    android:paddingLeft="5dp"
+                    app:circleColor="@color/colorSecondary"
+                    app:circleStrokeWidth="0dp"
+                    app:circleStrokeColor="@color/materialGrey"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_check_blue_24dp"
+                        android:layout_centerInParent="true"
+                        android:tint="@color/white"/>
+
+                </com.opcon.ui.views.CircleRelativeLayout>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/transparent"
+                    android:id="@+id/directEnterInput"
+                    android:inputType="phone"
+                    android:hint="@string/enter_phone_number_to_direct"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignLeft="@id/ok"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toLeftOf="@+id/ok"
+                    android:layout_toStartOf="@+id/ok"/>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container">
+
+    </RelativeLayout>
+
+</LinearLayout>

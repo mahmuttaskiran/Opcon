@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+                android:id="@+id/root"
+    android:background="@color/lightGrey"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true" android:focusable="true"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <agency.tango.android.avatarview.views.AvatarView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:av_border_width="0.3dp"
+        app:av_border_color="@color/colorSecondary"
+        android:id="@+id/avatar"
+        android:src="@drawable/no_avatar"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:tint="@color/white"
+        android:id="@+id/icon"
+        android:layout_alignRight="@id/avatar"
+        android:layout_alignEnd="@id/avatar"
+        android:layout_alignBottom="@id/avatar"
+        android:background="@drawable/circle_for_notification"
+        android:src="@drawable/ic_delete_white_18dp"
+        android:padding="5dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/log_title"
+            android:text="Merhaba dünya"
+            android:textSize="14sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/log_date"
+            android:layout_alignStart="@+id/log_date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016 09 11 | 11:01"
+            android:layout_below="@id/log_title"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:textSize="10sp"
+            android:id="@+id/log_date"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:weightSum="10"
+              android:layout_width="match_parent"
+              android:gravity="center_horizontal"
+              android:id="@+id/emoji_title"
+              android:layout_height="wrap_content">
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:clickable="true" android:focusable="true"
+      android:background="?selectableItemBackground"
+      android:layout_weight="1.1"
+      android:src="@drawable/ic_alarm_clock"/>
+
+   <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:clickable="true" android:focusable="true"
+      android:background="?selectableItemBackground"
+      android:layout_weight="1.1"
+      android:src="@drawable/ic_animal_footprint"/>
+
+   <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:clickable="true" android:focusable="true"
+      android:background="?selectableItemBackground"
+      android:layout_weight="1.1"
+      android:src="@drawable/ic_pig_money"/>
+
+   <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:clickable="true" android:focusable="true"
+      android:background="?selectableItemBackground"
+      android:layout_weight="1.1"
+      android:src="@drawable/ic_social_evernote"/>
+
+
+   <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:clickable="true" android:focusable="true"
+      android:background="?selectableItemBackground"
+      android:layout_weight="1.1"
+      android:src="@drawable/ic_social_dribbble"/>
+
+   <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:clickable="true" android:focusable="true"
+      android:background="?selectableItemBackground"
+      android:layout_weight="1.1"
+      android:src="@drawable/ic_sun"/>
+
+   <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:clickable="true" android:focusable="true"
+      android:background="?selectableItemBackground"
+      android:layout_weight="1.1"
+      android:src="@drawable/ic_sunshine"/>
+
+   <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:clickable="true" android:focusable="true"
+      android:background="?selectableItemBackground"
+      android:layout_weight="1.1"
+      android:src="@drawable/ic_heart"/>
+
+   <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:clickable="true" android:focusable="true"
+      android:background="?selectableItemBackground"
+      android:layout_weight="1.1"
+      android:src="@drawable/ic_arrow_fill_left"/>
+
+</LinearLayout>

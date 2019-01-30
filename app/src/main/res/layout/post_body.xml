@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="110dp"
+      android:visibility="gone"
+      android:id="@+id/charge"
+      android:background="@color/red_ff1744">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_battery_charging_90_white_48dp"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/charge_text"
+        android:textSize="35sp"
+        android:text="%50"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"/>
+  </RelativeLayout>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="150dp"
+      android:visibility="visible"
+      android:id="@+id/location"
+      android:background="@color/red_ff1744">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/location_image"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:padding="5dp"
+        android:background="#6f000000"
+        android:lineSpacingExtra="2dp"
+        android:id="@+id/location_text"
+        android:textSize="12sp"
+        android:layout_margin="10dp"
+        android:text="Yunus Emre Mah. 2947 Sok. No: 3"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"/>
+  </RelativeLayout>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:id="@+id/lastCapturedImage"
+      android:layout_height="290dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/lastImageView"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/uploading"
+        android:visibility="gone"
+        android:background="@color/transparentDark">
+
+      <ProgressBar
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:indeterminate="true"/>
+
+    </RelativeLayout>
+
+  </RelativeLayout>
+</RelativeLayout>

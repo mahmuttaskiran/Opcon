@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="3dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="7dp"
+    android:gravity="end"
+    android:paddingTop="5dp"
+    android:clickable="true" android:focusable="true"
+    android:longClickable="true"
+    android:layout_width="match_parent"
+    android:id="@+id/message_root_of_message"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_image_rl"
+        android:elevation="5dp">
+
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:clickable="true" android:focusable="true"
+            android:id="@+id/message_image_iv"/>
+
+        <com.vanniktech.emoji.EmojiTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:maxWidth="230dp"
+            android:id="@+id/addition_text"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:background="@color/transparentDark"
+            android:text="Test!"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:clickable="true" android:focusable="true"
+            android:visibility="gone"
+            android:id="@+id/choices"
+            android:layout_below="@id/message_image_iv"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="0.2dp"
+                android:layout_height="match_parent"
+                android:background="@color/softGrey"/>
+            <ImageButton
+                android:id="@+id/share"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true" android:focusable="true"
+                android:src="@drawable/ic_heart_no_outline"
+                android:tint="@color/red_ff1744"
+                android:layout_weight="0.5"
+                android:background="?selectableItemBackground"/>
+
+            <View
+                android:layout_width="0.2dp"
+                android:layout_height="match_parent"
+                android:background="@color/softGrey"/>
+
+            <ImageButton
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true" android:focusable="true"
+                android:layout_weight="0.5"
+                android:tint="@color/red_ff1744"
+                android:src="@drawable/ic_delete_white_18dp"
+                android:background="?selectableItemBackground"/>
+
+            <View
+                android:layout_width="0.2dp"
+                android:layout_height="match_parent"
+                android:background="@color/softGrey"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="230dp"
+            android:layout_height="0.2dp"
+            android:layout_below="@id/choices"
+            android:background="@color/softGrey"/>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/message_image_root_process"
+            android:background="@drawable/circle_white_bordered"
+            android:layout_centerInParent="true">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/message_image_progress"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/message_image_process_image"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_delete_white_18dp"
+                android:tint="@color/white"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/blue_circle"
+        android:layout_toRightOf="@id/message_image_rl"
+        android:layout_toEndOf="@id/message_image_rl"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:padding="2dp"
+        android:id="@+id/message_ack_detail"
+        android:layout_alignBottom="@id/message_image_rl" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_details"
+        android:layout_below="@id/message_image_rl"
+        android:layout_alignRight="@id/message_image_rl"
+        android:layout_alignEnd="@id/message_image_rl"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:textSize="@dimen/message_details_text_size"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>

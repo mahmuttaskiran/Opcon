@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activityGreyBackground">
+
+        <ViewStub
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragmentofcontactlist_viewstup_permission"
+            android:layout="@layout/permission_denied_for_contact_read"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmentofcontactlist_not_found"
+            android:drawableLeft="@drawable/ic_search_black_18dp"
+            android:drawableStart="@drawable/ic_search_black_18dp"
+            android:drawableTint="@color/colorPrimary"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Sonuç bulunamadı"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragmentofcontactlist_swipe_refresh">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/fragmentofcontactlist_recyclerview"
+                    android:scrollbars="none"/>
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <com.futuremind.recyclerviewfastscroll.FastScroller
+            android:id="@+id/fastscroll"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:fastscroll__handleColor="@color/lightGrey"
+            app:fastscroll__bubbleColor="@color/colorPrimary"
+            app:fastscroll__bubbleTextAppearance="@style/StyledText"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:id="@+id/fragmentofcontactlist_letter"
+            android:layout_width="25sp"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textColor="@color/colorPrimary"
+            android:visibility="visible" />
+
+
+</RelativeLayout>
+
+

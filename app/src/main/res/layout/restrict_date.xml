@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.opcon.ui.views.TitleView android:layout_width="match_parent"
+                              android:layout_height="40dp"
+                              xmlns:app="http://schemas.android.com/apk/res-auto"
+                              android:id="@+id/dateRestrict"
+                              app:hideRightSide="true"
+                              app:content="@string/time_restrict_date"
+                              app:leftIcon="@drawable/ic_date_range_black_24dp"
+                              app:rightIconColor="@color/materialGrey"
+                              app:rightIcon="@drawable/operation_ic_help_black_18dp"
+                              app:contentColor="@color/strongGrey"
+                              app:leftIconColor="@color/strongGrey"
+                              xmlns:android="http://schemas.android.com/apk/res/android"/>

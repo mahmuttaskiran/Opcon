@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <com.opcon.ui.views.NewChatInput
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chat_input"
+        android:layout_alignParentBottom="true"/>
+
+    <android.support.v7.widget.RecyclerView
+
+        android:orientation="vertical"
+        android:id="@+id/chatf_recyclerview"
+        android:layout_above="@id/chat_input"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.opcon.ui.views.CloudRelativeView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/no_message"
+        android:visibility="gone"
+        app:iconColor="@color/colorPrimaryDark"
+        app:maxIcon="8"
+        app:iconMaxSize="1.5"
+        app:bottomCloudWidth="10dp"
+        app:bottomCloudColor="@color/white"
+        app:bgColor="@color/colorPrimary">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/linear"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chatFragmentIndicator"
+            android:layout_centerVertical="true"
+            android:text="@string/swipe_to_right_to_show_notifiers_of_this_dialog"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_info_outline_white_18dp"
+            android:drawableStart="@drawable/ic_info_outline_white_18dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/toolbar"/>
+    </com.opcon.ui.views.CloudRelativeView>
+
+</RelativeLayout>

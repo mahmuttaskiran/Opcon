@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:timepicker="http://schemas.android.com/apk/res-auto"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+              android:background="@color/strongGrey"
+              android:paddingBottom="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:elevation="2dp"
+                android:background="@color/strongGrey">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="FROM"/>
+            </RelativeLayout>
+
+            <com.erz.timepicker_library.TimePicker
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/fragmenttimerestrict_from"
+                timepicker:clock_color="@color/colorPrimary"
+                timepicker:dial_color="@color/colorSecondaryDark"
+                timepicker:text_color="@color/white"
+                android:layout_height="match_parent">
+            </com.erz.timepicker_library.TimePicker>
+
+        </LinearLayout>
+
+
+      <View
+          android:layout_width="0.3dp"
+          android:layout_height="match_parent"
+          android:background="#ffffff"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:elevation="2dp"
+                android:background="@color/strongGrey">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="TO"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <com.erz.timepicker_library.TimePicker
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/fragmenttimerestrict_to"
+                android:layout_height="match_parent"
+                timepicker:clock_color="@color/colorPrimary"
+                timepicker:text_color="@color/white"
+                timepicker:dial_color="@color/colorSecondaryDark">
+            </com.erz.timepicker_library.TimePicker>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+   <android.support.v7.widget.CardView
+       android:layout_width="48dp"
+       android:layout_height="48dp"
+       android:id="@+id/fragmenttimerestrict_select"
+       android:layout_gravity="center_horizontal"
+       android:layout_marginTop="10dp"
+       app:cardBackgroundColor="@color/colorSecondary"
+       timepicker:cardCornerRadius="24dp"
+       >
+
+       <ImageView
+           android:layout_width="22dp"
+           android:layout_height="22dp"
+           android:src="@drawable/ic_check_white_24dp"
+           android:layout_gravity="center"/>
+
+   </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

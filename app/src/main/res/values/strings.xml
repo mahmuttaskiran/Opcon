@@ -1,0 +1,663 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="facebook_applicationId" tools:ignore="MissingTranslation">YourFacebookAppId</string>
+    <string name="facebook_applicationClientToken" tools:ignore="MissingTranslation">YourApplicationClientToken</string>
+
+    <string name="app_name" tools:ignore="MissingTranslation">Opcon</string>
+    <string name="app_name_beta" tools:ignore="MissingTranslation">Opcon</string>
+    <string name="version" tools:ignore="MissingTranslation">Version</string>
+    <string name="version_name" tools:ignore="MissingTranslation">Version name</string>
+    <string name="build_number" tools:ignore="MissingTranslation">Version number</string>
+    <string name="developer" tools:ignore="MissingTranslation">Developer</string>
+    <string name="my_email" tools:ignore="MissingTranslation">taskiranmahmutt@gmail.com</string>
+    <string name="shared_preferences" tools:ignore="MissingTranslation">opcon_shared_preferences</string>
+    <string name="are_you_sure" tools:ignore="MissingTranslation">Are you sure?</string>
+    <string name="time_restrict_range" tools:ignore="MissingTranslation">Time girange restrict</string>
+    <string name="time_restrict_date" tools:ignore="MissingTranslation">Date restrict</string>
+    <string name="chargelow_ifdown" tools:ignore="MissingTranslation">fall under</string>
+    <string name="location_near" tools:ignore="MissingTranslation">%s m near</string>
+    <string name="mm" tools:ignore="MissingTranslation">m</string>
+
+    <string name="location_select_a_location" tools:ignore="MissingTranslation">Please select an location.</string>
+    <string name="location_please_enter_near_info" tools:ignore="MissingTranslation">How close is to your selected location.</string>
+    <string name="static_image_cannot_load" tools:ignore="MissingTranslation">There is an internet connection issue.</string>
+    <string name="charge_low_alert_select_a_percent" tools:ignore="MissingTranslation">Please specify degree of charge.</string>
+    <string name="notification_alert_please_enter_any_special_packet_or_text" tools:ignore="MissingTranslation">Please enter an text message or select a special packet.</string>
+    <string name="notification_sound_please_select_a_sound" tools:ignore="MissingTranslation">Please select a welcome notification tone in your hear.</string>
+    <string name="notifier_creation_save_it" tools:ignore="MissingTranslation">Submit</string>
+    <string name="please_select_a_condition" tools:ignore="MissingTranslation">Please select an condition.</string>
+    <string name="please_select_a_operation" tools:ignore="MissingTranslation">Please select an operation.</string>
+
+    <string name="_condition_is_time" tools:ignore="MissingTranslation">Alarm</string>
+    <string name="_condition_is_location" tools:ignore="MissingTranslation">When he at the that location</string>
+    <string name="_condition_in_call" tools:ignore="MissingTranslation">When he received a call</string>
+    <string name="_condition_out_call" tools:ignore="MissingTranslation">When he make an call</string>
+    <string name="_condition_in_msg" tools:ignore="MissingTranslation">When he received a message</string>
+    <string name="_condition_out_msg" tools:ignore="MissingTranslation">When he send a message</string>
+    <string name="_condition_battery" tools:ignore="MissingTranslation">If charge of her phone is low than</string>
+    <string name="_condition_new_picture" tools:ignore="MissingTranslation">When he captured an new photo</string>
+
+    <string name="_operation_sent_msg" tools:ignore="MissingTranslation">Send message to me</string>
+    <string name="__operation_play_sound" tools:ignore="MissingTranslation">Notify me</string>
+    <string name="_operation_play_sound" tools:ignore="MissingTranslation">Notify him</string>
+
+
+    <string name="packet_in_message" tools:ignore="MissingTranslation">Last incoming message of him</string>
+    <string name="packet_out_message" tools:ignore="MissingTranslation">Last outgoing message of him</string>
+    <string name="packet_in_call" tools:ignore="MissingTranslation">Last incoming call of him</string>
+    <string name="packet_out_call" tools:ignore="MissingTranslation">Last outgoing call of him</string>
+    <string name="packet_location" tools:ignore="MissingTranslation">Location of him</string>
+    <string name="packet_battery_state" tools:ignore="MissingTranslation">Battery degree of her phone</string>
+
+    <string name="interpreter_sender_time" formatted="false" tools:ignore="MissingTranslation">%02d:%02d</string>
+    <string name="interpreter_sender_location" tools:ignore="MissingTranslation"><![CDATA[<font color="blue">%2$s</font> m near of %1$s]]></string>
+    <string name="interpreter_receiver_location" tools:ignore="MissingTranslation"><![CDATA[<font color="blue">%2$s</font> m near of %1$s]]></string>
+
+
+    <string name="interpreter_sender_charge" tools:ignore="MissingTranslation">If charge of her phone is low than %%%d.</string>
+    <string name="interpreter_receiver_charge" tools:ignore="MissingTranslation">If charge of your phone is low than %%%d.</string>
+    <string name="interpreter_sender_incoming_call" tools:ignore="MissingTranslation">When %s call to him.</string>
+    <string name="interpreter_receiver_incoming_call" tools:ignore="MissingTranslation">When %s call to you.</string>
+    <string name="interpreter_sender_outgoing_call" tools:ignore="MissingTranslation">When he call to %s.</string>
+    <string name="interpreter_receiver_outgoing_call" tools:ignore="MissingTranslation">When you call to %s.</string>
+    <string name="interpreter_sender_incoming_message" tools:ignore="MissingTranslation">When %s send a message to him.</string>
+    <string name="interpreter_receiver_incoming_message" tools:ignore="MissingTranslation">When %s send a message to you.</string>
+    <string name="interpreter_sender_outgoing_message" translatable="true" tools:ignore="MissingTranslation">When he send a message to %s.</string>
+    <string name="interpreter_receiver_outgoing_message" translatable="true" tools:ignore="MissingTranslation">When you send a message to %s.</string>
+    <string name="interpreter_sender_incoming_message_all" tools:ignore="MissingTranslation">When he received a message from anyone.</string>
+    <string name="interpreter_receiver_incoming_message_all" tools:ignore="MissingTranslation">When you received a message from anyone.</string>
+    <string name="interpreter_sender_incoming_call_all" tools:ignore="MissingTranslation">When he received a call from anyone.</string>
+    <string name="interpreter_receiver_incoming_call_all" tools:ignore="MissingTranslation">When you received a call from anyone.</string>
+    <string name="interpreter_sender_outgoing_call_all" tools:ignore="MissingTranslation">When he make an call.</string>
+    <string name="interpreter_receiver_outgoing_call_all" tools:ignore="MissingTranslation">When you call to anyone.</string>
+    <string name="interpreter_sender_outgoing_message_all" tools:ignore="MissingTranslation">When he send a message to anyone.</string>
+    <string name="interpreter_receiver_outgoing_message_all" tools:ignore="MissingTranslation">When you send a message to anyone.</string>
+    <string name="interpreter_sender_message_to_me" tools:ignore="MissingTranslation">He will send message to you: %s</string>
+    <string name="interpreter_receiver_message_to_me" tools:ignore="MissingTranslation">You will send message to him: %s</string>
+    <string name="interpreter_sender_new_picture" tools:ignore="MissingTranslation">When he captured an new photo.</string>
+    <string name="interpreter_receiver_new_picture" tools:ignore="MissingTranslation">When you captured an new photo.</string>
+    <string name="interpreter_sender_sound_side_me" tools:ignore="MissingTranslation">You will be notified: %s</string>
+    <string name="interpreter_receiver_sound_side_me" tools:ignore="MissingTranslation">He will be notified: %s</string>
+    <string name="interpreter_sender_sound_side_u" tools:ignore="MissingTranslation">@string/interpreter_receiver_sound_side_me</string>
+    <string name="interpreter_receiver_sound_side_u" tools:ignore="MissingTranslation">@string/interpreter_sender_sound_side_me</string>
+
+    <string name="interpreter_special_sender_battery_level" tools:ignore="MissingTranslation">Percentage of her phone.</string>
+    <string name="interpreter_special_receiver_battery_level" tools:ignore="MissingTranslation">Percentage of your phone.</string>
+    <string name="interpreter_special_sender_call_inf" tools:ignore="MissingTranslation">Last incoming call of he.</string>
+    <string name="interpreter_special_receiver_call_inf" tools:ignore="MissingTranslation">Last incoming call of you.</string>
+    <string name="interpreter_special_sender_message_inf" tools:ignore="MissingTranslation">Last incoming message of he.</string>
+    <string name="interpreter_special_receiver_message_inf" tools:ignore="MissingTranslation">Last incoming message of you.</string>
+    <string name="interpreter_special_sender_outgoing_call_inf" tools:ignore="MissingTranslation">Last outgoing call of he.</string>
+    <string name="interpreter_special_receiver_outgoing_call_inf" tools:ignore="MissingTranslation">Last outgoing call of you.</string>
+    <string name="interpreter_special_sender_outgoing_message_inf" tools:ignore="MissingTranslation">Last outgoing message of he.</string>
+    <string name="interpreter_special_receiver_outgoing_message_inf" tools:ignore="MissingTranslation">Last outgoing message of you.</string>
+    <string name="interpreter_special_sender_motion_speed" tools:ignore="MissingTranslation">Motion speed of he.</string>
+    <string name="interpreter_special_receiver_motion_speed" tools:ignore="MissingTranslation">Motion speed of you.</string>
+    <string name="please" tools:ignore="MissingTranslation">Please…</string>
+    <string name="please_enter_a_comment_for_notifier" tools:ignore="MissingTranslation">Please enter your comment</string>
+
+
+    <string name="notifier_choice_toogle_stop" tools:ignore="MissingTranslation">Deactive</string>
+    <string name="notifier_choice_show_details" tools:ignore="MissingTranslation">See details of this notifier</string>
+    <string name="notifier_choice_edit" tools:ignore="MissingTranslation">Edit</string>
+    <string name="notifier_choice_share" tools:ignore="MissingTranslation">Share it</string>
+    <string name="choice_work_it" tools:ignore="MissingTranslation">Activate this notifier</string>
+    <string name="notifier_choice_delete" tools:ignore="MissingTranslation">Delete</string>
+    <string name="notifier_creation_update_it" tools:ignore="MissingTranslation">Change this notifier.</string>
+    <string name="ok" tools:ignore="MissingTranslation">OK</string>
+    <string name="not_now" tools:ignore="MissingTranslation">Not now</string>
+    <string name="permission_to_settings" tools:ignore="MissingTranslation">Go to settings.</string>
+    <string name="snack_notifier_activated" tools:ignore="MissingTranslation">The notifier activated.</string>
+    <string name="not_found_for" tools:ignore="MissingTranslation">Do not find: %s</string>
+    <string name="Opcon_need_permission_to_execute_this_notifier" tools:ignore="MissingTranslation">To process this notifier, Opcon needs permissions.</string>
+    <string name="sent" tools:ignore="MissingTranslation">Send</string>
+    <string name="cancel" tools:ignore="MissingTranslation">Cancel</string>
+    <string name="not_internet_connection" tools:ignore="MissingTranslation">Please check your internet connection, then try again.</string>
+    <string name="add_notifier" tools:ignore="MissingTranslation">Send notifier</string>
+    <string name="msg_to_string_sent_picture" tools:ignore="MissingTranslation">You send a image</string>
+    <string name="msg_to_string_reiver_sent_picture" tools:ignore="MissingTranslation">He send a image</string>
+    <string name="msg_to_string_sent_specialpacket" tools:ignore="MissingTranslation">You send a special packet</string>
+    <string name="msg_to_string_receiver_special_packet" tools:ignore="MissingTranslation">He send a special packet</string>
+    <string name="notifier_log_deleted" tools:ignore="MissingTranslation">Deleted</string>
+    <string name="notifier_log_stopped" tools:ignore="MissingTranslation">Stopped</string>
+    <string name="notifier_log_edited" tools:ignore="MissingTranslation">Edited</string>
+    <string name="notifier_log_rerun" tools:ignore="MissingTranslation">Activated</string>
+    <string name="title_of_notififer_log_activity" tools:ignore="MissingTranslation">Notifications</string>
+    <string name="are_you_sure_for_delete_all_logs_for_notifier" tools:ignore="MissingTranslation">Are you sure to delete all notifications?</string>
+    <string name="delete" tools:ignore="MissingTranslation">Delete</string>
+    <string name="no" tools:ignore="MissingTranslation">Give up</string>
+    <string name="search_or_enter_number" tools:ignore="MissingTranslation">Search an contact or enter an number</string>
+    <string name="all" tools:ignore="MissingTranslation">All</string>
+
+    <string name="navigation_remove_avatar" tools:ignore="MissingTranslation">Remove profile picture</string>
+    <string name="navigation_from_gallery" tools:ignore="MissingTranslation">Gallery</string>
+    <string name="navigation_from_camera" tools:ignore="MissingTranslation">Camera</string>
+    <string name="navigation_show_avatar" tools:ignore="MissingTranslation">Show my profile picture</string>
+    <string name="navigation_rename_yourself" tools:ignore="MissingTranslation">Change your name</string>
+    <string name="change_your_name" tools:ignore="MissingTranslation">Change your Opcon name</string>
+    <string name="enter_a_name" tools:ignore="MissingTranslation">Enter your name</string>
+    <string name="no_name" tools:ignore="MissingTranslation">** No name **</string>
+    <string name="please_enter_valid_name" tools:ignore="MissingTranslation">Please enter an valid name</string>
+    <string name="profile_image_updater_title" tools:ignore="MissingTranslation">Crop an rotate</string>
+    <string name="invite" tools:ignore="MissingTranslation">Invite</string>
+
+    <string name="last_message_as_str_owner_notifier" tools:ignore="MissingTranslation">You sent an notifier</string>
+    <string name="last_message_as_str_target_notifier" tools:ignore="MissingTranslation">He sent an notifier</string>
+    <string name="go_to_settings_for_notifier_permission" tools:ignore="MissingTranslation">Do you want to go to application settings to provide permissions?</string>
+    <string name="search" tools:ignore="MissingTranslation">Search…</string>
+    <string name="packet_last_captured_image" tools:ignore="MissingTranslation">Send last captured photo of he</string>
+    <string name="interpreter_special_sender_location" tools:ignore="MissingTranslation">Your location</string>
+    <string name="interpreter_special_receiver_location" tools:ignore="MissingTranslation">Her location</string>
+    <string name="interpreter_special_receiver_connection_state" tools:ignore="MissingTranslation">Connection state of he</string>
+    <string name="interpreter_special_sender_connection_state" tools:ignore="MissingTranslation">Connection state of you</string>
+    <string name="interpreter_special_receiver_captured_image" tools:ignore="MissingTranslation">Last captured photo of him.</string>
+    <string name="interpreter_special_sender_captured_image" tools:ignore="MissingTranslation">Last captured photo of you</string>
+
+    <string name="notifier_packet_do_not_sent" tools:ignore="MissingTranslation">Packet do not send</string>
+    <string name="image_not_found" tools:ignore="MissingTranslation">Image can not found.</string>
+    <string name="permission_readcallog_title" tools:ignore="MissingTranslation">Read call log</string>
+    <string name="permission_specialpacket_readcallog" tools:ignore="MissingTranslation">Opcon needs read call log permission to create this packet.</string>
+    <string name="permission_reaccontacts_title" tools:ignore="MissingTranslation">Read contacts</string>
+    <string name="permission_readsms_title" tools:ignore="MissingTranslation">Read message logs</string>
+    <string name="permission_specialpacket_readsms" tools:ignore="MissingTranslation">Opcon needs permission to create this packet.</string>
+    <string name="permission_specialpacket_location" tools:ignore="MissingTranslation">@string/permission_specialpacket_readsms</string>
+    <string name="permission_location_title" tools:ignore="MissingTranslation">Location</string>
+    <string name="permission_readexternal_title" tools:ignore="MissingTranslation">Storage (Read)</string>
+    <string name="permission_specialpacket_readexternal" tools:ignore="MissingTranslation">Opcon needs storage permission to create last captured photo packet.</string>
+    <string name="need_permission" tools:ignore="MissingTranslation">Need permission</string>
+    <string name="permission_camera_pick_desc" tools:ignore="MissingTranslation">To capture and send a image Opcon needs both permission camera permission and storage.</string>
+    <string name="permission_gallery_pick_request" tools:ignore="MissingTranslation">Opcon needs storage permission to do this.</string>
+    <string name="permission_for_show_images" tools:ignore="MissingTranslation">To show received images and send images Opcon needs storage permission.</string>
+    <string name="permission_for_change_avatar_with_camera" tools:ignore="MissingTranslation">@string/permission_camera_pick_desc</string>
+    <string name="permission_for_change_avatar_with_gallery" tools:ignore="MissingTranslation">@string/permission_camera_pick_desc</string>
+    <string name="search_dialog_dialogs" tools:ignore="MissingTranslation">Dialogs</string>
+    <string name="search_dialog_messages" tools:ignore="MissingTranslation">Messages</string>
+
+    <string-array name="arr_options_nav_view_no_picture">
+        <item>@string/navigation_from_camera</item>
+        <item>@string/navigation_from_gallery</item>
+        <item>@string/navigation_rename_yourself</item>
+    </string-array>
+
+    <string-array name="arr_options_nav_view_has_picture">
+        <item>@string/navigation_from_camera</item>
+        <item>@string/navigation_from_gallery</item>
+        <item>@string/navigation_rename_yourself</item>
+        <item>@string/navigation_show_avatar</item>
+        <item>@string/navigation_remove_avatar</item>
+    </string-array>
+
+    <string name="countries" tools:ignore="MissingTranslation">Ww0KICB7DQogICAgIm5hbWUiOiAiQWZnaGFuaXN0YW4iLA0KICAgICJkaWFsX2NvZGUiOiAiKzkzIiwNCiAgICAiY29kZSI6ICJBRiINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkFsYmFuaWEiLA0KICAgICJkaWFsX2NvZGUiOiAiKzM1NSIsDQogICAgImNvZGUiOiAiQUwiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJBbGdlcmlhIiwNCiAgICAiZGlhbF9jb2RlIjogIisyMTMiLA0KICAgICJjb2RlIjogIkRaIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQW1lcmljYW5TYW1vYSIsDQogICAgImRpYWxfY29kZSI6ICIrMSIsDQogICAgImNvZGUiOiAiQVMiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJBbmRvcnJhIiwNCiAgICAiZGlhbF9jb2RlIjogIiszNzYiLA0KICAgICJjb2RlIjogIkFEIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQW5nb2xhIiwNCiAgICAiZGlhbF9jb2RlIjogIisyNDQiLA0KICAgICJjb2RlIjogIkFPIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQW5ndWlsbGEiLA0KICAgICJkaWFsX2NvZGUiOiAiKzEiLA0KICAgICJjb2RlIjogIkFJIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQW50YXJjdGljYSIsDQogICAgImRpYWxfY29kZSI6ICIrNjcyIiwNCiAgICAiY29kZSI6ICJBUSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkFudGlndWEgYW5kIEJhcmJ1ZGEiLA0KICAgICJkaWFsX2NvZGUiOiAiKzEiLA0KICAgICJjb2RlIjogIkFHIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQXJnZW50aW5hIiwNCiAgICAiZGlhbF9jb2RlIjogIis1NCIsDQogICAgImNvZGUiOiAiQVIiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJBcm1lbmlhIiwNCiAgICAiZGlhbF9jb2RlIjogIiszNzQiLA0KICAgICJjb2RlIjogIkFNIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQXJ1YmEiLA0KICAgICJkaWFsX2NvZGUiOiAiKzI5NyIsDQogICAgImNvZGUiOiAiQVciDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJBdXN0cmFsaWEiLA0KICAgICJkaWFsX2NvZGUiOiAiKzYxIiwNCiAgICAiY29kZSI6ICJBVSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkF1c3RyaWEiLA0KICAgICJkaWFsX2NvZGUiOiAiKzQzIiwNCiAgICAiY29kZSI6ICJBVCINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkF6ZXJiYWlqYW4iLA0KICAgICJkaWFsX2NvZGUiOiAiKzk5NCIsDQogICAgImNvZGUiOiAiQVoiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJCYWhhbWFzIiwNCiAgICAiZGlhbF9jb2RlIjogIisxIiwNCiAgICAiY29kZSI6ICJCUyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkJhaHJhaW4iLA0KICAgICJkaWFsX2NvZGUiOiAiKzk3MyIsDQogICAgImNvZGUiOiAiQkgiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJCYW5nbGFkZXNoIiwNCiAgICAiZGlhbF9jb2RlIjogIis4ODAiLA0KICAgICJjb2RlIjogIkJEIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQmFyYmFkb3MiLA0KICAgICJkaWFsX2NvZGUiOiAiKzEiLA0KICAgICJjb2RlIjogIkJCIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQmVsYXJ1cyIsDQogICAgImRpYWxfY29kZSI6ICIrMzc1IiwNCiAgICAiY29kZSI6ICJCWSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkJlbGdpdW0iLA0KICAgICJkaWFsX2NvZGUiOiAiKzMyIiwNCiAgICAiY29kZSI6ICJCRSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkJlbGl6ZSIsDQogICAgImRpYWxfY29kZSI6ICIrNTAxIiwNCiAgICAiY29kZSI6ICJCWiINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkJlbmluIiwNCiAgICAiZGlhbF9jb2RlIjogIisyMjkiLA0KICAgICJjb2RlIjogIkJKIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQmVybXVkYSIsDQogICAgImRpYWxfY29kZSI6ICIrMSIsDQogICAgImNvZGUiOiAiQk0iDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJCaHV0YW4iLA0KICAgICJkaWFsX2NvZGUiOiAiKzk3NSIsDQogICAgImNvZGUiOiAiQlQiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJCb2xpdmlhLCBQbHVyaW5hdGlvbmFsIFN0YXRlIG9mIiwNCiAgICAiZGlhbF9jb2RlIjogIis1OTEiLA0KICAgICJjb2RlIjogIkJPIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQm9zbmlhIGFuZCBIZXJ6ZWdvdmluYSIsDQogICAgImRpYWxfY29kZSI6ICIrMzg3IiwNCiAgICAiY29kZSI6ICJCQSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkJvdHN3YW5hIiwNCiAgICAiZGlhbF9jb2RlIjogIisyNjciLA0KICAgICJjb2RlIjogIkJXIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQnJhemlsIiwNCiAgICAiZGlhbF9jb2RlIjogIis1NSIsDQogICAgImNvZGUiOiAiQlIiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJCcml0aXNoIEluZGlhbiBPY2VhbiBUZXJyaXRvcnkiLA0KICAgICJkaWFsX2NvZGUiOiAiKzI0NiIsDQogICAgImNvZGUiOiAiSU8iDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJCcnVuZWkgRGFydXNzYWxhbSIsDQogICAgImRpYWxfY29kZSI6ICIrNjczIiwNCiAgICAiY29kZSI6ICJCTiINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkJ1bGdhcmlhIiwNCiAgICAiZGlhbF9jb2RlIjogIiszNTkiLA0KICAgICJjb2RlIjogIkJHIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQnVya2luYSBGYXNvIiwNCiAgICAiZGlhbF9jb2RlIjogIisyMjYiLA0KICAgICJjb2RlIjogIkJGIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQnVydW5kaSIsDQogICAgImRpYWxfY29kZSI6ICIrMjU3IiwNCiAgICAiY29kZSI6ICJCSSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkNhbWJvZGlhIiwNCiAgICAiZGlhbF9jb2RlIjogIis4NTUiLA0KICAgICJjb2RlIjogIktIIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQ2FtZXJvb24iLA0KICAgICJkaWFsX2NvZGUiOiAiKzIzNyIsDQogICAgImNvZGUiOiAiQ00iDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJDYW5hZGEiLA0KICAgICJkaWFsX2NvZGUiOiAiKzEiLA0KICAgICJjb2RlIjogIkNBIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQ2FwZSBWZXJkZSIsDQogICAgImRpYWxfY29kZSI6ICIrMjM4IiwNCiAgICAiY29kZSI6ICJDViINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkNheW1hbiBJc2xhbmRzIiwNCiAgICAiZGlhbF9jb2RlIjogIiszNDUiLA0KICAgICJjb2RlIjogIktZIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQ2VudHJhbCBBZnJpY2FuIFJlcHVibGljIiwNCiAgICAiZGlhbF9jb2RlIjogIisyMzYiLA0KICAgICJjb2RlIjogIkNGIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQ2hhZCIsDQogICAgImRpYWxfY29kZSI6ICIrMjM1IiwNCiAgICAiY29kZSI6ICJURCINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkNoaWxlIiwNCiAgICAiZGlhbF9jb2RlIjogIis1NiIsDQogICAgImNvZGUiOiAiQ0wiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJDaGluYSIsDQogICAgImRpYWxfY29kZSI6ICIrODYiLA0KICAgICJjb2RlIjogIkNOIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQ2hyaXN0bWFzIElzbGFuZCIsDQogICAgImRpYWxfY29kZSI6ICIrNjEiLA0KICAgICJjb2RlIjogIkNYIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQ29jb3MgKEtlZWxpbmcpIElzbGFuZHMiLA0KICAgICJkaWFsX2NvZGUiOiAiKzYxIiwNCiAgICAiY29kZSI6ICJDQyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkNvbG9tYmlhIiwNCiAgICAiZGlhbF9jb2RlIjogIis1NyIsDQogICAgImNvZGUiOiAiQ08iDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJDb21vcm9zIiwNCiAgICAiZGlhbF9jb2RlIjogIisyNjkiLA0KICAgICJjb2RlIjogIktNIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQ29uZ28iLA0KICAgICJkaWFsX2NvZGUiOiAiKzI0MiIsDQogICAgImNvZGUiOiAiQ0ciDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJDb25nbywgVGhlIERlbW9jcmF0aWMgUmVwdWJsaWMgb2YgdGhlIiwNCiAgICAiZGlhbF9jb2RlIjogIisyNDMiLA0KICAgICJjb2RlIjogIkNEIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQ29vayBJc2xhbmRzIiwNCiAgICAiZGlhbF9jb2RlIjogIis2ODIiLA0KICAgICJjb2RlIjogIkNLIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQ29zdGEgUmljYSIsDQogICAgImRpYWxfY29kZSI6ICIrNTA2IiwNCiAgICAiY29kZSI6ICJDUiINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkNvdGUgZCdJdm9pcmUiLA0KICAgICJkaWFsX2NvZGUiOiAiKzIyNSIsDQogICAgImNvZGUiOiAiQ0kiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJDcm9hdGlhIiwNCiAgICAiZGlhbF9jb2RlIjogIiszODUiLA0KICAgICJjb2RlIjogIkhSIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQ3ViYSIsDQogICAgImRpYWxfY29kZSI6ICIrNTMiLA0KICAgICJjb2RlIjogIkNVIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQ3lwcnVzIiwNCiAgICAiZGlhbF9jb2RlIjogIiszNTciLA0KICAgICJjb2RlIjogIkNZIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiQ3plY2ggUmVwdWJsaWMiLA0KICAgICJkaWFsX2NvZGUiOiAiKzQyMCIsDQogICAgImNvZGUiOiAiQ1oiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJEZW5tYXJrIiwNCiAgICAiZGlhbF9jb2RlIjogIis0NSIsDQogICAgImNvZGUiOiAiREsiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJEamlib3V0aSIsDQogICAgImRpYWxfY29kZSI6ICIrMjUzIiwNCiAgICAiY29kZSI6ICJESiINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkRvbWluaWNhIiwNCiAgICAiZGlhbF9jb2RlIjogIisxIiwNCiAgICAiY29kZSI6ICJETSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkRvbWluaWNhbiBSZXB1YmxpYyIsDQogICAgImRpYWxfY29kZSI6ICIrMSIsDQogICAgImNvZGUiOiAiRE8iDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJFY3VhZG9yIiwNCiAgICAiZGlhbF9jb2RlIjogIis1OTMiLA0KICAgICJjb2RlIjogIkVDIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiRWd5cHQiLA0KICAgICJkaWFsX2NvZGUiOiAiKzIwIiwNCiAgICAiY29kZSI6ICJFRyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkVsIFNhbHZhZG9yIiwNCiAgICAiZGlhbF9jb2RlIjogIis1MDMiLA0KICAgICJjb2RlIjogIlNWIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiRXF1YXRvcmlhbCBHdWluZWEiLA0KICAgICJkaWFsX2NvZGUiOiAiKzI0MCIsDQogICAgImNvZGUiOiAiR1EiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJFcml0cmVhIiwNCiAgICAiZGlhbF9jb2RlIjogIisyOTEiLA0KICAgICJjb2RlIjogIkVSIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiRXN0b25pYSIsDQogICAgImRpYWxfY29kZSI6ICIrMzcyIiwNCiAgICAiY29kZSI6ICJFRSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkV0aGlvcGlhIiwNCiAgICAiZGlhbF9jb2RlIjogIisyNTEiLA0KICAgICJjb2RlIjogIkVUIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiRmFsa2xhbmQgSXNsYW5kcyAoTWFsdmluYXMpIiwNCiAgICAiZGlhbF9jb2RlIjogIis1MDAiLA0KICAgICJjb2RlIjogIkZLIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiRmFyb2UgSXNsYW5kcyIsDQogICAgImRpYWxfY29kZSI6ICIrMjk4IiwNCiAgICAiY29kZSI6ICJGTyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkZpamkiLA0KICAgICJkaWFsX2NvZGUiOiAiKzY3OSIsDQogICAgImNvZGUiOiAiRkoiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJGaW5sYW5kIiwNCiAgICAiZGlhbF9jb2RlIjogIiszNTgiLA0KICAgICJjb2RlIjogIkZJIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiRnJhbmNlIiwNCiAgICAiZGlhbF9jb2RlIjogIiszMyIsDQogICAgImNvZGUiOiAiRlIiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJGcmVuY2ggR3VpYW5hIiwNCiAgICAiZGlhbF9jb2RlIjogIis1OTQiLA0KICAgICJjb2RlIjogIkdGIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiRnJlbmNoIFBvbHluZXNpYSIsDQogICAgImRpYWxfY29kZSI6ICIrNjg5IiwNCiAgICAiY29kZSI6ICJQRiINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkdhYm9uIiwNCiAgICAiZGlhbF9jb2RlIjogIisyNDEiLA0KICAgICJjb2RlIjogIkdBIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiR2FtYmlhIiwNCiAgICAiZGlhbF9jb2RlIjogIisyMjAiLA0KICAgICJjb2RlIjogIkdNIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiR2VvcmdpYSIsDQogICAgImRpYWxfY29kZSI6ICIrOTk1IiwNCiAgICAiY29kZSI6ICJHRSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkdlcm1hbnkiLA0KICAgICJkaWFsX2NvZGUiOiAiKzQ5IiwNCiAgICAiY29kZSI6ICJERSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkdoYW5hIiwNCiAgICAiZGlhbF9jb2RlIjogIisyMzMiLA0KICAgICJjb2RlIjogIkdIIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiR2licmFsdGFyIiwNCiAgICAiZGlhbF9jb2RlIjogIiszNTAiLA0KICAgICJjb2RlIjogIkdJIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiR3JlZWNlIiwNCiAgICAiZGlhbF9jb2RlIjogIiszMCIsDQogICAgImNvZGUiOiAiR1IiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJHcmVlbmxhbmQiLA0KICAgICJkaWFsX2NvZGUiOiAiKzI5OSIsDQogICAgImNvZGUiOiAiR0wiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJHcmVuYWRhIiwNCiAgICAiZGlhbF9jb2RlIjogIisxIiwNCiAgICAiY29kZSI6ICJHRCINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkd1YWRlbG91cGUiLA0KICAgICJkaWFsX2NvZGUiOiAiKzU5MCIsDQogICAgImNvZGUiOiAiR1AiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJHdWFtIiwNCiAgICAiZGlhbF9jb2RlIjogIisxIiwNCiAgICAiY29kZSI6ICJHVSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkd1YXRlbWFsYSIsDQogICAgImRpYWxfY29kZSI6ICIrNTAyIiwNCiAgICAiY29kZSI6ICJHVCINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkd1ZXJuc2V5IiwNCiAgICAiZGlhbF9jb2RlIjogIis0NCIsDQogICAgImNvZGUiOiAiR0ciDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJHdWluZWEiLA0KICAgICJkaWFsX2NvZGUiOiAiKzIyNCIsDQogICAgImNvZGUiOiAiR04iDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJHdWluZWEtQmlzc2F1IiwNCiAgICAiZGlhbF9jb2RlIjogIisyNDUiLA0KICAgICJjb2RlIjogIkdXIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiR3V5YW5hIiwNCiAgICAiZGlhbF9jb2RlIjogIis1OTUiLA0KICAgICJjb2RlIjogIkdZIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiSGFpdGkiLA0KICAgICJkaWFsX2NvZGUiOiAiKzUwOSIsDQogICAgImNvZGUiOiAiSFQiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJIb2x5IFNlZSAoVmF0aWNhbiBDaXR5IFN0YXRlKSIsDQogICAgImRpYWxfY29kZSI6ICIrMzc5IiwNCiAgICAiY29kZSI6ICJWQSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkhvbmR1cmFzIiwNCiAgICAiZGlhbF9jb2RlIjogIis1MDQiLA0KICAgICJjb2RlIjogIkhOIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiSG9uZyBLb25nIiwNCiAgICAiZGlhbF9jb2RlIjogIis4NTIiLA0KICAgICJjb2RlIjogIkhLIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiSHVuZ2FyeSIsDQogICAgImRpYWxfY29kZSI6ICIrMzYiLA0KICAgICJjb2RlIjogIkhVIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiSWNlbGFuZCIsDQogICAgImRpYWxfY29kZSI6ICIrMzU0IiwNCiAgICAiY29kZSI6ICJJUyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkluZGlhIiwNCiAgICAiZGlhbF9jb2RlIjogIis5MSIsDQogICAgImNvZGUiOiAiSU4iDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJJbmRvbmVzaWEiLA0KICAgICJkaWFsX2NvZGUiOiAiKzYyIiwNCiAgICAiY29kZSI6ICJJRCINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIklyYW4sIElzbGFtaWMgUmVwdWJsaWMgb2YiLA0KICAgICJkaWFsX2NvZGUiOiAiKzk4IiwNCiAgICAiY29kZSI6ICJJUiINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIklyYXEiLA0KICAgICJkaWFsX2NvZGUiOiAiKzk2NCIsDQogICAgImNvZGUiOiAiSVEiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJJcmVsYW5kIiwNCiAgICAiZGlhbF9jb2RlIjogIiszNTMiLA0KICAgICJjb2RlIjogIklFIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiSXNsZSBvZiBNYW4iLA0KICAgICJkaWFsX2NvZGUiOiAiKzQ0IiwNCiAgICAiY29kZSI6ICJJTSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIklzcmFlbCIsDQogICAgImRpYWxfY29kZSI6ICIrOTcyIiwNCiAgICAiY29kZSI6ICJJTCINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkl0YWx5IiwNCiAgICAiZGlhbF9jb2RlIjogIiszOSIsDQogICAgImNvZGUiOiAiSVQiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJKYW1haWNhIiwNCiAgICAiZGlhbF9jb2RlIjogIisxIiwNCiAgICAiY29kZSI6ICJKTSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkphcGFuIiwNCiAgICAiZGlhbF9jb2RlIjogIis4MSIsDQogICAgImNvZGUiOiAiSlAiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJKZXJzZXkiLA0KICAgICJkaWFsX2NvZGUiOiAiKzQ0IiwNCiAgICAiY29kZSI6ICJKRSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkpvcmRhbiIsDQogICAgImRpYWxfY29kZSI6ICIrOTYyIiwNCiAgICAiY29kZSI6ICJKTyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkthemFraHN0YW4iLA0KICAgICJkaWFsX2NvZGUiOiAiKzciLA0KICAgICJjb2RlIjogIktaIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiS2VueWEiLA0KICAgICJkaWFsX2NvZGUiOiAiKzI1NCIsDQogICAgImNvZGUiOiAiS0UiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJLaXJpYmF0aSIsDQogICAgImRpYWxfY29kZSI6ICIrNjg2IiwNCiAgICAiY29kZSI6ICJLSSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIktvcmVhLCBEZW1vY3JhdGljIFBlb3BsZSdzIFJlcHVibGljIG9mIiwNCiAgICAiZGlhbF9jb2RlIjogIis4NTAiLA0KICAgICJjb2RlIjogIktQIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiS29yZWEsIFJlcHVibGljIG9mIiwNCiAgICAiZGlhbF9jb2RlIjogIis4MiIsDQogICAgImNvZGUiOiAiS1IiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJLdXdhaXQiLA0KICAgICJkaWFsX2NvZGUiOiAiKzk2NSIsDQogICAgImNvZGUiOiAiS1ciDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJLeXJneXpzdGFuIiwNCiAgICAiZGlhbF9jb2RlIjogIis5OTYiLA0KICAgICJjb2RlIjogIktHIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiTGFvIFBlb3BsZSdzIERlbW9jcmF0aWMgUmVwdWJsaWMiLA0KICAgICJkaWFsX2NvZGUiOiAiKzg1NiIsDQogICAgImNvZGUiOiAiTEEiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJMYXR2aWEiLA0KICAgICJkaWFsX2NvZGUiOiAiKzM3MSIsDQogICAgImNvZGUiOiAiTFYiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJMZWJhbm9uIiwNCiAgICAiZGlhbF9jb2RlIjogIis5NjEiLA0KICAgICJjb2RlIjogIkxCIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiTGVzb3RobyIsDQogICAgImRpYWxfY29kZSI6ICIrMjY2IiwNCiAgICAiY29kZSI6ICJMUyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkxpYmVyaWEiLA0KICAgICJkaWFsX2NvZGUiOiAiKzIzMSIsDQogICAgImNvZGUiOiAiTFIiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJMaWJ5YW4gQXJhYiBKYW1haGlyaXlhIiwNCiAgICAiZGlhbF9jb2RlIjogIisyMTgiLA0KICAgICJjb2RlIjogIkxZIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiTGllY2h0ZW5zdGVpbiIsDQogICAgImRpYWxfY29kZSI6ICIrNDIzIiwNCiAgICAiY29kZSI6ICJMSSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkxpdGh1YW5pYSIsDQogICAgImRpYWxfY29kZSI6ICIrMzcwIiwNCiAgICAiY29kZSI6ICJMVCINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIkx1eGVtYm91cmciLA0KICAgICJkaWFsX2NvZGUiOiAiKzM1MiIsDQogICAgImNvZGUiOiAiTFUiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJNYWNhbyIsDQogICAgImRpYWxfY29kZSI6ICIrODUzIiwNCiAgICAiY29kZSI6ICJNTyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIk1hY2Vkb25pYSwgVGhlIEZvcm1lciBZdWdvc2xhdiBSZXB1YmxpYyBvZiIsDQogICAgImRpYWxfY29kZSI6ICIrMzg5IiwNCiAgICAiY29kZSI6ICJNSyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIk1hZGFnYXNjYXIiLA0KICAgICJkaWFsX2NvZGUiOiAiKzI2MSIsDQogICAgImNvZGUiOiAiTUciDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJNYWxhd2kiLA0KICAgICJkaWFsX2NvZGUiOiAiKzI2NSIsDQogICAgImNvZGUiOiAiTVciDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJNYWxheXNpYSIsDQogICAgImRpYWxfY29kZSI6ICIrNjAiLA0KICAgICJjb2RlIjogIk1ZIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiTWFsZGl2ZXMiLA0KICAgICJkaWFsX2NvZGUiOiAiKzk2MCIsDQogICAgImNvZGUiOiAiTVYiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJNYWxpIiwNCiAgICAiZGlhbF9jb2RlIjogIisyMjMiLA0KICAgICJjb2RlIjogIk1MIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiTWFsdGEiLA0KICAgICJkaWFsX2NvZGUiOiAiKzM1NiIsDQogICAgImNvZGUiOiAiTVQiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJNYXJzaGFsbCBJc2xhbmRzIiwNCiAgICAiZGlhbF9jb2RlIjogIis2OTIiLA0KICAgICJjb2RlIjogIk1IIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiTWFydGluaXF1ZSIsDQogICAgImRpYWxfY29kZSI6ICIrNTk2IiwNCiAgICAiY29kZSI6ICJNUSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIk1hdXJpdGFuaWEiLA0KICAgICJkaWFsX2NvZGUiOiAiKzIyMiIsDQogICAgImNvZGUiOiAiTVIiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJNYXVyaXRpdXMiLA0KICAgICJkaWFsX2NvZGUiOiAiKzIzMCIsDQogICAgImNvZGUiOiAiTVUiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJNYXlvdHRlIiwNCiAgICAiZGlhbF9jb2RlIjogIisyNjIiLA0KICAgICJjb2RlIjogIllUIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiTWV4aWNvIiwNCiAgICAiZGlhbF9jb2RlIjogIis1MiIsDQogICAgImNvZGUiOiAiTVgiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJNaWNyb25lc2lhLCBGZWRlcmF0ZWQgU3RhdGVzIG9mIiwNCiAgICAiZGlhbF9jb2RlIjogIis2OTEiLA0KICAgICJjb2RlIjogIkZNIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiTW9sZG92YSwgUmVwdWJsaWMgb2YiLA0KICAgICJkaWFsX2NvZGUiOiAiKzM3MyIsDQogICAgImNvZGUiOiAiTUQiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJNb25hY28iLA0KICAgICJkaWFsX2NvZGUiOiAiKzM3NyIsDQogICAgImNvZGUiOiAiTUMiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJNb25nb2xpYSIsDQogICAgImRpYWxfY29kZSI6ICIrOTc2IiwNCiAgICAiY29kZSI6ICJNTiINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIk1vbnRlbmVncm8iLA0KICAgICJkaWFsX2NvZGUiOiAiKzM4MiIsDQogICAgImNvZGUiOiAiTUUiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJNb250c2VycmF0IiwNCiAgICAiZGlhbF9jb2RlIjogIisxIiwNCiAgICAiY29kZSI6ICJNUyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIk1vcm9jY28iLA0KICAgICJkaWFsX2NvZGUiOiAiKzIxMiIsDQogICAgImNvZGUiOiAiTUEiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJNb3phbWJpcXVlIiwNCiAgICAiZGlhbF9jb2RlIjogIisyNTgiLA0KICAgICJjb2RlIjogIk1aIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiTXlhbm1hciIsDQogICAgImRpYWxfY29kZSI6ICIrOTUiLA0KICAgICJjb2RlIjogIk1NIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiTmFtaWJpYSIsDQogICAgImRpYWxfY29kZSI6ICIrMjY0IiwNCiAgICAiY29kZSI6ICJOQSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIk5hdXJ1IiwNCiAgICAiZGlhbF9jb2RlIjogIis2NzQiLA0KICAgICJjb2RlIjogIk5SIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiTmVwYWwiLA0KICAgICJkaWFsX2NvZGUiOiAiKzk3NyIsDQogICAgImNvZGUiOiAiTlAiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJOZXRoZXJsYW5kcyIsDQogICAgImRpYWxfY29kZSI6ICIrMzEiLA0KICAgICJjb2RlIjogIk5MIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiTmV0aGVybGFuZHMgQW50aWxsZXMiLA0KICAgICJkaWFsX2NvZGUiOiAiKzU5OSIsDQogICAgImNvZGUiOiAiQU4iDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJOZXcgQ2FsZWRvbmlhIiwNCiAgICAiZGlhbF9jb2RlIjogIis2ODciLA0KICAgICJjb2RlIjogIk5DIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiTmV3IFplYWxhbmQiLA0KICAgICJkaWFsX2NvZGUiOiAiKzY0IiwNCiAgICAiY29kZSI6ICJOWiINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIk5pY2FyYWd1YSIsDQogICAgImRpYWxfY29kZSI6ICIrNTA1IiwNCiAgICAiY29kZSI6ICJOSSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIk5pZ2VyIiwNCiAgICAiZGlhbF9jb2RlIjogIisyMjciLA0KICAgICJjb2RlIjogIk5FIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiTmlnZXJpYSIsDQogICAgImRpYWxfY29kZSI6ICIrMjM0IiwNCiAgICAiY29kZSI6ICJORyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIk5pdWUiLA0KICAgICJkaWFsX2NvZGUiOiAiKzY4MyIsDQogICAgImNvZGUiOiAiTlUiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJOb3Jmb2xrIElzbGFuZCIsDQogICAgImRpYWxfY29kZSI6ICIrNjcyIiwNCiAgICAiY29kZSI6ICJORiINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIk5vcnRoZXJuIE1hcmlhbmEgSXNsYW5kcyIsDQogICAgImRpYWxfY29kZSI6ICIrMSIsDQogICAgImNvZGUiOiAiTVAiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJOb3J3YXkiLA0KICAgICJkaWFsX2NvZGUiOiAiKzQ3IiwNCiAgICAiY29kZSI6ICJOTyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIk9tYW4iLA0KICAgICJkaWFsX2NvZGUiOiAiKzk2OCIsDQogICAgImNvZGUiOiAiT00iDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJQYWtpc3RhbiIsDQogICAgImRpYWxfY29kZSI6ICIrOTIiLA0KICAgICJjb2RlIjogIlBLIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiUGFsYXUiLA0KICAgICJkaWFsX2NvZGUiOiAiKzY4MCIsDQogICAgImNvZGUiOiAiUFciDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJQYWxlc3RpbmlhbiBUZXJyaXRvcnksIE9jY3VwaWVkIiwNCiAgICAiZGlhbF9jb2RlIjogIis5NzAiLA0KICAgICJjb2RlIjogIlBTIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiUGFuYW1hIiwNCiAgICAiZGlhbF9jb2RlIjogIis1MDciLA0KICAgICJjb2RlIjogIlBBIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiUGFwdWEgTmV3IEd1aW5lYSIsDQogICAgImRpYWxfY29kZSI6ICIrNjc1IiwNCiAgICAiY29kZSI6ICJQRyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlBhcmFndWF5IiwNCiAgICAiZGlhbF9jb2RlIjogIis1OTUiLA0KICAgICJjb2RlIjogIlBZIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiUGVydSIsDQogICAgImRpYWxfY29kZSI6ICIrNTEiLA0KICAgICJjb2RlIjogIlBFIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiUGhpbGlwcGluZXMiLA0KICAgICJkaWFsX2NvZGUiOiAiKzYzIiwNCiAgICAiY29kZSI6ICJQSCINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlBpdGNhaXJuIiwNCiAgICAiZGlhbF9jb2RlIjogIis4NzIiLA0KICAgICJjb2RlIjogIlBOIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiUG9sYW5kIiwNCiAgICAiZGlhbF9jb2RlIjogIis0OCIsDQogICAgImNvZGUiOiAiUEwiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJQb3J0dWdhbCIsDQogICAgImRpYWxfY29kZSI6ICIrMzUxIiwNCiAgICAiY29kZSI6ICJQVCINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlB1ZXJ0byBSaWNvIiwNCiAgICAiZGlhbF9jb2RlIjogIisxIiwNCiAgICAiY29kZSI6ICJQUiINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlFhdGFyIiwNCiAgICAiZGlhbF9jb2RlIjogIis5NzQiLA0KICAgICJjb2RlIjogIlFBIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiUm9tYW5pYSIsDQogICAgImRpYWxfY29kZSI6ICIrNDAiLA0KICAgICJjb2RlIjogIlJPIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiUnVzc2lhIiwNCiAgICAiZGlhbF9jb2RlIjogIis3IiwNCiAgICAiY29kZSI6ICJSVSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlJ3YW5kYSIsDQogICAgImRpYWxfY29kZSI6ICIrMjUwIiwNCiAgICAiY29kZSI6ICJSVyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlLDqXVuaW9uIiwNCiAgICAiZGlhbF9jb2RlIjogIisyNjIiLA0KICAgICJjb2RlIjogIlJFIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiU2FpbnQgQmFydGjDqWxlbXkiLA0KICAgICJkaWFsX2NvZGUiOiAiKzU5MCIsDQogICAgImNvZGUiOiAiQkwiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJTYWludCBIZWxlbmEsIEFzY2Vuc2lvbiBhbmQgVHJpc3RhbiBEYSBDdW5oYSIsDQogICAgImRpYWxfY29kZSI6ICIrMjkwIiwNCiAgICAiY29kZSI6ICJTSCINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlNhaW50IEtpdHRzIGFuZCBOZXZpcyIsDQogICAgImRpYWxfY29kZSI6ICIrMSIsDQogICAgImNvZGUiOiAiS04iDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJTYWludCBMdWNpYSIsDQogICAgImRpYWxfY29kZSI6ICIrMSIsDQogICAgImNvZGUiOiAiTEMiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJTYWludCBNYXJ0aW4iLA0KICAgICJkaWFsX2NvZGUiOiAiKzU5MCIsDQogICAgImNvZGUiOiAiTUYiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJTYWludCBQaWVycmUgYW5kIE1pcXVlbG9uIiwNCiAgICAiZGlhbF9jb2RlIjogIis1MDgiLA0KICAgICJjb2RlIjogIlBNIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiU2FpbnQgVmluY2VudCBhbmQgdGhlIEdyZW5hZGluZXMiLA0KICAgICJkaWFsX2NvZGUiOiAiKzEiLA0KICAgICJjb2RlIjogIlZDIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiU2Ftb2EiLA0KICAgICJkaWFsX2NvZGUiOiAiKzY4NSIsDQogICAgImNvZGUiOiAiV1MiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJTYW4gTWFyaW5vIiwNCiAgICAiZGlhbF9jb2RlIjogIiszNzgiLA0KICAgICJjb2RlIjogIlNNIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiU2FvIFRvbWUgYW5kIFByaW5jaXBlIiwNCiAgICAiZGlhbF9jb2RlIjogIisyMzkiLA0KICAgICJjb2RlIjogIlNUIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiU2F1ZGkgQXJhYmlhIiwNCiAgICAiZGlhbF9jb2RlIjogIis5NjYiLA0KICAgICJjb2RlIjogIlNBIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiU2VuZWdhbCIsDQogICAgImRpYWxfY29kZSI6ICIrMjIxIiwNCiAgICAiY29kZSI6ICJTTiINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlNlcmJpYSIsDQogICAgImRpYWxfY29kZSI6ICIrMzgxIiwNCiAgICAiY29kZSI6ICJSUyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlNleWNoZWxsZXMiLA0KICAgICJkaWFsX2NvZGUiOiAiKzI0OCIsDQogICAgImNvZGUiOiAiU0MiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJTaWVycmEgTGVvbmUiLA0KICAgICJkaWFsX2NvZGUiOiAiKzIzMiIsDQogICAgImNvZGUiOiAiU0wiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJTaW5nYXBvcmUiLA0KICAgICJkaWFsX2NvZGUiOiAiKzY1IiwNCiAgICAiY29kZSI6ICJTRyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlNsb3Zha2lhIiwNCiAgICAiZGlhbF9jb2RlIjogIis0MjEiLA0KICAgICJjb2RlIjogIlNLIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiU2xvdmVuaWEiLA0KICAgICJkaWFsX2NvZGUiOiAiKzM4NiIsDQogICAgImNvZGUiOiAiU0kiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJTb2xvbW9uIElzbGFuZHMiLA0KICAgICJkaWFsX2NvZGUiOiAiKzY3NyIsDQogICAgImNvZGUiOiAiU0IiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJTb21hbGlhIiwNCiAgICAiZGlhbF9jb2RlIjogIisyNTIiLA0KICAgICJjb2RlIjogIlNPIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiU291dGggQWZyaWNhIiwNCiAgICAiZGlhbF9jb2RlIjogIisyNyIsDQogICAgImNvZGUiOiAiWkEiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJTb3V0aCBHZW9yZ2lhIGFuZCB0aGUgU291dGggU2FuZHdpY2ggSXNsYW5kcyIsDQogICAgImRpYWxfY29kZSI6ICIrNTAwIiwNCiAgICAiY29kZSI6ICJHUyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlNwYWluIiwNCiAgICAiZGlhbF9jb2RlIjogIiszNCIsDQogICAgImNvZGUiOiAiRVMiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJTcmkgTGFua2EiLA0KICAgICJkaWFsX2NvZGUiOiAiKzk0IiwNCiAgICAiY29kZSI6ICJMSyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlN1ZGFuIiwNCiAgICAiZGlhbF9jb2RlIjogIisyNDkiLA0KICAgICJjb2RlIjogIlNEIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiU3VyaW5hbWUiLA0KICAgICJkaWFsX2NvZGUiOiAiKzU5NyIsDQogICAgImNvZGUiOiAiU1IiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJTdmFsYmFyZCBhbmQgSmFuIE1heWVuIiwNCiAgICAiZGlhbF9jb2RlIjogIis0NyIsDQogICAgImNvZGUiOiAiU0oiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJTd2F6aWxhbmQiLA0KICAgICJkaWFsX2NvZGUiOiAiKzI2OCIsDQogICAgImNvZGUiOiAiU1oiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJTd2VkZW4iLA0KICAgICJkaWFsX2NvZGUiOiAiKzQ2IiwNCiAgICAiY29kZSI6ICJTRSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlN3aXR6ZXJsYW5kIiwNCiAgICAiZGlhbF9jb2RlIjogIis0MSIsDQogICAgImNvZGUiOiAiQ0giDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJTeXJpYW4gQXJhYiBSZXB1YmxpYyIsDQogICAgImRpYWxfY29kZSI6ICIrOTYzIiwNCiAgICAiY29kZSI6ICJTWSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlRhaXdhbiIsDQogICAgImRpYWxfY29kZSI6ICIrODg2IiwNCiAgICAiY29kZSI6ICJUVyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlRhamlraXN0YW4iLA0KICAgICJkaWFsX2NvZGUiOiAiKzk5MiIsDQogICAgImNvZGUiOiAiVEoiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJUYW56YW5pYSwgVW5pdGVkIFJlcHVibGljIG9mIiwNCiAgICAiZGlhbF9jb2RlIjogIisyNTUiLA0KICAgICJjb2RlIjogIlRaIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiVGhhaWxhbmQiLA0KICAgICJkaWFsX2NvZGUiOiAiKzY2IiwNCiAgICAiY29kZSI6ICJUSCINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlRpbW9yLUxlc3RlIiwNCiAgICAiZGlhbF9jb2RlIjogIis2NzAiLA0KICAgICJjb2RlIjogIlRMIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiVG9nbyIsDQogICAgImRpYWxfY29kZSI6ICIrMjI4IiwNCiAgICAiY29kZSI6ICJURyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlRva2VsYXUiLA0KICAgICJkaWFsX2NvZGUiOiAiKzY5MCIsDQogICAgImNvZGUiOiAiVEsiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJUb25nYSIsDQogICAgImRpYWxfY29kZSI6ICIrNjc2IiwNCiAgICAiY29kZSI6ICJUTyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlRyaW5pZGFkIGFuZCBUb2JhZ28iLA0KICAgICJkaWFsX2NvZGUiOiAiKzEiLA0KICAgICJjb2RlIjogIlRUIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiVHVuaXNpYSIsDQogICAgImRpYWxfY29kZSI6ICIrMjE2IiwNCiAgICAiY29kZSI6ICJUTiINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlR1cmtleSIsDQogICAgImRpYWxfY29kZSI6ICIrOTAiLA0KICAgICJjb2RlIjogIlRSIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiVHVya21lbmlzdGFuIiwNCiAgICAiZGlhbF9jb2RlIjogIis5OTMiLA0KICAgICJjb2RlIjogIlRNIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiVHVya3MgYW5kIENhaWNvcyBJc2xhbmRzIiwNCiAgICAiZGlhbF9jb2RlIjogIisxIiwNCiAgICAiY29kZSI6ICJUQyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlR1dmFsdSIsDQogICAgImRpYWxfY29kZSI6ICIrNjg4IiwNCiAgICAiY29kZSI6ICJUViINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlVnYW5kYSIsDQogICAgImRpYWxfY29kZSI6ICIrMjU2IiwNCiAgICAiY29kZSI6ICJVRyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlVrcmFpbmUiLA0KICAgICJkaWFsX2NvZGUiOiAiKzM4MCIsDQogICAgImNvZGUiOiAiVUEiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJVbml0ZWQgQXJhYiBFbWlyYXRlcyIsDQogICAgImRpYWxfY29kZSI6ICIrOTcxIiwNCiAgICAiY29kZSI6ICJBRSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlVuaXRlZCBLaW5nZG9tIiwNCiAgICAiZGlhbF9jb2RlIjogIis0NCIsDQogICAgImNvZGUiOiAiR0IiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJVbml0ZWQgU3RhdGVzIiwNCiAgICAiZGlhbF9jb2RlIjogIisxIiwNCiAgICAiY29kZSI6ICJVUyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlVydWd1YXkiLA0KICAgICJkaWFsX2NvZGUiOiAiKzU5OCIsDQogICAgImNvZGUiOiAiVVkiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJVemJla2lzdGFuIiwNCiAgICAiZGlhbF9jb2RlIjogIis5OTgiLA0KICAgICJjb2RlIjogIlVaIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiVmFudWF0dSIsDQogICAgImRpYWxfY29kZSI6ICIrNjc4IiwNCiAgICAiY29kZSI6ICJWVSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlZlbmV6dWVsYSwgQm9saXZhcmlhbiBSZXB1YmxpYyBvZiIsDQogICAgImRpYWxfY29kZSI6ICIrNTgiLA0KICAgICJjb2RlIjogIlZFIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiVmlldCBOYW0iLA0KICAgICJkaWFsX2NvZGUiOiAiKzg0IiwNCiAgICAiY29kZSI6ICJWTiINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlZpcmdpbiBJc2xhbmRzLCBCcml0aXNoIiwNCiAgICAiZGlhbF9jb2RlIjogIisxIiwNCiAgICAiY29kZSI6ICJWRyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIlZpcmdpbiBJc2xhbmRzLCBVLlMuIiwNCiAgICAiZGlhbF9jb2RlIjogIisxIiwNCiAgICAiY29kZSI6ICJWSSINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIldhbGxpcyBhbmQgRnV0dW5hIiwNCiAgICAiZGlhbF9jb2RlIjogIis2ODEiLA0KICAgICJjb2RlIjogIldGIg0KICB9LA0KICB7DQogICAgIm5hbWUiOiAiWWVtZW4iLA0KICAgICJkaWFsX2NvZGUiOiAiKzk2NyIsDQogICAgImNvZGUiOiAiWUUiDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJaYW1iaWEiLA0KICAgICJkaWFsX2NvZGUiOiAiKzI2MCIsDQogICAgImNvZGUiOiAiWk0iDQogIH0sDQogIHsNCiAgICAibmFtZSI6ICJaaW1iYWJ3ZSIsDQogICAgImRpYWxfY29kZSI6ICIrMjYzIiwNCiAgICAiY29kZSI6ICJaVyINCiAgfSwNCiAgew0KICAgICJuYW1lIjogIsOFbGFuZCBJc2xhbmRzIiwNCiAgICAiZGlhbF9jb2RlIjogIiszNTgiLA0KICAgICJjb2RlIjogIkFYIg0KICB9DQpd</string>
+    <string name="verify_phone_number" tools:ignore="MissingTranslation">Verify your phone number</string>
+    <string name="have_to_verify_phone_number" tools:ignore="MissingTranslation">Opcon will send sms to you to verify your phone number. Please enter your country and phone number.</string>
+    <string name="enter_phone_number" tools:ignore="MissingTranslation">Enter your phone number</string>
+    <string name="enter_token" tools:ignore="MissingTranslation">Verify code</string>
+    <string name="enter_verification_code_info" tools:ignore="MissingTranslation">Enter your verify code</string>
+    <string name="WELCOME_TO_OPCON" tools:ignore="MissingTranslation">Welcome to Opcon!</string>
+    <string name="bla_bla" tools:ignore="MissingTranslation"><![CDATA[Touch \"Approve and Continue\" to approve the <u>Terms of Service and Privacy Policy.</u>]]></string>
+    <string name="we_are_so_sorry" tools:ignore="MissingTranslation">We are so sorry....</string>
+    <string name="unexcepted_err" tools:ignore="MissingTranslation">Occurred an unexpected error. Try again later.</string>
+    <string name="are_you_sure_to_request_token_for_this_number" tools:ignore="MissingTranslation"><![CDATA[Opcon will send an verify code to below phone number. Please check again: <br><b>%s</b>]]></string>
+    <string name="edit_number" tools:ignore="MissingTranslation">Edit number</string>
+    <string name="please_wait_for_request_token" tools:ignore="MissingTranslation">Please wait. Opcon will send verify code to your phone number.</string>
+    <string name="verify_info" tools:ignore="MissingTranslation">Enter your verify code and enjoy with Opcon!</string>
+    <string name="retry_with_new_number" tools:ignore="MissingTranslation">Enter an new phone number</string>
+    <string name="retry_sms_back_counter" tools:ignore="MissingTranslation">Send sms again</string>
+    <string name="enter_valid_token" tools:ignore="MissingTranslation">Please enter verify code.</string>
+    <string name="please_wait" tools:ignore="MissingTranslation">Please wait…</string>
+    <string name="invalid_verify_code" tools:ignore="MissingTranslation">That is invalid code. Please check your verify code again.</string>
+    <string name="oppssss" tools:ignore="MissingTranslation">Opppsss!</string>
+    <string name="invalid_format_for_country" tools:ignore="MissingTranslation">Please enter an valid phone number.</string>
+    <string name="black_ip_address" tools:ignore="MissingTranslation">You have to wait to try again. Please try again after %s duration.</string>
+    <string name="black_sms_method" tools:ignore="MissingTranslation">You have to wait to try again. Please try again after %s duration.</string>
+    <string name="bla_bla_bla" tools:ignore="MissingTranslation">@string/bla_bla</string>
+    <string name="onayla_ve_devam_et" tools:ignore="MissingTranslation">Approve and Continue</string>
+    <string name="verify_method_call_me" tools:ignore="MissingTranslation">Call me</string>
+    <string name="online" tools:ignore="MissingTranslation">Online</string>
+    <string name="wait_for_update_profile" tools:ignore="MissingTranslation">Your profile picture uploading. Please wait.</string>
+    <string name="photo_will_remove" tools:ignore="MissingTranslation">Your profile picture removing. Please wait..</string>
+    <string name="removed_profile_picture" tools:ignore="MissingTranslation">Profile picture removed.</string>
+    <string name="cannat_removed_profile_picture" tools:ignore="MissingTranslation">An error occurred when removing profile picture.</string>
+    <string name="full_image_view_image_do_not_found" tools:ignore="MissingTranslation">Image can not found.</string>
+    <string name="saved" tools:ignore="MissingTranslation">Saved.</string>
+    <string name="cannot_saved" tools:ignore="MissingTranslation">Cannot saved.</string>
+    <string name="click_for_seen_editing_details" tools:ignore="MissingTranslation">Touch to see details</string>
+    <string name="notifier_choice_show_logs" tools:ignore="MissingTranslation">Show notifications</string>
+    <string name="to_sent_waiting_message" tools:ignore="MissingTranslation">Touch to here to send message. If you want to remove this message press long it.</string>
+    <string name="title_activity_settings" tools:ignore="MissingTranslation">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+
+    <!-- Example settings for Data & Sync -->
+
+    <!-- Example settings for Notifications -->
+
+    <string name="pref_ringtone_silent" tools:ignore="MissingTranslation">Silent</string>
+
+    <string name="settings_rigtone" tools:ignore="MissingTranslation">Dialog notifications</string>
+    <string name="as_dialog_enter_to_send" tools:ignore="MissingTranslation">Enter button will be send</string>
+    <string name="as_dialog_enable_ringtone" tools:ignore="MissingTranslation">Dialog notification sound</string>
+    <string name="as_notifier_notification_vibrate" tools:ignore="MissingTranslation">Vibrate</string>
+
+    <string name="as_dialog" tools:ignore="MissingTranslation">Dialog</string>
+    <string name="as_notifier_notifications" tools:ignore="MissingTranslation">Notifier notifications</string>
+    <string name="as_account" tools:ignore="MissingTranslation">Account</string>
+    <string name="as_about" tools:ignore="MissingTranslation">About and privacy/copyright information</string>
+    <string name="as_about_summary" tools:ignore="MissingTranslation">Feedback, privacy, copyright…</string>
+    <string name="as_account_summary" tools:ignore="MissingTranslation">Block users, delete your account</string>
+    <string name="as_dialog_summary" tools:ignore="MissingTranslation">Dialog notification settings, vibrate, sound</string>
+    <string name="as_dialog_enable_ringtone_on" tools:ignore="MissingTranslation">Notify when message received</string>
+    <string name="as_dialog_enable_ringtone_off" tools:ignore="MissingTranslation">Do not notify when message received</string>
+    <string name="as_dialog_enter_to_send_on" tools:ignore="MissingTranslation">When \'enter button\' pressed on keyboard then message will send.</string>
+    <string name="as_dialog_enter_to_send_off" tools:ignore="MissingTranslation">To send a message you have to press to \'send\' button</string>
+    <string name="as_notifier_notification_ringtone" tools:ignore="MissingTranslation">Notifications of your notifier is open.</string>
+    <string name="as_notifier_notification_ringtone_on" tools:ignore="MissingTranslation">When situation of your notifiers changes you will notify. (deleted, stopped, activated)</string>
+    <string name="as_notifier_notification_ringtone_off" tools:ignore="MissingTranslation">If you choose that than event of your notifiers do not notify to you. (deleted, stopped, activated)</string>
+    <string name="as_notifier_notification_ringtone_title" tools:ignore="MissingTranslation">Notification tone</string>
+    <string name="remove_from_black_list" tools:ignore="MissingTranslation">Unblock:</string>
+    <string name="black_list_note" tools:ignore="MissingTranslation">There is no blocked user. To add an user touch above little button.</string>
+    <string name="cannot_do_later" tools:ignore="MissingTranslation">Something goes wrong. Please try again later.</string>
+    <string name="already_in_black" tools:ignore="MissingTranslation">He is already blocked.</string>
+    <string name="black_activity_title" tools:ignore="MissingTranslation">Blocked users</string>
+    <string name="delete_my_account_activity_title" tools:ignore="MissingTranslation">Delete my account</string>
+    <string name="elveda" tools:ignore="MissingTranslation">Good bye…</string>
+    <string name="we_will_miss_you" tools:ignore="MissingTranslation">Are you sure to delete your account?</string>
+    <string name="i_just_kidding" tools:ignore="MissingTranslation">Joke!</string>
+    <string name="yes" tools:ignore="MissingTranslation">Yes</string>
+    <string name="feedback_activity_title" tools:ignore="MissingTranslation">Feedback</string>
+    <string name="feedback_please_enter_all_entries" tools:ignore="MissingTranslation">Please enter your name, email address and request/complaint/your thinks…</string>
+    <string name="feedback_please_enter_valid_email" tools:ignore="MissingTranslation">Email address is not valid. Please enter an valid email address.</string>
+    <string name="err_for_feedback" tools:ignore="MissingTranslation">Occurred an unexpected error. Please try again later.</string>
+    <string name="thanks_for_feedback" tools:ignore="MissingTranslation">Thanks for your feedback. We will evaluate your thinks and if need be, we will be communicate with you with your email address.</string>
+    <string name="about_activity_title" tools:ignore="MissingTranslation">About for Opcon</string>
+    <string name="there_are_x_unreaded_message" formatted="false" tools:ignore="MissingTranslation">There are %d unread message</string>
+    <string name="and" tools:ignore="MissingTranslation">and</string>
+    <string name="orher_x_man" tools:ignore="MissingTranslation">other %d</string>
+    <string name="notifier_notification_someting_has_been_change" tools:ignore="MissingTranslation">Some notifiers has been changed!</string>
+    <string name="thereiswaiting_message" tools:ignore="MissingTranslation">There are %d waiting messages.</string>
+    <string name="you_have_to_wait_for_verify" tools:ignore="MissingTranslation">You have to wait little.</string>
+    <string name="cannot_update_avatar" tools:ignore="MissingTranslation">Profile photo can not updated.</string>
+    <string name="notification_on" tools:ignore="MissingTranslation">Open notifications</string>
+    <string name="notification_off" tools:ignore="MissingTranslation">Close notifications</string>
+    <string name="notification_sound_on" tools:ignore="MissingTranslation">Open notification sound</string>
+    <string name="notification_sound_off" tools:ignore="MissingTranslation">Close notification sound</string>
+    <string name="black" tools:ignore="MissingTranslation">Block user</string>
+    <string name="non_black" tools:ignore="MissingTranslation">Unblock user</string>
+    <string name="__condition_new_picture" tools:ignore="MissingTranslation">When i captured an new photo</string>
+    <string name="__condition_in_call" tools:ignore="MissingTranslation">When i received an call from</string>
+    <string name="__condition_in_msg" tools:ignore="MissingTranslation">When i received an message from</string>
+    <string name="__condition_out_call" tools:ignore="MissingTranslation">When i call to</string>
+    <string name="__condition_out_msg" tools:ignore="MissingTranslation">When i send a message to</string>
+    <string name="__condition_battery" tools:ignore="MissingTranslation">When charge of my phone is low</string>
+    <string name="__condition_location" tools:ignore="MissingTranslation">When i at the that location</string>
+    <string name="__operation_sent_msg" tools:ignore="MissingTranslation">Send message to him</string>
+
+
+    <string name="__packet_battery" tools:ignore="MissingTranslation">Degree of your phone battery</string>
+    <string name="__packet_in_call" tools:ignore="MissingTranslation">Last incoming call of you</string>
+    <string name="__packet_in_message" tools:ignore="MissingTranslation">Last incoming message of you</string>
+    <string name="__packet_out_msg" tools:ignore="MissingTranslation">Last outgoing message of you</string>
+    <string name="__packet_out_call" tools:ignore="MissingTranslation">Last outgoing call of you</string>
+    <string name="__packet_location" tools:ignore="MissingTranslation">Your location</string>
+    <string name="__packet_last_captured_image" tools:ignore="MissingTranslation">Last captured photo of you</string>
+
+    <string name="remove_notifiers" tools:ignore="MissingTranslation">Delete notifiers</string>
+    <string name="remove_dialog" tools:ignore="MissingTranslation">Delete messages</string>
+    <string name="send_msg" tools:ignore="MissingTranslation">Send message</string>
+    <string name="application_settings" tools:ignore="MissingTranslation">Application settings</string>
+    <string name="refresh" tools:ignore="MissingTranslation">Refresh</string>
+    <string name="addANewUser" tools:ignore="MissingTranslation">New contact</string>
+    <string name="iam" tools:ignore="MissingTranslation">Me</string>
+    <string name="change_the_worl_in_tree_step" tools:ignore="MissingTranslation">Create an notifier only in two step!</string>
+    <string name="send_text_message" tools:ignore="MissingTranslation">Send text message</string>
+    <string name="send_special_packet" tools:ignore="MissingTranslation">Send special packet (optional)</string>
+    <string name="are_you_sure_for_editing_this_notifier" tools:ignore="MissingTranslation">Are you sure to editing this notifier? Changes will be send to your friend and this notifier will be deactive until your friends approval the changes.</string>
+    <string name="camera" tools:ignore="MissingTranslation">Camera</string>
+    <string name="gallery" tools:ignore="MissingTranslation">Gallery</string>
+    <string name="send_an_packet" tools:ignore="MissingTranslation">Send an special packet</string>
+    <string name="send_a_picture" tools:ignore="MissingTranslation">Send an picture</string>
+    <string name="are_you_sure_for_sending_this_packet" tools:ignore="MissingTranslation">Do you want to send this packet?</string>
+    <string name="packet_cannot_created" tools:ignore="MissingTranslation">Packet cannot created.</string>
+    <string name="see_relation_notifier" tools:ignore="MissingTranslation">See relation notifier</string>
+    <string name="add_an_notifier" tools:ignore="MissingTranslation">Send an notifier to your friend!</string>
+    <string name="cannot_seen_message" tools:ignore="MissingTranslation">Relation notifier is deleted.</string>
+    <string name="invitation_title" tools:ignore="MissingTranslation">Invite your friends</string>
+    <string name="invitation_message" tools:ignore="MissingTranslation">Get the Opcon from the Play Store and discover the notifiers to make life more fun!</string>
+    <string name="you_has_blocked" tools:ignore="MissingTranslation">Blocked…</string>
+    <string name="this_is_an_black_man_so_you_cannot_add_notifier" tools:ignore="MissingTranslation">You cannot put notifier to this dialog. You blocked he.</string>
+    <string name="invite_your_friends" tools:ignore="MissingTranslation">Invite your friends</string>
+    <string name="dialogs" tools:ignore="MissingTranslation">Dialogs and Notifiers</string>
+    <string name="dialog_helper" tools:ignore="MissingTranslation">Touch here to start an chat</string>
+    <string name="help" tools:ignore="MissingTranslation">Help</string>
+    <string name="google_play_services_not_valid" tools:ignore="MissingTranslation">Please update Google Play Services.</string>
+    <string name="there_are_x_message_and_x_notifier" formatted="false" tools:ignore="MissingTranslation">%d new message and %d new notifier</string>
+    <string name="there_are_x_notifier" tools:ignore="MissingTranslation">%d new notifier</string>
+    <string name="added_new_notifier_x_man" tools:ignore="MissingTranslation">He sent an new notifier</string>
+    <string name="need_permission_to_contact_friends" tools:ignore="MissingTranslation">To chat and send notifiers to your friends you have to give to Opcon contacts permission.</string>
+    <string name="settings" tools:ignore="MissingTranslation">Settings</string>
+    <string name="there_are_waiting_message" tools:ignore="MissingTranslation">There are waiting messages</string>
+    <string name="select_an_notification_sound_that_enjoy_you" tools:ignore="MissingTranslation">To select an notification sound touch here</string>
+    <string name="operation_in_out_choice" tools:ignore="MissingTranslation">Touch to select an contact. Do not choosing is also an choice.</string>
+    <string name="do_write_something" tools:ignore="MissingTranslation">Write something…</string>
+    <string name="myContacts" tools:ignore="MissingTranslation">My contacts</string>
+    <string name="everyone" tools:ignore="MissingTranslation">Everyone</string>
+    <string name="only_myself" tools:ignore="MissingTranslation">Only me</string>
+    <string name="who_can_see_that" tools:ignore="MissingTranslation">Who can see?</string>
+    <string name="share_an_special_packet" tools:ignore="MissingTranslation">Share an special packet</string>
+    <string name="write" tools:ignore="MissingTranslation">Write your comment…</string>
+    <string name="please_enter_an_text_or_packet_for_post" tools:ignore="MissingTranslation">Please enter your comments or select an packet.</string>
+    <string name="operation_post_two_factor" formatted="false" tools:ignore="MissingTranslation">You will share: %s ve %s.</string>
+    <string name="operation_post_only_special_packet" formatted="false" tools:ignore="MissingTranslation">You will share: %s.</string>
+    <string name="operaiton_post" formatted="false" tools:ignore="MissingTranslation">Share on my profile</string>
+    <string name="have_to_we_ask_before_share" tools:ignore="MissingTranslation">Shall we ask you before we share?</string>
+    <string name="yes_ask_me_before_share" tools:ignore="MissingTranslation">Yes</string>
+    <string name="remove_from_profile" tools:ignore="MissingTranslation">Remove from my profile</string>
+    <string name="complaint_it" tools:ignore="MissingTranslation">Complaint</string>
+    <string name="share" tools:ignore="MissingTranslation">Share</string>
+    <string name="waiting_posts_activity_title" tools:ignore="MissingTranslation">Waiting posts</string>
+    <string name="there_are_waiting_posts" tools:ignore="MissingTranslation">There are waiting posts</string>
+    <string name="click_to_seen_details" tools:ignore="MissingTranslation">Touch to see details.</string>
+    <string name="there_is_no_any_waiting_post" tools:ignore="MissingTranslation">There is no any waiting post</string>
+    <string name="there_is_no_any_post" tools:ignore="MissingTranslation">There is no any post.\n\n Say to your friends \'Try Profile Updaters!\'</string>
+    <string name="there_is_no_any_post_add" tools:ignore="MissingTranslation">There is no any post.\n\nDo you want to share something now?
+    No, it is impossible! Try Profile Updaters to share something…
+  </string>
+    <string name="you_cannot_change_condition_of_existing_notifier" tools:ignore="MissingTranslation">You can not change an exists notifier. You can only change parameter of existing condition of the notifier.</string>
+    <string name="feedback_text" tools:ignore="MissingTranslation">Your feedback is important to develop ourselves. Send to we your wish, suggestion, complaint. If need be, we will communicate with you through your email address.</string>
+
+    <string name="special_thanks" tools:ignore="MissingTranslation">Thanks for</string>
+    <string name="special_thanks_for_my_family" tools:ignore="MissingTranslation">My family for their beliefs and support</string>
+    <string name="special_thanks_for_Dennis" tools:ignore="MissingTranslation">Dennis Ritchie</string>
+    <string name="special_thanks_for_Stackowerflow" tools:ignore="MissingTranslation">Stack Overflow Community</string>
+
+
+    <string name="subject" tools:ignore="MissingTranslation">What is the matter?</string>
+    <string name="how_can_we_develop_ourselves" tools:ignore="MissingTranslation">How we can develop ourselves?</string>
+    <string name="email_address" tools:ignore="MissingTranslation">Your email address</string>
+    <string name="name" tools:ignore="MissingTranslation">Your name</string>
+    <string name="as_about_sss" tools:ignore="MissingTranslation">FAQ</string>
+    <string name="as_about_sss_subtitle" tools:ignore="MissingTranslation">Frequently asked questions</string>
+    <string name="as_about_help" tools:ignore="MissingTranslation">Help</string>
+    <string name="as_about_feedback" tools:ignore="MissingTranslation">Feedback</string>
+    <string name="as_about_feedback_subtitle" tools:ignore="MissingTranslation">Please enter your wish or suggestion or complaint</string>
+    <string name="as_about_about" tools:ignore="MissingTranslation">About</string>
+    <string name="as_account_black" tools:ignore="MissingTranslation">Blocked users</string>
+    <string name="as_account_black_subtitle" tools:ignore="MissingTranslation">Stop someone who you do not want to communicate with</string>
+    <string name="as_account_remove" tools:ignore="MissingTranslation">Delete account</string>
+    <string name="as_account_remove_subtitle" tools:ignore="MissingTranslation">Delete Opcon account</string>
+    <string name="token_will_be_send" tools:ignore="MissingTranslation">Token will be send</string>
+    <string name="click_to_seen_location_details_of_packet" tools:ignore="MissingTranslation">Touch to see location.</string>
+    <string name="deleting" tools:ignore="MissingTranslation">Deleting</string>
+    <string name="follow_to_opcon" tools:ignore="MissingTranslation">Follow to Opcon on Facebook</string>
+    <string name="see_your_profile" tools:ignore="MissingTranslation">See my profile</string>
+    <string name="delete_account_indicator" tools:ignore="MissingTranslation">Your all data on the remote server and in your phone will delete. (Includes: messages, notifiers, account information, profile, profile updaters.) Are you sure about that?</string>
+    <string name="delete_account_title" tools:ignore="MissingTranslation">Are you sure to remove your account?</string>
+    <string name="delete_account_button" tools:ignore="MissingTranslation">DELETE MY ACCOUNT</string>
+    <string name="condition_indicator" tools:ignore="MissingTranslation">What happens when?</string>
+    <string name="on_target_phone" tools:ignore="MissingTranslation">Her phone</string>
+    <string name="on_owner_phone" tools:ignore="MissingTranslation">My phone</string>
+    <string name="operation_indicator" tools:ignore="MissingTranslation">Who will be notified? Or what will happen?</string>
+    <string name="swipe_to_right_to_show_notifiers_of_this_dialog" tools:ignore="MissingTranslation">To see notifiers of this dialogs swipe to left.</string>
+    <string name="details_of_notifier" tools:ignore="MissingTranslation">Details of this notifier</string>
+    <string name="operation_in_out_only_one" tools:ignore="MissingTranslation">You can choose only one of either text or special packet.</string>
+    <string name="only_your_contacts_can_see" tools:ignore="MissingTranslation">This post seen only by your contacts.</string>
+    <string name="as_notifier_notifications_summary" tools:ignore="MissingTranslation">Notifier notifications</string>
+    <string name="relation_notifier_can_seen" tools:ignore="MissingTranslation">Can your contacts see this notifier?</string>
+    <string name="profile_updater_activity_title" tools:ignore="MissingTranslation">Your profile updaters</string>
+    <string name="add_an_profile_updater" tools:ignore="MissingTranslation">Add an profile updater</string>
+    <string name="what_if_what_happens_on_your_phone_for_profile_updater" tools:ignore="MissingTranslation">When?</string>
+    <string name="what_do_you_want_to_share_on_your_profile" tools:ignore="MissingTranslation">What do you want to share on your profile?</string>
+    <string name="only_two_step_to_add_an_profile_updater" tools:ignore="MissingTranslation">Create an profile updater in only two step.</string>
+    <string name="operation_post_two_factor_for_target" formatted="false" tools:ignore="MissingTranslation">He will share: %s ve %s.</string>
+    <string name="operation_post_only_special_packet_for_target" formatted="false" tools:ignore="MissingTranslation">He will share: %s.</string>
+    <string name="go_to_my_profile" tools:ignore="MissingTranslation">My profile</string>
+    <string name="profile_updaters" tools:ignore="MissingTranslation">Profile  updaters</string>
+    <string name="see_my_profile_updaters" tools:ignore="MissingTranslation">See my profile updaters</string>
+    <string name="make_an_profile_updater" tools:ignore="MissingTranslation">Add an profile updater</string>
+
+    <string name="close_notification_for_notifier" tools:ignore="MissingTranslation">Don\'t disturb</string>
+    <string name="acception_automated_packet_send" tools:ignore="MissingTranslation">Send relation packet witout approval of mine.</string>
+    <string name="notification_content_optional" tools:ignore="MissingTranslation">Notification content (optional)</string>
+    <string name="make_vibrate" tools:ignore="MissingTranslation">Do vibrate</string>
+    <string name="there_is_no_comment_for_notifier_desc" tools:ignore="MissingTranslation">** No comment **</string>
+    <string name="mm_near" tools:ignore="MissingTranslation">mm near</string>
+
+
+    <string name="in_call_indicator" tools:ignore="MissingTranslation"><![CDATA[<font><b>Who?</b> If you don\'t choose an contact every incoming call will trigger operation.</font>>]]></string>
+    <string name="out_call_indicator" tools:ignore="MissingTranslation"><![CDATA[<font><b>Who?</b> If you don\'t choose an contact every outgoing call will trigger operation.</font>]]></string>
+    <string name="in_msg_indicator" tools:ignore="MissingTranslation"><![CDATA[<font><b>Who?</b> If you don\'t choose an contact every incoming message will trigger operation.</font>]]></string>
+    <string name="out_msg_indicator" tools:ignore="MissingTranslation"><![CDATA[<font><b>Who?</b> If you don\'t choose an contact every outgoing message will trigger operation.</font>]]></string>
+
+
+    <string name="in_call_indicator_who" tools:ignore="MissingTranslation">Who? Please select an contact.</string>
+    <string name="out_call_indicator_who" tools:ignore="MissingTranslation">Who? Please select an contact.</string>
+    <string name="in_msg_indicator_who" tools:ignore="MissingTranslation">Who? Please select an contact.</string>
+    <string name="out_msg_indicator_who" tools:ignore="MissingTranslation">Who? Please select an contact.</string>
+
+
+    <string name="in_call_indicator_alert" tools:ignore="MissingTranslation">@string/in_call_indicator_who</string>
+    <string name="out_call_indicator_alert" tools:ignore="MissingTranslation">@string/out_call_indicator_who</string>
+    <string name="in_msg_indicator_alert" tools:ignore="MissingTranslation">@string/in_msg_indicator_who</string>
+    <string name="out_msg_indicator_alert" tools:ignore="MissingTranslation">@string/out_msg_indicator_who</string>
+
+
+    <string name="there_are_waiting_posts_main_ac" tools:ignore="MissingTranslation">There are waiting posts to approval.</string>
+    <string name="special_thanks_for_Githup" tools:ignore="MissingTranslation">Developers of third-party-frameworks and community of Githup</string>
+    <string name="show_relation_notifier" tools:ignore="MissingTranslation">See relation notifier</string>
+    <string name="call" tools:ignore="MissingTranslation">Call</string>
+    <string name="sendSms" tools:ignore="MissingTranslation">Send sms</string>
+    <string name="permission_need" tools:ignore="MissingTranslation">Opcon need permission</string>
+    <string name="need_permission_to_call" tools:ignore="MissingTranslation">To do this operation Opcon need \'call phone\' permission.</string>
+    <string name="go_to_application_settings" tools:ignore="MissingTranslation">Go to settings</string>
+    <string name="for_test" tools:ignore="MissingTranslation">For test</string>
+    <string name="next" tools:ignore="MissingTranslation">Next</string>
+    <string name="there_is_no_internet_conenction_to_loading_privacy" tools:ignore="MissingTranslation">Check your internet connection and try again.</string>
+    <string name="privacy_activity_title" tools:ignore="MissingTranslation">Terms of Service and Privacy Policy</string>
+    <string name="dont_show_again" tools:ignore="MissingTranslation">Don\'t show again</string>
+    <string name="features_activity_title" tools:ignore="MissingTranslation">News</string>
+    <string name="opcon_team" tools:ignore="MissingTranslation">Opcon</string>
+    <string name="copy_right_information" tools:ignore="MissingTranslation">Copyright information</string>
+    <string name="third_party_frameworks" tools:ignore="MissingTranslation">Third party frameworks</string>
+    <string name="notification_closed_for_notifier" tools:ignore="MissingTranslation">Notification closed</string>
+    <string name="notification_opened_for_notifier" tools:ignore="MissingTranslation">Notification opened</string>
+    <string name="do_you_want_to_block_that_user" tools:ignore="MissingTranslation">Do you want to block him?</string>
+    <string name="your_complaint_will_evaluate" tools:ignore="MissingTranslation">Your request will to be evaluated by Opcon team. If you want, you can block this user?</string>
+    <string name="yes_block" tools:ignore="MissingTranslation">Yep, block</string>
+    <string name="notifier_already_exists" tools:ignore="MissingTranslation">It is already exists that like this notifier.</string>
+    <string name="there_is_no_feature" tools:ignore="MissingTranslation">There is no any new feature…</string>
+    <string name="send" tools:ignore="MissingTranslation">Send</string>
+    <string name="something_goes_wrong_with_facebook_account_kit" tools:ignore="MissingTranslation">Some things went wrong.</string>
+    <string name="something_goes_wrong_with_facebook_account_kit_message" tools:ignore="MissingTranslation">Some things went wrong while trying to become an Opcon member using the Account Kit service. If you want, try Opcon\'s own service?</string>
+    <string name="yep_try_opcon_verification_service" tools:ignore="MissingTranslation">Let\'s try the Opcon Recognize System</string>
+    <string name="we_send_token_to_you" tools:ignore="MissingTranslation">We sent sms to %s</string>
+    <string name="contact_activity_there_is_no_friend_message" tools:ignore="MissingTranslation">There is no friend who using Opcon. If you want to chat or sent notifiers to your friends you have to invite your friends to Opcon. \n\nIf you are sure about there is friends who using Opcon, touch \'refresh\' button.</string>
+    <string name="there_is_no_internet_connection" tools:ignore="MissingTranslation">There is no internet connection.</string>
+    <string name="notifier_save_dialog_note1" tools:ignore="MissingTranslation">
+    <![CDATA[
+      <font>
+      <b>Don\'t forget!</b> When you send this notifier to your friend <font color="yellow">it is inactive as default.</font> Until your friend active this notifier, <font color="yellow">it is not processed.</font>
+      </font>
+    ]]>
+  </string>
+    <string name="this_notifier_is_not_active" tools:ignore="MissingTranslation">
+    <![CDATA[
+      <font>
+        This notifier is not active yet.
+        To active this notifier touch top-right button and \'active this notifier\'.
+      </font>
+    ]]>
+  </string>
+    <string name="this_notifier_is_deleted_on_target" tools:ignore="MissingTranslation">
+
+    <![CDATA[
+
+      <font>Your friends deleted this notifier.</font>
+
+    ]]>
+
+  </string>
+    <string name="this_notifier_is_not_active_on_target" tools:ignore="MissingTranslation">Your friends not activated this notifier yet.</string>
+    <string name="not_relation_sentMsg_interpret" tools:ignore="MissingTranslation">He will sent msg: %s</string>
+
+
+    <string name="in_call_indicator_none" tools:ignore="MissingTranslation">Every incoming call</string>
+    <string name="out_call_indicator_none" tools:ignore="MissingTranslation">Every outgoing call</string>
+    <string name="in_msg_indicator_none" tools:ignore="MissingTranslation">Every incoming call</string>
+    <string name="out_msg_indicator_none" tools:ignore="MissingTranslation">Every outgoing message</string>
+    <string name="edit_notifier" tools:ignore="MissingTranslation">Edit notifiers</string>
+    <string name="are_you_sure_to_edit_profile_updater" tools:ignore="MissingTranslation">Are you sure about that edit profile updater?</string>
+    <string name="save" tools:ignore="MissingTranslation">Save</string>
+    <string name="edit_profile_updater" tools:ignore="MissingTranslation">Edit profile updater</string>
+
+    <string name="vibrate" tools:ignore="MissingTranslation">Vibrate</string>
+    <string name="details" tools:ignore="MissingTranslation">Details</string>
+    <string name="delete_all" tools:ignore="MissingTranslation">Delete all</string>
+    <string name="are_you_sure_about_that_remove_all_waiting_posts" tools:ignore="MissingTranslation">Are you sure about that delete all waiting posts?</string>
+    <string name="save_profile_updater" tools:ignore="MissingTranslation">Save profile updater</string>
+    <string name="you_have_to_enter_notification_title" tools:ignore="MissingTranslation">Please enter notification content</string>
+    <string name="notification_content" tools:ignore="MissingTranslation">Notification content</string>
+    <string name="incall_packet_for_sent" tools:ignore="MissingTranslation">Last incoming call</string>
+    <string name="location_packet_for_sent" tools:ignore="MissingTranslation">Location</string>
+    <string name="battery_level_packet_for_sent" tools:ignore="MissingTranslation">Battery</string>
+    <string name="you" tools:ignore="MissingTranslation">You</string>
+    <string name="understand" tools:ignore="MissingTranslation">I got it.</string>
+    <string name="there_is_no_any_profile_updaters" tools:ignore="MissingTranslation">You have not any profile updater! \n\nTouch the top button to add one now.</string>
+    <string name="understand_shut_up" tools:ignore="MissingTranslation">I get it, don\'t show again</string>
+    <string name="do_you_want_to_share_this_profile_updater" tools:ignore="MissingTranslation">Do you also want to share this profile updater?</string>
+    <string name="do_you_want_to_share_this_profile_notifier" tools:ignore="MissingTranslation">Do you also want to share this notifier?</string>
+    <string name="yes_can_see_my_friends_this_notifier" tools:ignore="MissingTranslation">Yes, i want to show this notifier to my friends who see my post.</string>
+    <string name="yes_can_see_my_friends_this_profile_updater" tools:ignore="MissingTranslation">Yes, i want to show this profile updater to my friends who see my post.</string>
+
+    <string-array name="arr_vibrate" tools:ignore="MissingTranslation">
+        <item>Default</item>
+        <item>No Vibrate</item>
+        <item>Short</item>
+        <item>Long</item>
+    </string-array>
+
+    <string-array name="arr_vibrate_values" tools:ignore="MissingTranslation">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string name="___Thanks___" tools:ignore="MissingTranslation">Thanks…</string>
+    <string name="special_packet_connection_state_connected" tools:ignore="MissingTranslation">Connected</string>
+    <string name="special_packet_connection_state_no_connection" tools:ignore="MissingTranslation">Disconnected</string>
+    <string name="this_man_use_Opcon" tools:ignore="MissingTranslation">Your friends use Opcon</string>
+    <string name="there_is_no_any_time_restrict" tools:ignore="MissingTranslation">No time restrict</string>
+    <string name="helper_what_about_swiping" tools:ignore="MissingTranslation">Your messages are at the left</string>
+    <string name="helper_what_about_swiping_explantation" tools:ignore="MissingTranslation">If you touch anywhere and swipe to right then you can see your messages.</string>
+    <string name="helper_packet_details_and_default_behavior" tools:ignore="MissingTranslation">When does a notifier does effect?</string>
+    <string name="helper_packet_details_and_default_behavior_answer" tools:ignore="MissingTranslation">
+
+    <![CDATA[
+
+      <font>
+
+      When your friends send to you a notifier it is deactivated as default. If you want to active a notifier touch right-top button and select \'active\'.<br>Also! If a notifier contains a special packet, that packet will be offer your approval before send.
+
+      </font>
+
+    ]]>
+
+  </string>
+    <string name="helper_notifier_why_me" tools:ignore="MissingTranslation">Why there are my profile picture at the both side?</string>
+    <string name="helper_notifier_why_me_answer" tools:ignore="MissingTranslation">
+    Because you are condition supervisor and you will be notified (or you will send message) when condition is right. There is profile picture of condition supervisor on the left side every time. On the right side, there are profile picture of will be notified or who will send message.
+  </string>
+
+    <string name="helper_notifier_why_him" tools:ignore="MissingTranslation">Why there are profile picture of my friend at the both side?</string>
+    <string name="helper_notifier_why_him_answer" tools:ignore="MissingTranslation">
+    Because your friend is condition supervisor and him will be notified (or him will be send message) when condition right. There is profile picture of condition supervisor on the left side every time. On the right side, there are profile picture of will be notified or who will send message.
+  </string>
+
+    <string name="helper_no_time_restrict" tools:ignore="MissingTranslation">What is meaning, \'No time restrict\'</string>
+    <string name="helper_no_time_restrict_answer" tools:ignore="MissingTranslation">
+    This meaning that notifier will be effect for as long as it is active. If you wish you can add time restrict to that notifier: touch top-right button and select \'edit\'. For example: at the 12/02/2018 range of 12:00 - 13:30.
+  </string>
+
+    <string name="helper_there_is_both_restrict" tools:ignore="MissingTranslation">What are meaning time and date indicators below the notifier?</string>
+    <string name="helper_there_is_both_restrict_answer" formatted="false" tools:ignore="MissingTranslation">This is meaning, that notifier will be effect (if it is active) at the %s and range of %s - %s.</string>
+
+    <string name="helper_there_is_time_range_restrict" tools:ignore="MissingTranslation">What are meaning time indicators at the below the notifier?</string>
+    <string name="helper_there_is_time_range_restrict_answer" formatted="false" tools:ignore="MissingTranslation">This is meaning, that notifier will be effect (if it is active) at the range of %s - %s.</string>
+
+
+    <string name="helper_there_is_date_restrict" tools:ignore="MissingTranslation">What is meaning date indicator at the below notifier?</string>
+    <string name="helper_there_is_date_restrict_answer" tools:ignore="MissingTranslation">This is meaning, that notifier will be effect (if it is active) at the specified date.</string>
+
+    <string name="helper_there_is_discomfort" tools:ignore="MissingTranslation">I want to close notifications for this notifier</string>
+    <string name="helper_there_is_discomfort_answer" tools:ignore="MissingTranslation">It is too easy. Click right-top button of notifier that you want to close notifications for it and select \'Close notifications\' or you can touch to notification icon on the notifier to open/close notifications.</string>
+
+    <string name="what_is_profile_updater_answer" tools:ignore="MissingTranslation">What do you want to share with your friends when? An profile updater consist of what your answer for this question.</string>
+    <string name="what_is_profile_updater" tools:ignore="MissingTranslation">What is Profile Updater?</string>
+
+    <string name="what_is_notifier" tools:ignore="MissingTranslation">What is Notifier?</string>
+    <string name="what_is_notifier_answer" tools:ignore="MissingTranslation"><![CDATA[
+
+<font>
+
+    Think about an alarm application. An alarm application want to you to answer this question: <font color=LightGrey><i>\"When and how do i wake you up?\"</i></font>. Opcon asks <font color=LightGrey><i>\"Whom shall I inform about the events whose mobile phone notifies ?\"</i></font> That\'s all!
+
+     <br><br>
+
+
+    <h3>When does a notifier does effect?</h3>An notifier that you send to your friends it is deactivated as default. It does not any effect until your friend active it. Also! If the notifier contains special packet, that special packets will send after approval your friends (Even if it is active).
+
+    </font>
+]]>
+
+  </string>
+    <string name="provide_permissions">Provide permissions</string>
+    <string name="forget_what_you_now">Forget what you knows!</string>
+    <string name="what_welcome_activity">
+    <![CDATA[
+
+
+    Because Opcon offers some new features what you do not know before. Notifiers and Profile Updaters designed to facilitate and be more enjoyable to your life. Understanding features what Opcon offers to you will not last long.
+
+    <h1>We will verify your phone number</h1>
+
+    To recognize Opcon, we will verify your phone number. Opcon need some permissions to automatic perceive verify code what Opcon send to you through Sms. To provide this permission, touch below \'provide permissions\' button.
+
+    ]]>
+  </string>
+    <string name="what_welcome_activity_before_sdk_23">
+    <![CDATA[
+
+
+    Because Opcon offers some new features what you do not know before. Notifiers and Profile Updaters designed to facilitate and be more enjoyable to your life.
+    <h1>We will verify your phone number</h1>
+
+    To recognize Opcon, we will verify your phone number.
+
+    ]]>
+  </string>
+    <string name="permissions_provided">Permissions granted</string>
+    <string name="permissions_is_already_provided">Permissions already granted</string>
+    <string name="update_play_services_to_use_Opcon">To use Opcon you have to update Google Play Services because Opcon uses some Google Play Services to be able to serve to you. See: Firebase.</string>
+    <string name="update_play_services">Update Google Play Services</string>
+    <string name="please_enter_an_phone_number">Please enter a phone number</string>
+    <string name="enter_phone_number_to_direct">Phone number</string>
+    <string name="select_an_man_or_enter_an_phone_number">Select or enter a phone number</string>
+    <string name="what_is_notification_of_notifier">What is this?</string>
+    <string name="what_is_notification_of_notifier_answer">You can see notification of this notifier when your friends changes something on this notifier. For example: deleting or deactivating or activating or editing...</string>
+    <string name="hello">Hi</string>
+    <string name="all_right_reversed">All rights reversed.</string>
+    <string name="copy_right_Mahmut_Taskiran">© Mahmut Taşkıran</string>
+    <string name="content_of_notification">Notification content</string>
+    <string name="to_select_an_location_touch">Touch to select an location</string>
+    <string name="to_select_notification_sound_indicator">Touch to select an notification sound!</string>
+    <string name="close">Close</string>
+    <string name="account_deleted">Account deleted</string>
+    <string name="thanks">Thanks</string>
+    <string name="to_my_family">My family</string>
+    <string name="to_experts">Dennis Ritchie, Linus Torvalds and each other experts.</string>
+    <string name="to_stackoverflow">Stack Overflow and community</string>
+    <string name="to_developers">Developers of open source frameworks that i used to develop Opcon.</string>
+    <string name="developed_from_izmir_adiyaman"><![CDATA[It was developed with pleasure in Turkey by <font color="blue"><u>Mahmut Taşkıran.</u></font>]]></string>
+
+</resources>

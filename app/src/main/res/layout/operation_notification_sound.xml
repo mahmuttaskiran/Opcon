@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+
+    <com.opcon.ui.views.NewChatInput
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:id="@+id/chatInput"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lightGrey"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/ringtone"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/colorSecondary"
+        app:cardCornerRadius="35dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/operation_ic_music_note_black_18dp"
+            android:tint="@color/white"
+            android:layout_gravity="center"/>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_play_arrow_black_18dp"
+        android:drawablePadding="5dp"
+        android:text="@string/to_select_notification_sound_indicator"
+        android:id="@+id/selectSoundIndicator"
+        android:layout_marginTop="10dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/lightGrey"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vibrate"
+        android:checked="true"
+        android:text="@string/vibrate"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"/>
+
+</LinearLayout>

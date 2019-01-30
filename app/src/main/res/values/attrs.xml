@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="OpconView">
+      <attr name="ov_circle_background" format="color"/>
+      <attr name="ov_description" format="string"/>
+      <attr name="ov_icon" format="reference"/>
+      <attr name="ov_id" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="CloudView">
+      <attr name="radius" format="dimension"/>
+      <attr name="cloudColor" format="color"/>
+      <attr name="strokeColor" format="color"/>
+      <attr name="strokeWidth" format="dimension"/>
+      <attr name="atBottom" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CloudRelativeView">
+      <attr name="maxIcon" format="integer"/>
+      <attr name="iconMaxSize" format="float"/>
+      <attr name="iconMinSize" format="float"/>
+      <attr name="iconColor" format="color"/>
+      <attr name="bgColor" format="color"/>
+
+      <attr name="topCloudColor" format="color"/>
+      <attr name="topCloudWidth" format="dimension"/>
+      <attr name="topCloudStrokeColor" format="color"/>
+      <attr name="topCloudStrokeWidth" format="dimension"/>
+
+      <attr name="bottomCloudColor" format="color"/>
+      <attr name="bottomCloudWidth" format="dimension"/>
+      <attr name="bottomCloudStrokeColor" format="color"/>
+      <attr name="bottomCloudStrokeWidth" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleRelativeLayout">
+      <attr name="circleColor" format="color"/>
+      <attr name="circleStrokeWidth" format="dimension"/>
+      <attr name="circleStrokeColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="TitleView">
+      <attr name="leftIcon" format="reference"/>
+      <attr name="rightIcon" format="reference"/>
+      <attr name="titleBg" format="color"/>
+      <attr name="leftIconColor" format="color"/>
+      <attr name="rightIconColor" format="color"/>
+      <attr name="rightIconStrokeColor" format="color"/>
+      <attr name="content" format="string"/>
+      <attr name="contentColor" format="color"/>
+      <attr name="hideRightSide" format="boolean"/>
+      <attr name="color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="VerticalOccView">
+      <attr name="components" format="string"/>
+      <attr name="hiDivider" format="string"/>
+      <attr name="youDivider" format="string"/>
+    </declare-styleable>
+
+
+</resources>

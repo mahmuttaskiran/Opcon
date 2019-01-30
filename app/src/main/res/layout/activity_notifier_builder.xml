@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_new_main"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/activityGreyBackground"
+    android:layout_height="match_parent"
+    tools:context="com.opcon.ui.activities.MainActivity">
+  <android.support.design.widget.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar">
+
+      <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:contentDescription="back_button"
+          android:id="@+id/backButton"
+          android:tint="@color/white"
+          android:src="@drawable/ic_arrow_back_white_18dp"/>
+
+      <agency.tango.android.avatarview.views.AvatarView
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:id="@+id/avatar"
+          app:av_border_color="@color/white"
+          app:av_border_width="1dp"
+          android:src="@drawable/no_avatar"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:paddingLeft="12dp"
+          android:gravity="center_vertical"
+          android:paddingRight="12dp"
+          android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:text="Mahmut Taşkıran"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subtitle"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text="@string/change_the_worl_in_tree_step"/>
+      </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/linear">
+
+    </LinearLayout>
+
+  </android.support.design.widget.AppBarLayout>
+
+  <android.support.v4.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <com.opcon.ui.views.NotifierView
+          android:id="@+id/notifierView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:visibility="gone"/>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:visibility="visible"
+          android:layout_margin="5dp">
+
+        <include layout="@layout/helper"/>
+      </RelativeLayout>
+
+      <LinearLayout
+          android:id="@+id/conditionSelectIndicator"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:gravity="center_vertical"
+          android:orientation="horizontal"
+          android:paddingBottom="16dp"
+          android:paddingLeft="16dp"
+          android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_number_one"
+            android:tint="@color/strongGrey"/>
+
+        <TextView
+            android:id="@+id/conditionTitleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/condition_indicator"
+            android:textSize="15sp"/>
+
+      </LinearLayout>
+
+
+
+      <android.support.v7.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          android:layout_marginBottom="-10dp"
+          android:layout_marginLeft="-7dp"
+          android:layout_marginRight="-7dp"
+          android:layout_marginTop="-7dp"
+          app:cardCornerRadius="2dp"
+          app:cardElevation="3.8dp"
+          app:cardMaxElevation="5.8dp"
+          app:cardPreventCornerOverlap="false"
+          app:cardUseCompatPadding="true"
+          app:contentPaddingBottom="20dp"
+          app:contentPaddingTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/onWhoRoot"
+              android:layout_marginBottom="10dp"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="10dp"
+              android:gravity="right">
+
+            <include layout="@layout/onwho"/>
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                />
+
+          </RelativeLayout>
+
+          <TextView
+              android:id="@+id/conditionDesc"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_vertical"
+              android:gravity="center_vertical"
+              android:padding="16dp"
+              android:textSize="20sp"/>
+
+          <com.opcon.ui.views.VerticalOccView
+              android:id="@+id/conditionSelectView"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/onWhoRoot"
+              app:components="condition"
+              app:hiDivider="@string/on_target_phone"
+              app:youDivider="@string/on_owner_phone">
+          </com.opcon.ui.views.VerticalOccView>
+
+        </RelativeLayout>
+
+
+      </android.support.v7.widget.CardView>
+
+
+      <android.support.v7.widget.CardView
+          android:id="@+id/conditionContainerCard"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="16dp"
+          android:layout_marginRight="16dp"
+          android:visibility="gone"
+          app:cardCornerRadius="1.5dp"
+          app:cardElevation="2.5dp">
+
+        <RelativeLayout
+            android:id="@+id/conditionContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/conditionSelectView"
+            android:visibility="gone"/>
+
+      </android.support.v7.widget.CardView>
+
+
+      <LinearLayout
+          android:id="@+id/operationSelectIndicator"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:gravity="center_vertical"
+          android:orientation="horizontal"
+          android:padding="16dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_number_two"
+            android:tint="@color/strongGrey"/>
+
+        <TextView
+            android:id="@+id/operationTitleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/operation_indicator"
+            android:textSize="15sp"/>
+
+
+      </LinearLayout>
+
+      <android.support.v7.widget.CardView
+          android:id="@+id/operationCardView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="-10dp"
+          android:layout_marginLeft="-7dp"
+          android:layout_marginRight="-7dp"
+          android:layout_marginTop="-5dp"
+          app:cardCornerRadius="2dp"
+          app:cardElevation="3.8dp"
+          app:cardMaxElevation="5.8dp"
+          app:cardPreventCornerOverlap="false"
+          app:cardUseCompatPadding="true"
+          app:contentPaddingBottom="20dp"
+          app:contentPaddingTop="20dp">
+
+        <TextView
+            android:id="@+id/operationDesc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:textSize="20sp"/>
+
+        <com.opcon.ui.views.VerticalOccView
+            android:id="@+id/operationSelectView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:components="operation"
+            app:hiDivider="@string/on_target_phone"
+            app:youDivider="@string/on_owner_phone">
+        </com.opcon.ui.views.VerticalOccView>
+      </android.support.v7.widget.CardView>
+
+
+      <android.support.v7.widget.CardView
+          android:id="@+id/operationContainerCard"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="16dp"
+          android:layout_marginRight="16dp"
+          android:visibility="gone"
+          app:cardCornerRadius="1.5dp"
+          app:cardElevation="2.5dp">
+
+        <RelativeLayout
+            android:id="@+id/operationContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/conditionSelectView"
+            android:visibility="gone"/>
+
+      </android.support.v7.widget.CardView>
+
+      <View
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"/>
+
+
+      <android.support.v7.widget.CardView
+          android:id="@+id/saveButton"
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginBottom="35dp"
+          android:layout_marginTop="25dp"
+          app:cardCornerRadius="30dp"
+          app:cardElevation="10dp">
+
+        <ImageView
+            android:id="@+id/saveButtonIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_check_18_white"
+            android:tint="@color/colorSecondary"/>
+      </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+  </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:id="@+id/contact_root"
+    android:paddingRight="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="8dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="@color/white"
+    android:clickable="true" android:focusable="true">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="25sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:id="@+id/contact_letter"
+        android:text="A"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:textColor="@color/strongGrey"
+        android:visibility="invisible" />
+
+    <agency.tango.android.avatarview.views.AvatarView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/contact_letter"
+        android:layout_toEndOf="@id/contact_letter"
+
+        app:av_border_color="@color/colorPrimary"
+        app:av_border_width="0.6dp"
+        android:id="@+id/contact_avatar"
+        android:clickable="true" android:focusable="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/contact_avatar"
+        android:layout_toEndOf="@id/contact_avatar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginEnd="7dp"
+            android:textColor="@color/strongGrey"
+            android:maxLines="1"
+            android:text="name"
+            android:id="@+id/contact_name"
+
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginEnd="7dp"
+            android:id="@+id/number"
+            android:maxLines="1"
+            android:textStyle="italic"
+            android:textSize="11sp"
+            android:text="phone number"/>
+
+    </LinearLayout>
+
+
+
+    <com.opcon.ui.views.CircleRelativeLayout
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/contactCircle"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:circleColor="@color/white"
+        app:circleStrokeWidth="1dp"
+        app:circleStrokeColor="@color/white"
+        android:layout_alignParentEnd="true">
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:elevation="3dp"
+            android:layout_gravity="center"
+            android:tint="@color/colorPrimary"
+            android:padding="1dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_add_alert_white_18"
+            android:id="@+id/contact_notifier_icon" />
+
+    </com.opcon.ui.views.CircleRelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#fcfcfc"
+        android:layout_below="@id/contact_avatar"
+        android:layout_toRightOf="@id/contact_avatar"
+        android:layout_toEndOf="@id/contact_avatar"
+        android:layout_marginTop="7.5dp"/>
+
+</RelativeLayout>

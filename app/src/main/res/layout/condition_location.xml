@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="false"
+        android:id="@+id/location_select"
+        android:layout_width="70dp"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/ic_location_on_white_48dp"
+            tools:ignore="ContentDescription"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectLocationIndicator"
+        android:layout_marginTop="15dp"
+        android:text="@string/to_select_an_location_touch"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription"
+            android:id="@+id/location_selected_location_static_image" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:textColor="@color/white"
+            android:id="@+id/location_address"
+            android:gravity="center"
+            android:background="#4d4aecdc"
+            android:visibility="gone"
+            android:text="Adıyaman, Yunus Emre Mahallesi 2947 sokak."/>
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="+"
+                android:id="@+id/location_add_mm" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            app:cardUseCompatPadding="true">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:minWidth="70dp"
+                android:maxWidth="100dp"
+                android:text="200"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:hint="@string/mm"
+                android:textColorHint="#ffffff"
+                android:id="@+id/location_et_mm" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="-"
+                android:textSize="20sp"
+                android:id="@+id/location_subtract_mm" />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/mm_near"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/near_string"
+        android:visibility="gone"
+        android:layout_marginTop="6dp"
+        android:text="@string/location_near"/>
+
+    <com.opcon.ui.views.TimeRangeRestrictView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/location_time_restrict">
+
+    </com.opcon.ui.views.TimeRangeRestrictView>
+
+    <com.opcon.ui.views.DateRestrictView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location_date_restrict">
+
+    </com.opcon.ui.views.DateRestrictView>
+
+</LinearLayout>

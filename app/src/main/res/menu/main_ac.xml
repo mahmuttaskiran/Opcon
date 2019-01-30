@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<group>
+  <item
+      android:id="@+id/toProfile"
+      android:title="@string/see_my_profile_updaters"/>
+  <item
+      android:id="@+id/contacts"
+      android:title="@string/myContacts"/>
+  <item android:id="@+id/app_settings" android:title="@string/application_settings"/>
+</group>
+
+  <item android:title="@string/profile_updaters" android:id="@+id/toProfileUpdater"
+      android:icon="@drawable/ic_account_circle" app:showAsAction="always"/>
+
+</menu>

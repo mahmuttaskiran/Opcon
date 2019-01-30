@@ -1,0 +1,42 @@
+0.1.904
+
+BUGS
+    * [OP-00017] Don't show granted permissions on the Permissions dialog. see@NotifierPermissionRationaleAlertDialog
+    * [OP-00018] Support in-out checking to national numbers.
+
+TASKS
+    * [OP-00019] Re-designed @MainActivity->WaitingPostIndicator
+    * [OP-00020] OperationPost relational notifier/profile_updater share as default= TRUE.
+    * [OP-00021] Added extra description for Operation.NOTIFICATION for text.
+    *
+
+0.1.903
+
+BUGS
+
+    * [OP-00013] PostPoster does not work.
+    Last failed post does not show in MainActivity as WaitingPost. When WaitingPostActivity opened it was visible but content (image content) still does not show. Cause is that difference of file and uri. See@PostPoster.uploadImage()
+    * [OP-00014] Manuel image sending via camera or gallery does not appear on the chat-ui sometimes.
+    İt is happening when chat is empty. So if your first message is image, it is not be visible.
+
+TASKS
+    * [OP-00016] Added new AboutActivity. see@NewAboutActivity
+
+0.1.902
+
+BUGS
+    * [OP-00001] DateRestrictView returning month value as missed. For example, if user select 12/05/25, DateRestrictView returning 12/04/25.
+    * [OP-00002] NullPointerException when ContactAdapter->OnBindView try to get Contact object.
+    * [OP-00003] Release version is using LocaleExceptionHandler.
+    * [OP-00005] new_post, new_notifier analytics don't work.
+    * [OP-00006] Don't update presence information on every activity-based event.
+    * [OP-00007] Time range restrict does not work.
+    * [OP-00009] Use thread pool for ContactSync.sync() to improve performance and fluent ui.
+    * [OP-00010] check the last time when you deciding user presence. if lastTimestamp so older don't say this user online.
+    * [OP-00011] Don't request permissions in WelcomeActivity if SDK < runtime_permission_sdk.
+
+IMPROVEMENT REQUEST
+    * [OP-00004] Get user profile picture even if it is not exists in contacts list.
+    * [OP-00008] add analytics event that count verified user.
+    * [OP-00012] Feedback to user when him changed our name.
+    * [OP-00015] Smooth scroll on the PostActivity and PostFragment.

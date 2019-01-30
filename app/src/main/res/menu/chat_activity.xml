@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Copy"
+        android:id="@+id/menuitem_copy"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_content_copy_white_18dp"
+        android:visible="false" />
+
+    <item
+        android:title="Remove"
+        android:id="@+id/menuitem_remove"
+        android:icon="@drawable/ic_delete_white_18dp"
+        app:showAsAction="always"
+        android:visible="false" />
+
+    <item android:title="@string/add_notifier"
+        android:visible="true"
+        app:showAsAction="always"
+        android:id="@+id/menuitem_add_notifier"
+        android:icon="@drawable/ic_add_alert_white_18" />
+
+  <item
+      android:title="@string/see_relation_notifier"
+      android:icon="@drawable/ic_eye"
+      app:showAsAction="always"
+      android:visible="false"
+      android:id="@+id/see_relation_notifier"/>
+
+    <group app:showAsAction="always">
+        <item android:title="@string/notification_off" android:id="@+id/state_of_notification"/>
+        <item android:title="@string/notification_sound_on" android:id="@+id/state_of_notification_sound"/>
+        <item android:title="@string/non_black" android:id="@+id/state_of_black_list"/>
+    </group>
+
+
+</menu>
