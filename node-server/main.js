@@ -14,12 +14,7 @@ var Accountkit = require ('node-accountkit');
 var PNF = require('google-libphonenumber').PhoneNumberFormat;
 // Get an instance of `PhoneNumberUtil`.
 var phoneUtil = require('google-libphonenumber').PhoneNumberUtil.getInstance();
-
 var winston = require('winston');
-
-
-
-
 
 // init logging utils.
 // thanks winston!
