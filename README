@@ -1,3 +1,5 @@
+## [**Get it on Play Store**](https://play.google.com/store/apps/details?id=com.opcon)
+
 # Opcon
 It is a messaging application. And it is more than a messaging application. Opcon offers to user some new features like Notifier and Profile Updater.  Let's think about an alarm application. An alarm application wants to you to answer this question: "When and how do i wake you up?". Opcon asks "Whom shall I inform about the events whose mobile phone notifies?" That's all!
 
