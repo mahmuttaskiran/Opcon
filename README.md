@@ -1,4 +1,3 @@
-<iframe width="560" height="315" src="https://www.youtube.com/embed/j-WoKTDGt0E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ## Important note
 Google has updated its Google Play Developer Policy which restricting SMS, CALL_LOG access only to default apps. So, Opcon needs read sms logs and call logs to execute **InCallCondition, OutCallCondition, InSmsCondition, OutSmsCondition**. After Google has updated its policy, Opcon has been removed from Play Store. There are two option to re-implement Opcon to successfull execute above conditions:
 1) We should be filling 6-page [Permission Decleration Form](https://docs.google.com/forms/d/e/1FAIpQLSfCnRaa4b1VuHhE4gVekWJc_V0Zt4XiTlsKsTipTlPg5ECA7Q/viewform) and submitting to Google Play for review.
