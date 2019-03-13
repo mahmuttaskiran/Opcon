@@ -6,6 +6,8 @@ package com.opcon;
 
 public class Build {
 
+  public static final boolean LIMITED_VERSION = false;
+
   public static final String VERSION = "0.1.910";
   public static final String VERSION_NAME = "Hello, World!";
 
@@ -32,4 +34,5 @@ public class Build {
   public static boolean isTesting() {
     return BUILT_TYPE == TESTING;
   }
+  public static boolean isLimitedVersion() {return LIMITED_VERSION;}
 }

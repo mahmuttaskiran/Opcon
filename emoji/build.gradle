@@ -2,7 +2,7 @@
 
 android {
     compileSdkVersion 24
-    buildToolsVersion '25.0.0'
+    buildToolsVersion '28.0.3'
 
 
 
@@ -16,5 +16,5 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:24.2.0'
+    implementation 'com.android.support:appcompat-v7:24.2.0'
 }

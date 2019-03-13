@@ -36,9 +36,7 @@ public class NewAboutActivity extends AppCompatActivity {
     ButterKnife.bind(this);
     version.setText(getString(R.string.version) + " " + Build.VERSION);
     versionName.setText(Build.VERSION_NAME);
-
     mByMyy.setText(Html.fromHtml(getString(R.string.developed_from_izmir_adiyaman)));
-
   }
 
   @OnClick(R.id.seeCopyrightInformation)
