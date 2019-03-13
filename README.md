@@ -1,10 +1,4 @@
-<style>
-centerme: {
-   margin-left: auto;
-   margin-right: auto;
-}
-</style>
-<img style="display:block;margin-left: auto; margin-right: auto; width: '50%'" src="https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/icon/outputs/mipmap/mipmapldpi.png?style=centerme">
+<img style="display:block;margin-left: auto; margin-right: auto;" src="https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/icon/outputs/mipmap/mipmapldpi.png?style=centerme">
 
 
 Chatting|Profile
