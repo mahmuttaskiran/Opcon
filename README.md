@@ -1,3 +1,4 @@
+
 <p align="center">
    <img style="display:block;margin-left: auto; margin-right: auto;" src="https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/icon/outputs/mipmap/mipmapldpi.png?style=centerme">
  </p>
@@ -14,10 +15,10 @@ Google has updated its Google Play Developer Policy which restricting SMS, CALL_
 Personally, I don't have time to do these things. If anyone has, feel free to contribute, it will be good to see Opcon on the Play Store again.
 
 ## Download APK
-If you wanna examine Opcon, you can [download the .apk](https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/opcon-release.apk) and install. But don't forget, some functionality needs SMS and CALL_LOG permission, will not work as expected.
+If you wanna examine Opcon, you can [download the .apk](https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/opcon-release.apk) and install. But don't forget, some functionality needs SMS and CALL_LOG permission will not work as expected.
 
 ## What is Opcon
-It is a messaging application. And it is more than a messaging application. Opcon offers to user some new features like Notifier and Profile Updater.  Let's think about an alarm application. An alarm application wants to you to answer this question: "When and how do i wake you up?". Opcon asks "Whom shall I inform about the events whose mobile phone notifies?" That's all!
+It is a messaging application. And it is more than a messaging application. Opcon offers to user some new features like Notifier and Profile Updater. To explain Option,  let's think about an alarm application. An alarm application wants to you to answer this question: "When and how do i wake you up?". Opcon asks "Whom shall I inform about the events whose mobile phone notifies?" That's all!
 
 ## Features
 * Text messaging<br>
@@ -31,7 +32,7 @@ It is a messaging application. And it is more than a messaging application. Opco
 
 ## Notifier
 ![Image](https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/play-presence/outputs/en/en_add_rule_revert0.jpg)
-In Opcon, an notifier is a advanced alarm mechanism. A notifier consist of two component: Condition and Operation. A condition is mobile event (in/out call, in/out sms messages, camera events, alarm, battery degree events, location listener) trigger. An operation is what user want to make when on specific condition.
+In Opcon, an notifier is a advanced alarm mechanism. A notifier consist of two component: Condition and Operation. A condition is mobile event (in/out call, in/out sms messages, camera events, alarm, battery degree events, location listener) trigger. An operation is what user want to do when on specific condition.
 
 Supported Conditions|Supported Operations
 --- | --- |
@@ -57,10 +58,13 @@ Special Packets| Description
 `LastCapturedImage`|Sends last captured image
 
 ## What is Profile Updater?
-What do you want to share with your friends when? An profile updater consist of what you answer this question. If you want, you can show to your friends what profile updaters that makes posts.
-
+What do you want to share with your friends when conditions you specified right? An profile updater consist of what you answer this question.
+![](https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/play-presence/outputs/en/en_profile_updater20.jpg)
 ## When does a notifier does effect?
 An notifier that you send to your friends it is deactivated as default. It does not any effect until your friend active it. Also! If the notifier contains special packet, that special packets will send after approval your friends (Even if it is active).
+
+## Backend
+Opcon uses Firebase to store messages, notifiers, images, and other packets. To authentication, verifying user with phone number a little NodeJS server runs. Check node-server directory.
 
 License
 -------
