@@ -1,6 +1,6 @@
-<p align="center">	<style>
-  <img style="display:block;margin-left: auto; margin-right: auto;" src="https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/icon/outputs/mipmap/mipmapldpi.png?style=centerme">	centerme: {
-</p>	   margin-left: auto;
+<p align="center">
+   <img style="display:block;margin-left: auto; margin-right: auto;" src="https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/icon/outputs/mipmap/mipmapldpi.png?style=centerme">
+ </p>
 
 Chatting|Profile
 :-:|:-:
@@ -54,7 +54,7 @@ Special Packets| Description
 `LastReceivedMessage`|Sends last incoming message of user.
 `LastSendMessage`|Sends last message user sent to.
 `Location`|Sends Last known location of user
-`LastCapturedImage`|Sends last captured image of user.
+`LastCapturedImage`|Sends last captured image
 
 ## What is Profile Updater?
 What do you want to share with your friends when? An profile updater consist of what you answer this question. If you want, you can show to your friends what profile updaters that makes posts.
