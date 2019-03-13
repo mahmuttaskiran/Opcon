@@ -1,6 +1,6 @@
-<img style="display:block;margin-left: auto; margin-right: auto;" src="https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/icon/outputs/mipmap/mipmapldpi.png?style=centerme">
-
-
+<p align="center">
+  <img style="display:block;margin-left: auto; margin-right: auto;" src="https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/icon/outputs/mipmap/mipmapldpi.png?style=centerme">
+</p>
 Chatting|Profile
 :-------------------------:|:-------------------------:
 ![](https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/play-presence/outputs/en/en_chat0.jpg)  |  ![](https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/play-presence/outputs/en/en_profile0.jpg)
