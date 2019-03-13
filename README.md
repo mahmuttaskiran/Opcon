@@ -45,7 +45,7 @@ Supported Conditions|Supported Operations
 `BatteryLevel`<br>E.g: When her/his phone battery level is lower than X|
 `Camera`<br>When she/he capture a photo|
 
-Any condition can work with any operation, and any operation can contain any special packet. And... When a user wanna sent a notifier to the oppos*ite side, he/she can select a any condition on any side. **Awesome right!?**
+Any condition can work with any operation, and any operation can contain any special packet. And... When a user wanna sent a notifier to the opposite side, he/she can select a any condition on any side. **Awesome right!?**
 
 Special Packets| Description
 ---|--|
