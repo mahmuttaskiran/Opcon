@@ -1,9 +1,13 @@
-<p align="center">
-  <img style="display:block;margin-left: auto; margin-right: auto;" src="https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/icon/outputs/mipmap/mipmapldpi.png?style=centerme">
-</p>
+<style>
+centerme: {
+   margin-left: auto;
+   margin-right: auto;
+}
+</style>
+<img style="display:block;margin-left: auto; margin-right: auto; width: '50%'" src="https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/icon/outputs/mipmap/mipmapldpi.png?style=centerme">
 
 Chatting|Profile
-:-------------------------:|:-------------------------:
+:-:|:-:
 ![](https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/play-presence/outputs/en/en_chat0.jpg)  |  ![](https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/play-presence/outputs/en/en_profile0.jpg)
 
 ## Important note
@@ -23,7 +27,7 @@ It is a messaging application. And it is more than a messaging application. Opco
 * Text messaging<br>
 * Image Messaging<br>
 * Special packet messaging. Includes: Battery level, last incoming call, last outgoing call, last outgoing message, last incoming message.<br>
-* Locatinal conditions<br>
+* Locational conditions<br>
 * In and Out call conditions<br>
 * In and Out sms conditions<br>
 * User profile
@@ -32,6 +36,29 @@ It is a messaging application. And it is more than a messaging application. Opco
 ## Notifier
 ![Image](https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/play-presence/outputs/en/en_add_rule_revert0.jpg)
 In Opcon, an notifier is a advanced alarm mechanism. A notifier consist of two component: Condition and Operation. A condition is mobile event (in/out call, in/out sms messages, camera events, alarm, battery degree events, location listener) trigger. An operation is what user want to make when on specific condition.
+
+Supported Conditions|Supported Operations
+--- | --- |
+`Alarm`<br>E.g: At 12:46PM or 01/01/2020 12:00 | Send a message to me<br>A message can contain a special packet.
+`Locational`<br>E.g: When he/she near of a location you picked.| Send a message to her/his<br>A message can contain a special packet.
+`IncomingCall`<br>E.g: When he/she receives a call from a phone number|Notify me with a notification sound.
+`OutgoingCall`<br>E.g: When he/she calls a phone number| Notify him with a notification sound.
+`IncomingMessage`<br>E.g: When he/seh receives a message from a phone number|Shara something on my profile. It is can be a special packet.
+`OutgoingMessage`<br>E.g: When she/he send a message to a phone number|
+`BatteryLevel`<br>E.g: When her/his phone battery level is lower than X|
+`Camera`<br>When she/he capture a photo|
+
+Any condition can work with any operation, and any operation can contain any special packet. And... When a user wanna sent a notifier to the oppos*ite side, he/she can select a any condition on any side. **Awesome right!?**
+
+Special Packets| Description
+---|--|
+`BatteryLevel`|Sends battery level of user|
+`LastIncomingCall`|Sends last incoming call of user. Reads from call-logs.
+`LastOutgoingCall`|Sends last outgoing call of user. Reads from call-logs.
+`LastReceivedMessage`|Sends last incoming message of user.
+`LastSendMessage`|Sends last message user sent to.
+`Location`|Sends Last known location of user
+`LastCapturedImage`|Sends last captured image of user.
 
 ## What is Profile Updater?
 What do you want to share with your friends when? An profile updater consist of what you answer this question. If you want, you can show to your friends what profile updaters that makes posts.
