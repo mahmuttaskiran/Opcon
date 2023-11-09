@@ -1,85 +1,77 @@
-
 <p align="center">
-   <img style="display:block;margin-left: auto; margin-right: auto;" src="https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/icon/outputs/mipmap/mipmapldpi.png?style=centerme">
- </p>
+   <img src="https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/icon/outputs/mipmap/mipmapldpi.png" style="display:block; margin-left: auto; margin-right: auto;">
+</p>
 
 Chatting|Profile
 :-:|:-:
 ![](https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/play-presence/outputs/en/en_chat0.jpg)  |  ![](https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/play-presence/outputs/en/en_profile0.jpg)
 
-## Important note
-Google has updated its Google Play Developer Policy which restricting SMS, CALL_LOG access only to default apps. So, Opcon needs read sms logs and call logs to execute **InCallCondition, OutCallCondition, InSmsCondition, OutSmsCondition**. After Google has updated its policy, Opcon has been removed from Play Store. There are two option to re-implement Opcon to successfull execute above conditions:
-1) We should be filling 6-page [Permission Decleration Form](https://docs.google.com/forms/d/e/1FAIpQLSfCnRaa4b1VuHhE4gVekWJc_V0Zt4XiTlsKsTipTlPg5ECA7Q/viewform) and submitting to Google Play for review.
-2) We should implement default Sms Application features.
+## Important Note
+Google has updated its Google Play Developer Policy to restrict SMS and CALL_LOG access to only default apps. Therefore, Opcon requires reading SMS logs and call logs to execute **InCallCondition, OutCallCondition, InSmsCondition, OutSmsCondition**. Following Google's policy update, Opcon was removed from the Play Store. To reintroduce Opcon successfully and execute the above conditions, there are two options:
+1) Complete a 6-page [Permission Declaration Form](https://docs.google.com/forms/d/e/1FAIpQLSfCnRaa4b1VuHhE4gVekWJc_V0Zt4XiTlsKsTipTlPg5ECA7Q/viewform) and submit it to Google Play for review.
+2) Implement features for the default SMS Application.
 
-Personally, I don't have time to do these things. If anyone has, feel free to contribute, it will be good to see Opcon on the Play Store again.
+Personally, I don't have the time to undertake these tasks. If anyone is willing to contribute, it would be great to see Opcon available on the Play Store again.
 
 ## Download APK
-If you wanna examine Opcon, you can [download the .apk](https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/opcon-release.apk) and install. But don't forget, some functionality needs SMS and CALL_LOG permission will not work as expected.
+If you want to explore Opcon, you can [download the .apk](https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/opcon-release.apk) and install it. But keep in mind that some functionalities requiring SMS and CALL_LOG permissions will not work as expected.
 
-## What is Opcon
-It is a messaging application. And it is more than a messaging application. Opcon offers to user some new features like Notifier and Profile Updater. To explain Option,  let's think about an alarm application. An alarm application wants to you to answer this question: "When and how do i wake you up?". Opcon asks "Whom shall I inform about the events whose mobile phone notifies?" That's all!
+## What is Opcon?
+Opcon is more than a messaging application; it introduces users to new features like Notifier and Profile Updater. Think of it like an alarm app that asks, "When and how should I wake you up?" Opcon asks, "Who should I inform about the events your mobile phone notifies you of?" That's the essence!
+
+## History of Opcon
+The Opcon was the first mobile project that I developed with Java for Android. The idea behind the Opcon comes from a project that I developed for Windows in the earlier years of my programming journey (I was 15). At that age, I was using a scripting language, AutoScript, and Microsoft's VisualBasic. With AutoScript, I developed a Windows program in which users can control their devices by setting conditions and operations, for example:
+- If the program X, do kill the process [X|Y].
+- If the user's screen time exceeds the duration X, then show an alert.
+- If the user runs the program X for Y duration, then lock the screen.
+- If I receive the data X from the Y port from the Z IP, then send back the data X. (This was very complex to set from the end user perspective because they are supposed to have different devices that run my program, have a static IP address to send data to other's device that also has the setup for my program)
+
+There were too many conditions and operations and the user was able to create a rule in which he/she could set any condition(s) with an operation(s).
+
+Anyway, in 2015, I wanted to learn Java and Android SDK together, and I knew the only way to learn a new programming language/paradigm was to create a new project. Before 2015, I had used AutoScript, VB, PHP, JS, and Python languages and wrote many applications with those languages. But I never experienced the OOP with those languages even though some of them are OOP languages, because I wasn't aware of OOP. I'm a self-taught programmer, I was programming to have fun, and none of my projects were a big deal. But, at the age of 22, I wanted to build something for the users, I wanted to prove my skills to everyone, I wanted to change the world, LOL.
+
+Well, considering all these, I wanted to learn Java & And SDK, I had to have a good idea to deliver to users -to change to world, and have decided to create the same project as I did for Windows to let users have full control of their devices. But this project was an automation tool rather than an application in which users can have fun. I needed to redesign the idea of my first Android application, Opcon. Redesigning Opcon's idea was a very long process, I re-wrote the Opcon many times, maybe more than 10 times, and each fresh start came with a lot of knowledge of Java, OOP,  algorithms, data structures, and Android SDK and with a re(designed|considired) idea of the Opcon.
+
+After 1.5 years of struggling, I was finally able to release the first stable release (stable to me, LOL, I was the only tester/designer/coder & the user of this app). I had a stressful year for this application, I had to isolate myself from life and dedicate myself to learning, and developing. Anyway, it had come to reach out to the users. But, I couldn't do this, because I was alone, I mean I wasn't in such an environment in which I could show my doings to the people who could help me, I wasn't in the software environment at all. 
+
+After one more year of contributing the Opcon, I finally quit the application for the reason I have mentioned above, Google's new Privacy Policy, made it open source.
 
 ## Features
-* Text messaging<br>
-* Image Messaging<br>
-* Special packet messaging. Includes: Battery level, last incoming call, last outgoing call, last outgoing message, last incoming message.<br>
-* Locational conditions<br>
-* In and Out call conditions<br>
-* In and Out sms conditions<br>
-* User profile
-* User profile updater
+* Text messaging
+* Image messaging
+* Special packet messaging, including Battery level, last incoming/outgoing call, and last received/sent message.
+* Location-based conditions
+* Incoming and outgoing call conditions
+* Incoming and outgoing SMS conditions
+* User profile and profile updater
 
 ## Notifier
 ![Image](https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/play-presence/outputs/en/en_add_rule_revert0.jpg)
-In Opcon, an notifier is a advanced alarm mechanism. A notifier consist of two component: Condition and Operation. A condition is mobile event (in/out call, in/out sms messages, camera events, alarm, battery degree events, location listener) trigger. An operation is what user want to do when on specific condition.
+In Opcon, a notifier is an advanced alarm mechanism that consists of two components: Condition and Operation. A condition is a mobile event trigger (like incoming/outgoing calls, SMS messages, camera events, alarms, battery level, and location changes). An operation is what the user wants to do when a specific condition occurs.
+
+# Profile updater
+In Opcon, the users are able to set conditions to automatically update their profile statuses or to post on their profiles. For example, **when my phone battery is about to die** (less than %X) **then post**, 
+"Guys, I'm about to join my phone in 'low power mode.' If I don't respond, send a charger!" 
 
 Supported Conditions|Supported Operations
 --- | --- |
-`Alarm`<br>E.g: At 12:46PM or 01/01/2020 12:00 | Send a message to me<br>A message can contain a special packet.
-`Locational`<br>E.g: When he/she near of a location you picked.| Send a message to her/his<br>A message can contain a special packet.
-`IncomingCall`<br>E.g: When he/she receives a call from a phone number|Notify me with a notification sound.
-`OutgoingCall`<br>E.g: When he/she calls a phone number| Notify him with a notification sound.
-`IncomingMessage`<br>E.g: When he/seh receives a message from a phone number|Shara something on my profile. It is can be a special packet.
-`OutgoingMessage`<br>E.g: When she/he send a message to a phone number|
-`BatteryLevel`<br>E.g: When her/his phone battery level is lower than X|
-`Camera`<br>When she/he capture a photo|
+`Alarm`<br>For example: At 12:46 PM or on 01/01/2020 at 12:00 PM | Send me a message<br>A message can include a special packet.
+`Location`<br>For example: When near a chosen location| Send them a message<br>A message can include a special packet.
+`IncomingCall`<br>For example: When receiving a call from a specific number| Notify me with a sound alert.
+`OutgoingCall`<br>For example: When making a call to a specific number| Notify them with a sound alert.
+`IncomingMessage`<br>For example: When receiving a message from a specific number| Share something on my profile, possibly a special packet.
+`OutgoingMessage`<br>For example: When sending a message to a specific number|
+`BatteryLevel`<br>For example: When the phone battery is below a certain percentage|
+`Camera`<br>For example: When capturing a photo|
 
-Any condition can work with any operation, and any operation can contain any special packet. And... When a user wanna sent a notifier to the opposite side, he/she can select a any condition on any side. **Awesome right!?**
+Any condition can work with any operation, and any operation can include any special packet. Plus, when a user wants to send a notifier to someone, they can choose any condition on any side. **Awesome, right!?**
 
 Special Packets| Description
 ---|--|
-`BatteryLevel`|Sends battery level of user|
-`LastIncomingCall`|Sends last incoming call of user. Reads from call-logs.
-`LastOutgoingCall`|Sends last outgoing call of user. Reads from call-logs.
-`LastReceivedMessage`|Sends last incoming message of user.
-`LastSendMessage`|Sends last message user sent to.
-`Location`|Sends Last known location of user
-`LastCapturedImage`|Sends last captured image
-
-## What is Profile Updater?
-What do you want to share with your friends when conditions you specified right? An profile updater consist of what you answer this question.
-![](https://github.com/mahmuttaskiran/Opcon/raw/master/store_presence/play-presence/outputs/en/en_profile_updater20.jpg)
-## When does a notifier does effect?
-An notifier that you send to your friends it is deactivated as default. It does not any effect until your friend active it. Also! If the notifier contains special packet, that special packets will send after approval your friends (Even if it is active).
-
-## Backend
-Opcon uses Firebase to store messages, notifiers, images, and other packets. To authentication, verifying user with phone number a little NodeJS server runs. Check node-server directory.
-
-License
--------
-
-    Copyright 2015 Mahmut Taşkıran
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
+`BatteryLevel`|Sends the user's battery level|
+`LastIncomingCall`|Sends details of the user's last incoming call, read from call logs.
+`LastOutgoingCall`|Sends details of the user's last outgoing call, read from call logs.
+`LastReceivedMessage`|Sends the user's last received message.
+`LastSentMessage`|Sends the last message the user sent.
+`Location`|Sends the user's last known location.
+`LastCaptured
