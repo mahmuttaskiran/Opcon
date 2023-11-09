@@ -34,7 +34,7 @@ Well, considering all these, I wanted to learn Java & And SDK, I had to have a g
 
 After 1.5 years of struggling, I was finally able to release the first stable release (stable to me, LOL, I was the only tester/designer/coder & the user of this app). I had a stressful year for this application, I had to isolate myself from life and dedicate myself to learning, and developing. Anyway, it had come to reach out to the users. But, I couldn't do this, because I was alone, I mean I wasn't in such an environment in which I could show my doings to the people who could help me, I wasn't in the software environment at all. 
 
-After one more year of contributing the Opcon, I finally quit the application for the reason I have mentioned above, made it open source and it died.
+After one more year of contributing the Opcon, I finally quit the application for the reason I have mentioned above, made it open source and it died. I hope the same won't happen for my dear [Polyingo](https://www.polyingo.com)
 
 From all this, I learned that "less is more". If I could go back to 2015, I would break up Opcon into smaller, simpler apps, each one doing just one thing.
 
