@@ -36,6 +36,8 @@ After 1.5 years of struggling, I was finally able to release the first stable re
 
 After one more year of contributing the Opcon, I finally quit the application for the reason I have mentioned above, made it open source and it died.
 
+From all this, I learned that "less is more". If I could go back to 2015, I would break up Opcon into smaller, simpler apps, each one doing just one thing.
+
 ## Features
 * Text messaging
 * Image messaging
