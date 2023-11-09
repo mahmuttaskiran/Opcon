@@ -79,5 +79,5 @@ Special Packets| Description
 `LastCaptured
 
 # YouTube videos
-For advertisement: https://www.youtube.com/watch?v=j-WoKTDGt0E&ab_channel=MahmutTa%C5%9Fkiran
+For advertisement: https://youtu.be/j-WoKTDGt0E?si=RL790LSTOBKt-yzf
 Live demo: https://youtu.be/YDbwCD21gqg?si=axODoCuLgH5lW_9U
